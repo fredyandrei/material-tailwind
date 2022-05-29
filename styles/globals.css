@@ -5,7 +5,7 @@
 .code-editor code[class*="language-"],
 .code-editor pre[class*="language-"] {
   color: #d6deeb;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-family: Plus Jakarta Sans, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -160,7 +160,7 @@
 [data-rehype-pretty-code-fragment] code {
   display: block;
   width: 100%;
-  font-family: "Fira Code";
+  font-family: "Roboto";
   font-size: 1rem;
   counter-reset: line;
 }

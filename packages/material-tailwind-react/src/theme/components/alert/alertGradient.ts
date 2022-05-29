@@ -3,6 +3,10 @@ const alertGradient: object = {
     backgroud: "bg-gradient-to-tr from-blue-grey-600 to-blue-grey-400",
     color: "text-white",
   },
+  priamry: {
+    backgroud: "bg-gradient-to-tr from-primary-600 to-primary-400",
+    color: "text-white",
+  },
   grey: {
     backgroud: "bg-gradient-to-tr from-grey-600 to-grey-400",
     color: "text-white",
