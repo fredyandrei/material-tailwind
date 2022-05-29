@@ -23,7 +23,7 @@ export default function CodePreviewCard({ code }: CodePreviewCardProps) {
           padding={20}
           className="code-editor h-max text-white outline-none focus:outline-none"
           style={{
-            fontFamily: "Fira Code",
+            fontFamily: "Roboto",
             fontWeight: 500
           }}
         />

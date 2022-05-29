@@ -66,7 +66,7 @@ export const chip: ChipStylesType = {
       fontFamily: "font-sans",
       fontSize: "text-xs",
       fontWeight: "font-bold",
-      textTransform: "uppercase",
+      textTransform: "none",
       textAlign: "center",
       lineHeight: "leading-none",
       whiteSpace: "whitespace-nowrap",

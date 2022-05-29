@@ -70,7 +70,7 @@ export const button: ButtonStyleTypes = {
         fontFamily: "font-sans",
         fontWeight: "font-bold",
         textAlign: "center",
-        textTransform: "uppercase",
+        textTransform: "none",
         transition: "transition-all",
       },
       fullWidth: {

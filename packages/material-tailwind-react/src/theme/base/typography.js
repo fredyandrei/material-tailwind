@@ -1,5 +1,5 @@
 const typography = {
-  sans: ["Roboto", "sans-serif"],
+  sans: ["Plus Jakarta Sans", "sans-serif"],
   serif: ["Roboto Slab", "serif"],
   body: ["Roboto", "sans-serif"],
 };

@@ -58,7 +58,7 @@ export const typography: TypographyStylesType = {
         letterSpacing: "tracking-normal",
         fontFamily: "font-serif",
         fontSize: "text-5xl",
-        fontWeight: "font-semibold",
+        fontWeight: "font-bold",
         lineHeight: "leading-tight",
       },
       h2: {
@@ -67,7 +67,7 @@ export const typography: TypographyStylesType = {
         letterSpacing: "tracking-normal",
         fontFamily: "font-serif",
         fontSize: "text-4xl",
-        fontWeight: "font-semibold",
+        fontWeight: "font-bold",
         lineHeight: "leading-[1.3]",
       },
       h3: {
@@ -76,7 +76,7 @@ export const typography: TypographyStylesType = {
         letterSpacing: "tracking-normal",
         fontFamily: "font-serif",
         fontSize: "text-3xl",
-        fontWeight: "font-semibold",
+        fontWeight: "font-bold",
         lineHeight: "leading-snug",
       },
       h4: {
@@ -85,7 +85,7 @@ export const typography: TypographyStylesType = {
         letterSpacing: "tracking-normal",
         fontFamily: "font-sans",
         fontSize: "text-2xl",
-        fontWeight: "font-semibold",
+        fontWeight: "font-bold",
         lineHeight: "leading-snug",
       },
       h5: {
@@ -94,7 +94,7 @@ export const typography: TypographyStylesType = {
         letterSpacing: "tracking-normal",
         fontFamily: "font-sans",
         fontSize: "text-xl",
-        fontWeight: "font-semibold",
+        fontWeight: "font-bold",
         lineHeight: "leading-snug",
       },
       h6: {
@@ -103,7 +103,7 @@ export const typography: TypographyStylesType = {
         letterSpacing: "tracking-normal",
         fontFamily: "font-sans",
         fontSize: "text-base",
-        fontWeight: "font-semibold",
+        fontWeight: "font-bold",
         lineHeight: "leading-relaxed",
       },
       lead: {

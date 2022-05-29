@@ -195,7 +195,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
         <div className="px-6">
           <div className="max-w-[1440px] mx-auto flex">
             <aside
-              className={`fixed z-[999] lg:relative lg:z-10 w-80 lg:w-64 h-screen lg:pt-20 pb-4 pr-4 transition-all duration-300 lg:left-0 ${
+              className={`fixed z-[999] lg:relative lg:z-10 w-80 lg:w-64 h-screen lg:pt-16 pb-4 pr-4 transition-all duration-300 lg:left-0 ${
                 mobileNav ? "left-0" : "-left-96"
               }`}
             >
@@ -208,9 +208,6 @@ export default function Page({ frontMatter, mdxSource, slug }) {
               />
               <div className="fixed overflow-y-scroll bg-white lg:bg-transparent w-80 lg:w-64 h-screen pb-48 pt-6 pl-6 lg:pt-0 lg:pl-0">
                 <div className="flex items-center justify-between">
-                  <Typography variant="h4" color="blue-grey">
-                    Documentation
-                  </Typography>
                   <Typography
                     variant="h5"
                     className="lg:hidden p-2 mr-3 mt-px !text-blue-grey-500 hover:!text-blue-grey-900 cursor-pointer transition-colors"
@@ -230,16 +227,17 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                     </svg>
                   </Typography>
                 </div>
-                <div className="mt-4">
+                <div className="">
                   {routes.map(({ name, icon, pages }, key): any => (
                     <div key={key}>
-                      <div className="flex items-center mt-8">
-                        <div className="grid place-items-center w-7 h-7 text-xs rounded-lg bg-gradient-to-tr from-pink-400 to-pink-600 text-white mr-3">
+                      <div className="flex items-center mt-10">
+                        <div className="grid place-items-center w-7 h-7 text-xs rounded-lg bg-primary-500 text-white mr-3">
                           <i className={icon} />
                         </div>
                         <Typography
                           color="blue-grey"
-                          className="font-bold capitalize"
+                          fontSize="sm"
+                          className="font-bold uppercase"
                         >
                           {name}
                         </Typography>
@@ -272,10 +270,10 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                 </div>
               </div>
             </aside>
-            <div className="mt-36 lg:mt-20 lg:px-6 w-full lg:w-[60%]">
+            <div className="mt-36 lg:mt-28 lg:px-6 w-full lg:w-[60%]">
               <MDXRemote {...mdxSource} components={components} />
 
-              <div className="w-full mt-20 flex justify-between items-center">
+              <div className="w-full mt-28 flex justify-between items-center">
                 {frontMatter.prev && (
                   <Link href={`/docs/html/${frontMatter.prev}`}>
                     <a>
@@ -338,7 +336,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                 </Typography>
               </footer>
             </div>
-            <aside className="hidden lg:block relative w-64 h-screen pt-20 pb-4 pl-16">
+            <aside className="hidden lg:block relative w-64 h-screen pt-28 pb-4 pl-16">
               <div className="fixed w-64 h-screen">
                 <Typography
                   variant="h6"

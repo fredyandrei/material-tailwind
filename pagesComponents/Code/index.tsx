@@ -9,7 +9,7 @@ export default function Code({
 }) {
   return (
     <code
-      className={`font-['Fira_Code'] font-normal px-1 rounded-md ${
+      className={`font-['Plus_Jakarta_Sans'] font-normal px-1 rounded-md ${
         html
           ? "text-pink-500 bg-pink-500/[0.15]"
           : "text-blue-500 bg-blue-500/[0.15]"
