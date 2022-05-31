@@ -191,7 +191,7 @@ const selectStaticColors: object = {
       borderColor: "border-blue-grey-200",
     },
     open: {
-      borderColor: "border-pink-500",
+      borderColor: "border-primary-500",
     },
     withValue: {
       borderColor: "border-blue-grey-200",

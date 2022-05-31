@@ -230,9 +230,9 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                 <div className="">
                   {routes.map(({ name, icon, pages }, key): any => (
                     <div key={key}>
-                      <div className="flex items-center mt-10">
+                      <div className="flex items-center mt-16">
                         <div className="grid place-items-center w-7 h-7 text-xs rounded-lg bg-primary-500 text-white mr-3">
-                          <i className={icon} />
+                          <i aria-hidden className={icon} />
                         </div>
                         <Typography
                           color="blue-grey"
@@ -270,15 +270,15 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                 </div>
               </div>
             </aside>
-            <div className="mt-36 lg:mt-28 lg:px-6 w-full lg:w-[60%]">
+            <div className="mt-36 lg:mt-32 lg:px-6 w-full lg:w-[60%]">
               <MDXRemote {...mdxSource} components={components} />
 
-              <div className="w-full mt-28 flex justify-between items-center">
+              <div className="w-full mt-32 flex justify-between items-center">
                 {frontMatter.prev && (
                   <Link href={`/docs/html/${frontMatter.prev}`}>
                     <a>
                       <Typography className="py-2 capitalize !font-medium !text-blue-grey-500 hover:!text-blue-grey-900 !transition-colors">
-                        <i className="fas fa-caret-left mr-2 mt-px" />
+                        <i aria-hidden className="fas fa-caret-left mr-2 mt-px" />
                         {frontMatter.prev.replace("-", " ")}
                       </Typography>
                     </a>
@@ -289,7 +289,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                     <a>
                       <Typography className="py-2 capitalize !font-medium !text-blue-grey-500 hover:!text-blue-grey-900 !transition-colors">
                         {frontMatter.next.replace("-", " ")}
-                        <i className="fas fa-caret-right ml-2 mt-px" />
+                        <i aria-hidden className="fas fa-caret-right ml-2 mt-px" />
                       </Typography>
                     </a>
                   </Link>
@@ -310,33 +310,31 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                   href="https://vercel.com/?utm_source=ct-tailwind-team&utm_campaign=oss"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center no-underline text-dark font-semibold"
-                >
-                  <span className="mr-1">Sponsored by</span>
-                  <span>
-                    <svg height="20" viewBox="0 0 283 64" fill="none">
-                      <path
-                        fill="currentColor"
-                        d="M141.04 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM248.72 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM200.24 34c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9V5h9zM36.95 0L73.9 64H0L36.95 0zm92.38 5l-27.71 48L73.91 5H84.3l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10V51h-9V17h9v9.2c0-5.08 5.91-9.2 13.2-9.2z"
-                      ></path>
-                    </svg>
+                  className="inline-flex items-center no-underline text-dark font-semibold">
+                    <span>
+                    <svg width="20" height="20" viewBox="0 0 1155 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M577.344 0L1154.69 1000H0L577.344 0Z" fill="black"/></svg>
                   </span>
+
+                  <span className="border-[0.5px] h-4 rounded-full mr-2 ml-2"></span>
+                  <span className="mr-1 !text-sm">Powered by <span className="font-bold">Vercel</span></span>
+                  
                 </a>
-                <Typography className="!font-normal !text-blue-grey-500 text-center lg:text-left">
-                  Copyright &copy; {date} Material Tailwind by{" "}
+                <Typography className="!font-medium !text-sm !text-blue-grey-500 text-center lg:text-left">
+                  &copy; {date} Horizon UI - based on {" "}
                   <a
-                    href="https://www.creative-tim.com?ref=material-tailwind"
+                    href="https://github.com/creativetimofficial/material-tailwind"
                     target="_blank"
                     rel="noreferrer"
                     className="text-current hover:text-blue-grey-900 transition-colors"
                   >
-                    Creative Tim
+                    Material Tailwind
                   </a>
                   .
                 </Typography>
               </footer>
             </div>
-            <aside className="hidden lg:block relative w-64 h-screen pt-28 pb-4 pl-16">
+            <aside className="hidden lg:block relative w-64 h-screen pt-32 pb-4 pl-16">
               <div className="fixed w-64 h-screen">
                 <Typography
                   variant="h6"

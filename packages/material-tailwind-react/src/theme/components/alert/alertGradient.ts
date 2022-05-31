@@ -72,7 +72,7 @@ const alertGradient: object = {
     color: "text-white",
   },
   pink: {
-    backgroud: "bg-gradient-to-tr from-pink-600 to-pink-400",
+    backgroud: "bg-gradient-to-tr from-primary-600 to-primary-400",
     color: "text-white",
   },
   red: {

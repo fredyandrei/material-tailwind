@@ -68,8 +68,8 @@ const textareaStaticLabelColors: object = {
     after: "after:border-purple-500 peer-focus:after:border-purple-500",
   },
   pink: {
-    color: "text-blue-grey-500 peer-focus:text-pink-500",
-    after: "after:border-pink-500 peer-focus:after:border-pink-500",
+    color: "text-blue-grey-500 peer-focus:text-primary-500",
+    after: "after:border-primary-500 peer-focus:after:border-primary-500",
   },
   red: {
     color: "text-blue-grey-500 peer-focus:text-red-500",

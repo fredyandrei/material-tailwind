@@ -68,7 +68,7 @@ const progressFilled: object = {
     color: "text-white",
   },
   pink: {
-    backgroud: "bg-pink-500",
+    backgroud: "bg-primary-500",
     color: "text-white",
   },
   red: {

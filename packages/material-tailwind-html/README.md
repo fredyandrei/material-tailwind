@@ -1,6 +1,6 @@
 # @material-tailwind/html
 
-Material Tailwind HTML is an easy to use components library for Tailwind CSS. Material Tailwind HTML features multiple components, all written with Tailwind CSS classes and Material Design guidelines. Material Tailwind HTML provides a simple way to customize your components, you can change the colors, fonts, breakpoints and everything you need.
+Horizon UI HTML is an easy to use components library for Tailwind CSS. Horizon UI HTML features multiple components, all written with Tailwind CSS classes and Material Design guidelines. Horizon UI HTML provides a simple way to customize your components, you can change the colors, fonts, breakpoints and everything you need.
 
 <br />
 
@@ -72,5 +72,5 @@ module.exports = withMT({
 Now you're good to go and use @material-tailwind/html in your project.
 
 ```html
-<button class="button button-pink">Button</button>
+<button class="button button-primary">Button</button>
 ```

@@ -59,7 +59,7 @@ export default function SectionColorsPalette() {
               >
                 Material Design
               </a>
-              . Get color inspiration for your designs with Material Tailwind!
+              . Get color inspiration for your designs with Horizon UI!
             </Typography>
           </div>
         </div>

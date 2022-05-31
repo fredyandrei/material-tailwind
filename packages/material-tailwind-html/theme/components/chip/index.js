@@ -32,6 +32,7 @@ const chipVariant = (theme, background) => ({
 
 const chip = (theme) => ({
   ".chip": chipRoot,
+  ".chip-primary": chipVariant(theme, "colors.primary"),
   ".chip-pink": chipVariant(theme, "colors.pink"),
   ".chip-purple": chipVariant(theme, "colors.purple"),
   ".chip-deep-purple": chipVariant(theme, "colors.deep-purple"),

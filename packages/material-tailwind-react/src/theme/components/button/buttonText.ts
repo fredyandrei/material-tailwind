@@ -85,9 +85,9 @@ const buttonText: object = {
     active: "active:bg-purple-500/30",
   },
   pink: {
-    color: "text-pink-500",
-    hover: "hover:bg-pink-500/10",
-    active: "active:bg-pink-500/30",
+    color: "text-primary-500",
+    hover: "hover:bg-primary-500/10",
+    active: "active:bg-primary-500/30",
   },
   red: {
     color: "text-red-500",

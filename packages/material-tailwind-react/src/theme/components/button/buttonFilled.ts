@@ -136,10 +136,10 @@ const buttonFilled: object = {
     active: "active:opacity-[0.85] active:shadow-none",
   },
   pink: {
-    backgroud: "bg-pink-500",
+    backgroud: "bg-primary-500",
     color: "text-white",
-    shadow: "shadow-md shadow-pink-500/20",
-    hover: "hover:shadow-lg hover:shadow-pink-500/40",
+    shadow: "shadow-md shadow-primary-500/20",
+    hover: "hover:shadow-lg hover:shadow-primary-500/40",
     focus: "focus:opacity-[0.85] focus:shadow-none",
     active: "active:opacity-[0.85] active:shadow-none",
   },

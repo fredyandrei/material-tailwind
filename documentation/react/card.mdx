@@ -1,5 +1,5 @@
 ---
-title: Tailwind CSS Card for React - Material Tailwind
+title: Tailwind CSS Card for React - Horizon UI
 description: Customise your web projects with our beautiful cards component for Tailwind CSS and React using Material Design guidelines.
 navigation:
   [
@@ -8,7 +8,7 @@ navigation:
     "card-header-props",
     "card-body-props",
     "card-footer-props",
-    "types"
+    "types",
   ]
 github: card
 prev: button
@@ -25,13 +25,13 @@ See below our beautiful card example that you can use in your React and Tailwind
 
 <br />
 
-<ComponentCard id="card">
-  <Card className="w-96 mt-6">
-    <CardHeader color="blue" className="relative h-56">
-      <Image src="/img/blog.jpg" alt="img-blur-shadow" layout="fill" />
+<ComponentCard id='card'>
+  <Card className='w-96 mt-6'>
+    <CardHeader color='blue' className='relative h-56'>
+      <Image src='/img/blog.jpg' alt='img-blur-shadow' layout='fill' />
     </CardHeader>
-    <CardBody className="text-center">
-      <Typography variant="h5" color="blue-grey" className="mb-2">
+    <CardBody className='text-center'>
+      <Typography variant='h5' color='blue-grey' className='mb-2'>
         <span>Cozy 5 Stars Apartment</span>
       </Typography>
       <Typography>
@@ -42,11 +42,10 @@ See below our beautiful card example that you can use in your React and Tailwind
     </CardBody>
     <CardFooter
       divider
-      className="flex items-center justify-between py-3 -mt-4"
-    >
-      <Typography variant="small">$899/night</Typography>
-      <Typography variant="small" color="grey" className="flex gap-1">
-        <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
+      className='flex items-center justify-between py-3 -mt-4'>
+      <Typography variant='small'>$899/night</Typography>
+      <Typography variant='small' color='grey' className='flex gap-1'>
+        <i className='fas fa-map-marker-alt fa-sm mt-[3px]' />
         <span>Barcelona, Spain</span>
       </Typography>
     </CardFooter>
@@ -58,21 +57,21 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter
+  CardFooter,
 } from "@material-tailwind/react";
 
 export default function Example() {
   return (
-    <Card className="w-96 mt-6">
-      <CardHeader color="blue" className="relative h-56">
+    <Card className='w-96 mt-6'>
+      <CardHeader color='blue' className='relative h-56'>
         <img
-          src="/img/blog.jpg"
-          alt="img-blur-shadow"
-          className="w-full h-full"
+          src='/img/blog.jpg'
+          alt='img-blur-shadow'
+          className='w-full h-full'
         />
       </CardHeader>
-      <CardBody className="text-center">
-        <Typography variant="h5" className="mb-2">
+      <CardBody className='text-center'>
+        <Typography variant='h5' className='mb-2'>
           Cozy 5 Stars Apartment
         </Typography>
         <Typography>
@@ -81,10 +80,10 @@ export default function Example() {
           night life in Barcelona.
         </Typography>
       </CardBody>
-      <CardFooter divider className="flex items-center justify-between py-3">
-        <Typography variant="small">$899/night</Typography>
-        <Typography variant="small" color="grey" className="flex gap-1">
-          <i className="fas fa-map-marker-alt fa-sm mt-[3px]" />
+      <CardFooter divider className='flex items-center justify-between py-3'>
+        <Typography variant='small'>$899/night</Typography>
+        <Typography variant='small' color='grey' className='flex gap-1'>
+          <i className='fas fa-map-marker-alt fa-sm mt-[3px]' />
           Barcelona, Spain
         </Typography>
       </CardFooter>
@@ -97,7 +96,7 @@ export default function Example() {
 
 ## Card Props
 
-<span id="card-props" className="scroll-mt-48" />
+<span id='card-props' className='scroll-mt-48' />
 The following props are available for the card component. These are the custom props
 that come with we've added for the card component and you can use all the other native
 props as well.
@@ -114,7 +113,7 @@ props as well.
 
 ## Card Header Props
 
-<span id="card-header-props" className="scroll-mt-48" />
+<span id='card-header-props' className='scroll-mt-48' />
 The following props are available for the card header component. These are the custom
 props that come with we've added for the card header component and you can use all
 the other native props as well.
@@ -132,7 +131,7 @@ the other native props as well.
 
 ## Card Body Props
 
-<span id="card-body-props" className="scroll-mt-48" />
+<span id='card-body-props' className='scroll-mt-48' />
 The following props are available for the card body component. These are the custom
 props that come with we've added for the card body component and you can use all
 the other native props as well.
@@ -146,7 +145,7 @@ the other native props as well.
 
 ## Card Footer Props
 
-<span id="card-footer-props" className="scroll-mt-48" />
+<span id='card-footer-props' className='scroll-mt-48' />
 The following props are available for the card footer component. These are the custom
 props that come with we've added for the card footer component and you can use all
 the other native props as well.
@@ -161,7 +160,7 @@ the other native props as well.
 
 ## Types
 
-<span id="types" className="scroll-mt-48" />
+<span id='types' className='scroll-mt-48' />
 
 ```ts
 type variant = "filled" | "gradient";

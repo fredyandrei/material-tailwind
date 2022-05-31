@@ -1,5 +1,5 @@
 ---
-title: Tailwind CSS Chips for React - Material Tailwind
+title: Tailwind CSS Chips for React - Horizon UI
 description: Customise your web projects with our easy-to-use chips component for Tailwind CSS and React using Material Design guidelines.
 navigation:
   ["chip", "chip-variants", "chip-colors", "chip-dismissible", "props", "types"]
@@ -16,15 +16,15 @@ See below our simple chip component example that you can use for your Tailwind C
 
 <br />
 
-<ComponentCard id="chip">
-  <Chip value="chip" />
+<ComponentCard id='chip'>
+  <Chip value='chip' />
 </ComponentCard>
 
 ```jsx showLineNumbers {1, 4}
 import { Chip } from "@material-tailwind/react";
 
 export default function Example() {
-  return <Chip value="chip" />;
+  return <Chip value='chip' />;
 }
 ```
 
@@ -34,10 +34,10 @@ export default function Example() {
 
 The chip component comes with 2 different variants that you can change it using the <Code>variant</Code> prop.
 
-<ComponentCard id="chip-variants">
-  <div className="flex gap-2">
-    <Chip value="chip filled" />
-    <Chip variant="gradient" value="chip gradient" />
+<ComponentCard id='chip-variants'>
+  <div className='flex gap-2'>
+    <Chip value='chip filled' />
+    <Chip variant='gradient' value='chip gradient' />
   </div>
 </ComponentCard>
 
@@ -46,9 +46,9 @@ import { Chip } from "@material-tailwind/react";
 
 export default function Variants() {
   return (
-    <div className="flex gap-2">
-      <Chip variant="filled" value="chip filled" />
-      <Chip variant="gradient" value="chip gradient" />
+    <div className='flex gap-2'>
+      <Chip variant='filled' value='chip filled' />
+      <Chip variant='gradient' value='chip gradient' />
     </div>
   );
 }
@@ -60,17 +60,17 @@ export default function Variants() {
 
 The chip component comes with 19 different colors that you can change it using the <Code>color</Code> prop, below there are some examples of the colors but you can check all of the them [here.](#props)
 
-<ComponentCard id="chip-colors">
-  <div className="flex gap-2">
-    <Chip value="blue" />
-    <Chip color="red" value="red" />
-    <Chip color="green" value="green" />
-    <Chip color="amber" value="amber" />
-    <Chip color="pink" value="pink" />
-    <Chip color="indigo" value="indigo" />
-    <Chip color="purple" value="purple" />
-    <Chip color="teal" value="teal" />
-    <Chip color="cyan" value="cyan" />
+<ComponentCard id='chip-colors'>
+  <div className='flex gap-2'>
+    <Chip value='blue' />
+    <Chip color='red' value='red' />
+    <Chip color='green' value='green' />
+    <Chip color='amber' value='amber' />
+    <Chip color='pink' value='pink' />
+    <Chip color='indigo' value='indigo' />
+    <Chip color='purple' value='purple' />
+    <Chip color='teal' value='teal' />
+    <Chip color='cyan' value='cyan' />
   </div>
 </ComponentCard>
 
@@ -79,16 +79,16 @@ import { Chip } from "@material-tailwind/react";
 
 export default function Colors() {
   return (
-    <div className="flex gap-2">
-      <Chip color="blue" value="blue" />
-      <Chip color="red" value="red" />
-      <Chip color="green" value="green" />
-      <Chip color="amber" value="amber" />
-      <Chip color="pink" value="pink" />
-      <Chip color="indigo" value="indigo" />
-      <Chip color="purple" value="purple" />
-      <Chip color="teal" value="teal" />
-      <Chip color="cyan" value="cyan" />
+    <div className='flex gap-2'>
+      <Chip color='blue' value='blue' />
+      <Chip color='red' value='red' />
+      <Chip color='green' value='green' />
+      <Chip color='amber' value='amber' />
+      <Chip color='pink' value='pink' />
+      <Chip color='indigo' value='indigo' />
+      <Chip color='purple' value='purple' />
+      <Chip color='teal' value='teal' />
+      <Chip color='cyan' value='cyan' />
     </div>
   );
 }
@@ -101,26 +101,25 @@ export default function Colors() {
 The chip component is a dismissible component that you can control it using the <Code>dismissible</Code> and <Code>show</Code> props.
 
 <State initialState={{ show: true }}>
-  <ComponentCard id="chip-dismissible">
+  <ComponentCard id='chip-dismissible'>
     <Observe>
       {({ setState, show }) => (
         <>
           {!show && (
             <Button
-              variant="gradient"
-              className="absolute"
-              onClick={() => setState((s) => ({ show: true }))}
-            >
+              variant='gradient'
+              className='absolute'
+              onClick={() => setState((s) => ({ show: true }))}>
               Show Chip
             </Button>
           )}
           <Chip
-            variant="gradient"
+            variant='gradient'
             show={show}
             dismissible={{
-              onClose: () => setState((s) => ({ show: false }))
+              onClose: () => setState((s) => ({ show: false })),
             }}
-            value="Dismissible"
+            value='Dismissible'
           />
         </>
       )}
@@ -139,20 +138,19 @@ export default function Dismissible() {
     <Fragment>
       {!show && (
         <Button
-          variant="gradient"
-          className="absolute"
-          onClick={() => setShow(true)}
-        >
+          variant='gradient'
+          className='absolute'
+          onClick={() => setShow(true)}>
           Show Chip
         </Button>
       )}
       <Chip
-        variant="gradient"
+        variant='gradient'
         show={show}
         dismissible={{
-          onClose: () => setShow(false)
+          onClose: () => setShow(false),
         }}
-        value="Dismissible"
+        value='Dismissible'
       />
     </Fragment>
   );
@@ -163,7 +161,7 @@ export default function Dismissible() {
 
 ## Props
 
-<span id="props" className="scroll-mt-48" />
+<span id='props' className='scroll-mt-48' />
 The following props are available for the button component. These are the custom
 props that come with we've added for the chip component and you can use all the other
 native props as well.
@@ -183,7 +181,7 @@ native props as well.
 
 ## Types
 
-<span id="types" className="scroll-mt-48" />
+<span id='types' className='scroll-mt-48' />
 
 ```ts
 type variant = "filled" | "gradient";

@@ -85,9 +85,9 @@ const radioColors: object = {
     before: "checked:before:bg-purple-500",
   },
   pink: {
-    color: "text-pink-500",
-    border: "checked:border-pink-500",
-    before: "checked:before:bg-pink-500",
+    color: "text-primary-500",
+    border: "checked:border-primary-500",
+    before: "checked:before:bg-primary-500",
   },
   red: {
     color: "text-red-500",

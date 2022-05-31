@@ -1,5 +1,5 @@
 ---
-title: Tailwind CSS Input for React - Material Tailwind
+title: Tailwind CSS Input for React - Horizon UI
 description: Customise your web projects with our complex inputs component for Tailwind CSS and React using Material Design guidelines.
 navigation:
   [
@@ -10,7 +10,7 @@ navigation:
     "input-validations",
     "input-with-icon",
     "props",
-    "types"
+    "types",
   ]
 github: input
 prev: icon-button
@@ -27,9 +27,9 @@ See below our input component example. It comes in different styles and colors, 
 
 <br />
 
-<ComponentCard id="input">
-  <div className="w-72">
-    <Input label="Username" />
+<ComponentCard id='input'>
+  <div className='w-72'>
+    <Input label='Username' />
   </div>
 </ComponentCard>
 
@@ -37,7 +37,7 @@ See below our input component example. It comes in different styles and colors, 
 import { Input } from "@material-tailwind/react";
 
 export default function Example() {
-  return <Input label="Username" />;
+  return <Input label='Username' />;
 }
 ```
 
@@ -47,11 +47,11 @@ export default function Example() {
 
 The input component comes with 3 different variants that you can change it using the <Code>variant</Code> prop.
 
-<ComponentCard id="input-variants">
-  <div className="flex items-end gap-4 w-full">
-    <Input variant="outlined" label="Outlined" />
-    <Input variant="standard" label="Standard" />
-    <Input variant="static" label="Static" placeholder="Static" />
+<ComponentCard id='input-variants'>
+  <div className='flex items-end gap-4 w-full'>
+    <Input variant='outlined' label='Outlined' />
+    <Input variant='standard' label='Standard' />
+    <Input variant='static' label='Static' placeholder='Static' />
   </div>
 </ComponentCard>
 
@@ -60,10 +60,10 @@ import { Input } from "@material-tailwind/react";
 
 export default function Variants() {
   return (
-    <div className="flex items-end gap-4 w-full">
-      <Input variant="outlined" label="Outlined" />
-      <Input variant="standard" label="Standard" />
-      <Input variant="static" label="Static" placeholder="Static" />
+    <div className='flex items-end gap-4 w-full'>
+      <Input variant='outlined' label='Outlined' />
+      <Input variant='standard' label='Standard' />
+      <Input variant='static' label='Static' placeholder='Static' />
     </div>
   );
 }
@@ -75,10 +75,10 @@ export default function Variants() {
 
 The input component comes with 2 different sizes that you can change it using the <Code>size</Code> prop.
 
-<ComponentCard id="input-sizes">
-  <div className="flex items-end gap-4 w-full">
-    <Input size="md" label="Input Medium" />
-    <Input size="lg" label="Input Large" />
+<ComponentCard id='input-sizes'>
+  <div className='flex items-end gap-4 w-full'>
+    <Input size='md' label='Input Medium' />
+    <Input size='lg' label='Input Large' />
   </div>
 </ComponentCard>
 
@@ -87,9 +87,9 @@ import { Input } from "@material-tailwind/react";
 
 export default function Sizes() {
   return (
-    <div className="flex items-end gap-4 w-full">
-      <Input size="md" label="Input Medium" />
-      <Input size="lg" label="Input Large" />
+    <div className='flex items-end gap-4 w-full'>
+      <Input size='md' label='Input Medium' />
+      <Input size='lg' label='Input Large' />
     </div>
   );
 }
@@ -101,12 +101,12 @@ export default function Sizes() {
 
 The input component comes with 19 different colors that you can change it using the <Code>color</Code> prop, below there are some examples of the colors but you can check all of the them [here.](#props)
 
-<ComponentCard id="input-colors">
-  <div className="flex flex-col gap-4 w-72">
-    <Input color="blue" label="Input Blue" />
-    <Input color="purple" label="Input Purple" />
-    <Input color="indigo" label="Input Indigo" />
-    <Input color="teal" label="Input Teal" />
+<ComponentCard id='input-colors'>
+  <div className='flex flex-col gap-4 w-72'>
+    <Input color='blue' label='Input Blue' />
+    <Input color='purple' label='Input Purple' />
+    <Input color='indigo' label='Input Indigo' />
+    <Input color='teal' label='Input Teal' />
   </div>
 </ComponentCard>
 
@@ -115,11 +115,11 @@ import { Input } from "@material-tailwind/react";
 
 export default function Colors() {
   return (
-    <div className="flex flex-col gap-4 w-72">
-      <Input color="blue" label="Input Blue" />
-      <Input color="purple" label="Input Purple" />
-      <Input color="indigo" label="Input Indigo" />
-      <Input color="teal" label="Input Teal" />
+    <div className='flex flex-col gap-4 w-72'>
+      <Input color='blue' label='Input Blue' />
+      <Input color='purple' label='Input Purple' />
+      <Input color='indigo' label='Input Indigo' />
+      <Input color='teal' label='Input Teal' />
     </div>
   );
 }
@@ -131,10 +131,10 @@ export default function Colors() {
 
 The input component comes with error and success states for performing validations.
 
-<ComponentCard id="input-validations">
-  <div className="flex items-end gap-4 w-full">
-    <Input label="Input Error" error />
-    <Input label="Input Success" success />
+<ComponentCard id='input-validations'>
+  <div className='flex items-end gap-4 w-full'>
+    <Input label='Input Error' error />
+    <Input label='Input Success' success />
   </div>
 </ComponentCard>
 
@@ -143,9 +143,9 @@ import { Input } from "@material-tailwind/react";
 
 export default function Validations() {
   return (
-    <div className="flex items-end gap-4 w-full">
-      <Input label="Input Error" error />
-      <Input label="Input Success" success />
+    <div className='flex items-end gap-4 w-full'>
+      <Input label='Input Error' error />
+      <Input label='Input Success' success />
     </div>
   );
 }
@@ -157,9 +157,9 @@ export default function Validations() {
 
 You can add icon for the input component using the <Code>icon</Code> prop.
 
-<ComponentCard id="input-with-icon">
-  <div className="w-72">
-    <Input label="Input With Icon" icon={<i className="fas fa-heart" />} />
+<ComponentCard id='input-with-icon'>
+  <div className='w-72'>
+    <Input label='Input With Icon' icon={<i className='fas fa-heart' />} />
   </div>
 </ComponentCard>
 
@@ -168,7 +168,7 @@ import { Input } from "@material-tailwind/react";
 
 export default function InputWithIcon() {
   return (
-    <Input label="Input With Icon" icon={<i className="fas fa-heart" />} />
+    <Input label='Input With Icon' icon={<i className='fas fa-heart' />} />
   );
 }
 ```
@@ -177,7 +177,7 @@ export default function InputWithIcon() {
 
 ## Props
 
-<span id="props" className="scroll-mt-48" />
+<span id='props' className='scroll-mt-48' />
 The following props are available for the input component. These are the custom props
 that come with we've added for the input component and you can use all the other
 native input props as well.
@@ -198,7 +198,7 @@ native input props as well.
 
 ## Types
 
-<span id="types" className="scroll-mt-48" />
+<span id='types' className='scroll-mt-48' />
 
 ```ts
 type variant = "standard" | "outlined" | "static";

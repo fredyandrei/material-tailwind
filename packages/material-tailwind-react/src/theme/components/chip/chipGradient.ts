@@ -1,4 +1,8 @@
 const chipGradient: object = {
+  primary: {
+    backgroud: "bg-gradient-to-tr from-primary-600 to-primary-400",
+    color: "text-white",
+  },
   "blue-grey": {
     backgroud: "bg-gradient-to-tr from-blue-grey-600 to-blue-grey-400",
     color: "text-white",
@@ -68,7 +72,7 @@ const chipGradient: object = {
     color: "text-white",
   },
   pink: {
-    backgroud: "bg-gradient-to-tr from-pink-600 to-pink-400",
+    backgroud: "bg-gradient-to-tr from-primary-600 to-primary-400",
     color: "text-white",
   },
   red: {

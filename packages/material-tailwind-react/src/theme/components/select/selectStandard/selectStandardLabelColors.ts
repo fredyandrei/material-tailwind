@@ -240,15 +240,15 @@ const selectStandardLabelColors: object = {
   pink: {
     close: {
       color: "text-blue-grey-500",
-      after: "after:border-pink-500",
+      after: "after:border-primary-500",
     },
     open: {
-      color: "text-pink-500",
-      after: "after:border-pink-500",
+      color: "text-primary-500",
+      after: "after:border-primary-500",
     },
     withValue: {
       color: "text-blue-grey-500",
-      after: "after:border-pink-500",
+      after: "after:border-primary-500",
     },
   },
   red: {

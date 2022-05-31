@@ -1,12 +1,12 @@
-# Material Tailwind Contributing Guide
+# Horizon UI Contributing Guide
 
-Thank you for your interest in contributing to Material Tailwind! Please feel free to put up a PR for any issue, feature request or enhancement.
+Thank you for your interest in contributing to Horizon UI! Please feel free to put up a PR for any issue, feature request or enhancement.
 
 Even if you have little to no experience with Tailwind CSS, JavaScript or React, we'd be more than happy to help you with any information or guidance in order to fulfill your PR.
 
 ## Development Setup
 
-Material Tailwind is using PNPM workspaces and you need to execute the following commands after clonning the repository.
+Horizon UI is using PNPM workspaces and you need to execute the following commands after clonning the repository.
 
 1. Install dependencies
 
@@ -28,7 +28,7 @@ yarn dev
 npm run dev
 ```
 
-## Material Tailwind Structure
+## Horizon UI Structure
 
 There are different files and folders inside the @material-tailwind directory:
 

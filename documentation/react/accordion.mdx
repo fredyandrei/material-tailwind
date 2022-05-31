@@ -1,5 +1,5 @@
 ---
-title: Tailwind CSS Accordion for React - Material Tailwind
+title: Tailwind CSS Accordion for React - Horizon UI
 description: Customise your web projects with our easy-to-use accordion component for Tailwind CSS and React using Material Design guidelines.
 navigation:
   [
@@ -7,7 +7,7 @@ navigation:
     "accordion-props",
     "accordion-header-props",
     "accordion-body-props",
-    "types"
+    "types",
   ]
 github: accordion
 prev: getting-started
@@ -23,15 +23,14 @@ See below our simple and versatile accordion example that you can use in your Re
 <br />
 
 <State initialState={{ active: 0 }}>
-  <ComponentCard id="accordion">
+  <ComponentCard id='accordion'>
     <Observe>
       {({ setState, active }) => (
         <>
           <Accordion
             open={active === 1}
-            onClick={() => setState((s) => ({ active: active === 1 ? 0 : 1 }))}
-          >
-            <AccordionHeader>What is Material Tailwind?</AccordionHeader>
+            onClick={() => setState((s) => ({ active: active === 1 ? 0 : 1 }))}>
+            <AccordionHeader>What is Horizon UI?</AccordionHeader>
             <AccordionBody>
               We&apos;re not always in the position that we want to be at.
               We&apos;re constantly growing. We&apos;re constantly making
@@ -41,9 +40,8 @@ See below our simple and versatile accordion example that you can use in your Re
           </Accordion>
           <Accordion
             open={active === 2}
-            onClick={() => setState((s) => ({ active: active === 2 ? 0 : 2 }))}
-          >
-            <AccordionHeader>How to use Material Tailwind?</AccordionHeader>
+            onClick={() => setState((s) => ({ active: active === 2 ? 0 : 2 }))}>
+            <AccordionHeader>How to use Horizon UI?</AccordionHeader>
             <AccordionBody>
               We&apos;re not always in the position that we want to be at.
               We&apos;re constantly growing. We&apos;re constantly making
@@ -53,11 +51,8 @@ See below our simple and versatile accordion example that you can use in your Re
           </Accordion>
           <Accordion
             open={active === 3}
-            onClick={() => setState((s) => ({ active: active === 3 ? 0 : 3 }))}
-          >
-            <AccordionHeader>
-              What can I do with Material Tailwind?
-            </AccordionHeader>
+            onClick={() => setState((s) => ({ active: active === 3 ? 0 : 3 }))}>
+            <AccordionHeader>What can I do with Horizon UI?</AccordionHeader>
             <AccordionBody>
               We&apos;re not always in the position that we want to be at.
               We&apos;re constantly growing. We&apos;re constantly making
@@ -76,7 +71,7 @@ import { useState } from "react";
 import {
   Accordion,
   AccordionHeader,
-  AccordionBody
+  AccordionBody,
 } from "@material-tailwind/react";
 
 export default function Example() {
@@ -89,7 +84,7 @@ export default function Example() {
   return (
     <Fragment>
       <Accordion open={open === 1} onClick={() => handleOpen(1)}>
-        <AccordionHeader>What is Material Tailwind?</AccordionHeader>
+        <AccordionHeader>What is Horizon UI?</AccordionHeader>
         <AccordionBody>
           We&apos;re not always in the position that we want to be at.
           We&apos;re constantly growing. We&apos;re constantly making mistakes.
@@ -98,7 +93,7 @@ export default function Example() {
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 2} onClick={() => handleOpen(2)}>
-        <AccordionHeader>How to use Material Tailwind?</AccordionHeader>
+        <AccordionHeader>How to use Horizon UI?</AccordionHeader>
         <AccordionBody>
           We&apos;re not always in the position that we want to be at.
           We&apos;re constantly growing. We&apos;re constantly making mistakes.
@@ -107,7 +102,7 @@ export default function Example() {
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 3} onClick={() => handleOpen(3)}>
-        <AccordionHeader>What can I do with Material Tailwind?</AccordionHeader>
+        <AccordionHeader>What can I do with Horizon UI?</AccordionHeader>
         <AccordionBody>
           We&apos;re not always in the position that we want to be at.
           We&apos;re constantly growing. We&apos;re constantly making mistakes.
@@ -124,7 +119,7 @@ export default function Example() {
 
 ## Accordion Props
 
-<span id="accordion-props" className="scroll-mt-48" />
+<span id='accordion-props' className='scroll-mt-48' />
 The following props are available for the accordion component. These are the custom
 props that come with we've added for the accordion component and you can use all
 the other native props as well.
@@ -142,7 +137,7 @@ the other native props as well.
 
 ## Accordion Header Props
 
-<span id="accordion-header-props" className="scroll-mt-48" />
+<span id='accordion-header-props' className='scroll-mt-48' />
 The following props are available for the accordion header component. These are the
 custom props that come with we've added for the accordion header component and you
 can use all the other native props as well.
@@ -156,7 +151,7 @@ can use all the other native props as well.
 
 ## Accordion Body Props
 
-<span id="accordion-body-props" className="scroll-mt-48" />
+<span id='accordion-body-props' className='scroll-mt-48' />
 The following props are available for the accordion body component. These are the
 custom props that come with we've added for the accordion body component and you
 can use all the other native props as well.
@@ -170,7 +165,7 @@ can use all the other native props as well.
 
 ## Types
 
-<span id="types" className="scroll-mt-48" />
+<span id='types' className='scroll-mt-48' />
 
 ```ts
 type animate = {

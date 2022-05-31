@@ -94,9 +94,9 @@ const cardGradient: object = {
     shadow: "shadow-purple-500/40",
   },
   pink: {
-    backgroud: "bg-gradient-to-tr from-pink-600 to-pink-400",
+    backgroud: "bg-gradient-to-tr from-primary-600 to-primary-400",
     color: "text-white",
-    shadow: "shadow-pink-500/40",
+    shadow: "shadow-primary-500/40",
   },
   red: {
     backgroud: "bg-gradient-to-tr from-red-600 to-red-400",

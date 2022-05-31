@@ -295,9 +295,9 @@ const selectOutlinedLabelColors: object = {
       after: "after:border-transparent",
     },
     open: {
-      color: "text-pink-500",
-      before: "before:border-pink-500",
-      after: "after:border-pink-500",
+      color: "text-primary-500",
+      before: "before:border-primary-500",
+      after: "after:border-primary-500",
     },
     withValue: {
       color: "text-blue-grey-400",

@@ -94,9 +94,9 @@ const cardFilled: object = {
     shadow: "shadow-purple-500/40",
   },
   pink: {
-    backgroud: "bg-pink-500",
+    backgroud: "bg-primary-500",
     color: "text-white",
-    shadow: "shadow-pink-500/40",
+    shadow: "shadow-primary-500/40",
   },
   red: {
     backgroud: "bg-red-500",

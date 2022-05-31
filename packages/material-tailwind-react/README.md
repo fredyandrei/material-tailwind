@@ -1,8 +1,8 @@
 # @material-tailwind/react
 
-Material Tailwind React is an easy to use components library for ReactJS and Tailwind CSS. Material Tailwind React features multiple react.js components, all written with Tailwind CSS classes and Material Design guidelines. Material Tailwind React provides a simple way to customize your button, you can change the colors, fonts, breakpoints and everything you need.
+Horizon UI React is an easy to use components library for ReactJS and Tailwind CSS. Horizon UI React features multiple react.js components, all written with Tailwind CSS classes and Material Design guidelines. Horizon UI React provides a simple way to customize your button, you can change the colors, fonts, breakpoints and everything you need.
 
-Material Tailwind React is written in TypeScript and you can easily use it for building TypeScript based applications.
+Horizon UI React is written in TypeScript and you can easily use it for building TypeScript based applications.
 
 <br />
 

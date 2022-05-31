@@ -1,4 +1,8 @@
 const chipFilled: object = {
+  primary: {
+    backgroud: "bg-primary-500",
+    color: "text-white",
+  },
   "blue-grey": {
     backgroud: "bg-blue-grey-500",
     color: "text-white",
@@ -68,7 +72,7 @@ const chipFilled: object = {
     color: "text-white",
   },
   pink: {
-    backgroud: "bg-pink-500",
+    backgroud: "bg-primary-500",
     color: "text-white",
   },
   red: {

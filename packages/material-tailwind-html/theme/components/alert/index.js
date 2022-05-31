@@ -3,30 +3,34 @@ const alertRoot = {
   padding: "1rem",
   "margin-bottom": "1rem",
   border: "0 solid transparent",
-  "border-radius": "0.375rem",
+  "border-radius": "0.875rem",
   "line-height": "1.25rem",
   opacity: "1",
   transition: "opacity .15s linear",
 
   "&.hide": {
     opacity: "0",
-    display: "none"
-  }
+    display: "none",
+  },
 };
 
 const alertVariant = (theme, background) => ({
   "background-color": theme(`${background}.500`),
   color: theme("colors.white"),
+  "box-shadow": `0 10px 15px -3px ${theme(
+    `${background}.200`
+  )}, 0 4px 6px -4px ${theme(`${background}.200`)}`,
 
   "&.alert-gradient": {
     "background-image": `linear-gradient(195deg, ${theme(
       `${background}.400`
-    )}, ${theme(`${background}.600`)})`
-  }
+    )}, ${theme(`${background}.600`)})`,
+  },
 });
 
 const alert = (theme) => ({
   ".alert": alertRoot,
+  ".alert-primary": alertVariant(theme, "colors.primary"),
   ".alert-pink": alertVariant(theme, "colors.pink"),
   ".alert-purple": alertVariant(theme, "colors.purple"),
   ".alert-deep-purple": alertVariant(theme, "colors.deep-purple"),
@@ -48,7 +52,7 @@ const alert = (theme) => ({
   ".alert-red": alertVariant(theme, "colors.red"),
   ".alert-secondary": alertVariant(theme, "colors.secondary"),
   ".alert-dark": alertVariant(theme, "colors.dark"),
-  ".alert-light": alertVariant(theme, "colors.light")
+  ".alert-light": alertVariant(theme, "colors.light"),
 });
 
 module.exports.alertVariant = alertVariant;

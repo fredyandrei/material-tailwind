@@ -1,4 +1,8 @@
 const chipCloseButtonColors: object = {
+  primary: {
+    default: "bg-primary-800",
+    hover: "hover:bg-primary-900",
+  },
   "blue-grey": {
     default: "bg-blue-grey-800",
     hover: "hover:bg-blue-grey-900",
@@ -68,8 +72,8 @@ const chipCloseButtonColors: object = {
     hover: "hover:bg-purple-900",
   },
   pink: {
-    default: "bg-pink-800",
-    hover: "hover:bg-pink-900",
+    default: "bg-primary-800",
+    hover: "hover:bg-primary-900",
   },
   red: {
     default: "bg-red-800",

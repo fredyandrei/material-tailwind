@@ -69,7 +69,7 @@ const textareaOutlinedColors: object = {
   },
   pink: {
     borderColor: "border-blue-grey-200",
-    borderColorFocused: "focus:border-pink-500",
+    borderColorFocused: "focus:border-primary-500",
   },
   red: {
     borderColor: "border-blue-grey-200",

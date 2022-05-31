@@ -225,7 +225,7 @@ const selectOutlinedColors: object = {
       borderColor: "border-blue-grey-200",
     },
     open: {
-      borderColor: "border-pink-500",
+      borderColor: "border-primary-500",
       borderTopColor: "border-t-transparent",
     },
     withValue: {

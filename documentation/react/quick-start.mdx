@@ -1,6 +1,6 @@
 ---
-title: Get Started with Material Tailwind - React & Tailwind CSS Components Library
-description: Learn how to use Material Tailwind components from this documentation to easily create elegant and flexible pages using Tailwind CSS and React.
+title: Get Started with Horizon UI - React & Tailwind CSS Components Library
+description: Learn how to use Horizon UI components from this documentation to easily create elegant and flexible pages using Tailwind CSS and React.
 navigation:
   [
     "quick-start",
@@ -11,7 +11,7 @@ navigation:
     "tailwindcss-config",
     "theme-provider",
     "example",
-    "typescript"
+    "typescript",
   ]
 github: quick-start
 next: license
@@ -19,13 +19,13 @@ next: license
 
 # Quick Start
 
-<span id="quick-start" className="scroll-mt-48" />
-Material Tailwind is free and open-source components library for ReactJS and Tailwind
-CSS inspired by Material Design.
+<span id='quick-start' className='scroll-mt-48' />
+Horizon UI is free and open-source components library for ReactJS and Tailwind CSS
+inspired by Material Design.
 
 <br />
 ## Installation
-<span id="installation" className="scroll-mt-48" />
+<span id='installation' className='scroll-mt-48' />
 
 Learn how to use @material-tailwind/react components from this documentation to quickly and easily create elegant and flexible pages using Tailwind CSS.
 
@@ -34,9 +34,9 @@ Learn how to use @material-tailwind/react components from this documentation to 
 <br />
 ## Using NPM
 
-Install Material Tailwind as a dependency using NPM by running the following command:
+Install Horizon UI as a dependency using NPM by running the following command:
 
-<span id="npm" className="scroll-mt-48" />
+<span id='npm' className='scroll-mt-48' />
 
 ```bash
 npm i @material-tailwind/react
@@ -48,7 +48,7 @@ npm i @material-tailwind/react
 
 Or use Yarn:
 
-<span id="yarn" className="scroll-mt-48" />
+<span id='yarn' className='scroll-mt-48' />
 
 ```bash
 yarn add @material-tailwind/react
@@ -58,7 +58,7 @@ yarn add @material-tailwind/react
 
 ## Using PNPM
 
-<span id="pnpm" className="scroll-mt-48" />
+<span id='pnpm' className='scroll-mt-48' />
 
 ```bash
 pnpm i @material-tailwind/react
@@ -68,7 +68,7 @@ pnpm i @material-tailwind/react
 
 ## TailwindCSS Configurations
 
-<span id="tailwindcss-config" className="scroll-mt-48" />
+<span id='tailwindcss-config' className='scroll-mt-48' />
 
 Once you install @material-tailwind/react you need to wrap your tailwind css configurations with the <Code>withMT()</Code> function coming from @material-tailwind/react.
 
@@ -78,9 +78,9 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {}
+    extend: {},
   },
-  plugins: []
+  plugins: [],
 });
 ```
 
@@ -88,7 +88,7 @@ module.exports = withMT({
 
 ## Theme Provider
 
-<span id="theme-provider" className="scroll-mt-48" />
+<span id='theme-provider' className='scroll-mt-48' />
 
 @material-tailwind/react is comes with a theme provider that you can use to provide your own theme to your components. You need to wrap your entire application with the <Code>ThemeProvider</Code> coming from @material-tailwind/react.
 
@@ -112,7 +112,7 @@ ReactDOM.render(
 
 Now you're good to go and use @material-tailwind/react in your project.
 
-<ComponentCard id="example">
+<ComponentCard id='example'>
   <Button>Button</Button>
 </ComponentCard>
 
@@ -128,6 +128,6 @@ export default function Example() {
 
 ## TypeScript
 
-<span id="typescript" className="scroll-mt-48" />
+<span id='typescript' className='scroll-mt-48' />
 
 @material-tailwind/react is a TypeScript based components library and you can easily use it in your TypeScript based projects.

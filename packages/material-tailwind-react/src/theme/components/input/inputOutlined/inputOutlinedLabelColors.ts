@@ -85,9 +85,9 @@ const inputOutlinedLabelColors: object = {
     after: "after:border-blue-grey-200 peer-focus:after:border-purple-500",
   },
   pink: {
-    color: "text-blue-grey-400 peer-focus:text-pink-500",
-    before: "before:border-blue-grey-200 peer-focus:before:border-pink-500",
-    after: "after:border-blue-grey-200 peer-focus:after:border-pink-500",
+    color: "text-blue-grey-400 peer-focus:text-primary-500",
+    before: "before:border-blue-grey-200 peer-focus:before:border-primary-500",
+    after: "after:border-blue-grey-200 peer-focus:after:border-primary-500",
   },
   red: {
     color: "text-blue-grey-400 peer-focus:text-red-500",

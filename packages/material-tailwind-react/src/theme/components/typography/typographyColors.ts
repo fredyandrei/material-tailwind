@@ -80,8 +80,8 @@ const typographyColors: object = {
     gradient: "bg-gradient-to-tr from-purple-600 to-purple-400",
   },
   pink: {
-    color: "text-pink-500",
-    gradient: "bg-gradient-to-tr from-pink-600 to-pink-400",
+    color: "text-primary-500",
+    gradient: "bg-gradient-to-tr from-primary-600 to-primary-400",
   },
   red: {
     color: "text-red-500",

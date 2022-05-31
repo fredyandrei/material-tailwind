@@ -12,20 +12,20 @@ export default function SectionFeatures() {
           Tailwind CSS-Based Framework
         </Typography>
         <Typography className="text-[#1A237E]/60 text-lg font-light mb-2">
-          Material Tailwind features multiple React and HTML components, all written with
+          Horizon UI features multiple React and HTML components, all written with
           Tailwind CSS classes and Material Design guidelines.
         </Typography>
       </div>
       <div className="flex flex-row flex-wrap content-center">
         <div className="w-full max-w-full px-3 mb-12 lg:mb-0 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4">
           <FeatureCard icon="dashboard" title="Tailwind CSS Components">
-            Material Tailwind comes with a huge number of Fully Coded Tailwind CSS
+            Horizon UI comes with a huge number of Fully Coded Tailwind CSS
             components.
           </FeatureCard>
         </div>
         <div className="w-full max-w-full px-3 mb-12 lg:mb-0 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4">
           <FeatureCard icon="terminal" title="JavaScript Components">
-            Material Tailwind only features React and HTML components, but in the near
+            Horizon UI only features React and HTML components, but in the near
             future it will future more.
           </FeatureCard>
         </div>
@@ -37,7 +37,7 @@ export default function SectionFeatures() {
         </div>
         <div className="w-full max-w-full px-3 mb-12 lg:mb-0 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4">
           <FeatureCard icon="view_carousel" title="Templates (soon)">
-            Material Tailwind will come with fully coded sample pages so you
+            Horizon UI will come with fully coded sample pages so you
             could start working instantly.
           </FeatureCard>
         </div>

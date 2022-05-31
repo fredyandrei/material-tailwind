@@ -7,7 +7,7 @@ const progressRoot = {
   "border-radius": ".125rem",
 
   "&[percentage='true']": {
-    height: "1.5rem"
+    height: "1.5rem",
   },
 
   ".progress-bar": {
@@ -16,19 +16,20 @@ const progressRoot = {
     color: "#fff",
     "text-align": "center",
     "white-space": "nowrap",
-    "transition": "width .6s ease",
+    transition: "width .6s ease",
     "border-radius": ".125rem",
 
     "&.progress-stripped": {
-      "background-image": "linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)",
-      "background-size": "1rem 1rem"
+      "background-image":
+        "linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)",
+      "background-size": "1rem 1rem",
     },
 
-    "span": {
+    span: {
       position: "absolute",
-      "margin-top": "3px"
-    }
-  }
+      "margin-top": "3px",
+    },
+  },
 };
 
 const progressVariant = (theme, background) => ({
@@ -37,12 +38,13 @@ const progressVariant = (theme, background) => ({
   "&.progress-gradient": {
     "background-image": `linear-gradient(to top right, ${theme(
       `${background}.600`
-    )}, ${theme(`${background}.400`)})`
-  }
+    )}, ${theme(`${background}.400`)})`,
+  },
 });
 
 const progress = (theme) => ({
   ".progress": progressRoot,
+  ".progress-primary": progressVariant(theme, "colors.primary"),
   ".progress-pink": progressVariant(theme, "colors.pink"),
   ".progress-purple": progressVariant(theme, "colors.purple"),
   ".progress-deep-purple": progressVariant(theme, "colors.deep-purple"),
@@ -64,7 +66,7 @@ const progress = (theme) => ({
   ".progress-red": progressVariant(theme, "colors.red"),
   ".progress-secondary": progressVariant(theme, "colors.secondary"),
   ".progress-dark": progressVariant(theme, "colors.dark"),
-  ".progress-light": progressVariant(theme, "colors.light")
+  ".progress-light": progressVariant(theme, "colors.light"),
 });
 
 module.exports.progressVariant = progressVariant;

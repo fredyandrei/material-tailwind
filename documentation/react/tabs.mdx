@@ -1,5 +1,5 @@
 ---
-title: Tailwind CSS Tabs for React - Material Tailwind
+title: Tailwind CSS Tabs for React - Horizon UI
 description: Customise your web projects with our beautiful tabs component for Tailwind CSS and React using Material Design guidelines.
 navigation:
   [
@@ -9,7 +9,7 @@ navigation:
     "tabs-body-props",
     "tab-props",
     "tab-panel-props",
-    "types"
+    "types",
   ]
 github: tabs
 prev: switch
@@ -26,37 +26,37 @@ See below our example that will help you create a simple and easy-to-use tabs fo
 
 <br />
 
-<ComponentCard id="tabs">
-  <Tabs value="html">
+<ComponentCard id='tabs'>
+  <Tabs value='html'>
     <TabsHeader>
-      <Tab value="html">HTML</Tab>
-      <Tab value="react">React</Tab>
-      <Tab value="vue">Vue</Tab>
-      <Tab value="angular">Angular</Tab>
-      <Tab value="svelte">Svelte</Tab>
+      <Tab value='html'>HTML</Tab>
+      <Tab value='react'>React</Tab>
+      <Tab value='vue'>Vue</Tab>
+      <Tab value='angular'>Angular</Tab>
+      <Tab value='svelte'>Svelte</Tab>
     </TabsHeader>
     <TabsBody>
-      <TabPanel value="html">
+      <TabPanel value='html'>
         {`It really matters and then like it really doesn't matter. What
           matters is the people who are sparked by it. And the people who are
           like offended by it, it doesn't matter.`}
       </TabPanel>
-      <TabPanel value="react">
+      <TabPanel value='react'>
         {`Because it's about motivating the doers. Because I'm here
           to follow my dreams and inspire other people to follow their dreams, too.`}
       </TabPanel>
-      <TabPanel value="vue">
+      <TabPanel value='vue'>
         {`We're not always in the position that we want to be at.
           We're constantly growing. We're constantly making mistakes.
           We're constantly trying to express ourselves and actualize our
           dreams.`}
       </TabPanel>
-      <TabPanel value="angular">
+      <TabPanel value='angular'>
         {`It really matters and then like it really doesn't matter. What
           matters is the people who are sparked by it. And the people who are
           like offended by it, it doesn't matter.`}
       </TabPanel>
-      <TabPanel value="svelte">
+      <TabPanel value='svelte'>
         {`We're not always in the position that we want to be at.
           We're constantly growing. We're constantly making mistakes.
           We're constantly trying to express ourselves and actualize our
@@ -72,7 +72,7 @@ import {
   TabsHeader,
   TabsBody,
   Tab,
-  TabPanel
+  TabPanel,
 } from "@material-tailwind/react";
 
 export default function Example() {
@@ -82,13 +82,13 @@ export default function Example() {
       value: "html",
       desc: `It really matters and then like it really doesn't matter.
       What matters is the people who are sparked by it. And the people 
-      who are like offended by it, it doesn't matter.`
+      who are like offended by it, it doesn't matter.`,
     },
     {
       label: "React",
       value: "react",
       desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`
+      to follow my dreams and inspire other people to follow their dreams, too.`,
     },
 
     {
@@ -96,14 +96,14 @@ export default function Example() {
       value: "vue",
       desc: `We're not always in the position that we want to be at.
       We're constantly growing. We're constantly making mistakes. We're 
-      constantly trying to express ourselves and actualize our dreams.`
+      constantly trying to express ourselves and actualize our dreams.`,
     },
 
     {
       label: "Angular",
       value: "angular",
       desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`
+      to follow my dreams and inspire other people to follow their dreams, too.`,
     },
 
     {
@@ -111,12 +111,12 @@ export default function Example() {
       value: "svelte",
       desc: `We're not always in the position that we want to be at.
       We're constantly growing. We're constantly making mistakes. We're 
-      constantly trying to express ourselves and actualize our dreams.`
-    }
+      constantly trying to express ourselves and actualize our dreams.`,
+    },
   ];
 
   return (
-    <Tabs value="html">
+    <Tabs value='html'>
       <TabsHeader>
         {data.map(({ label, value }) => (
           <Tab key={value} value={value}>
@@ -140,7 +140,7 @@ export default function Example() {
 
 ## Tabs Props
 
-<span id="tabs-props" className="scroll-mt-48" />
+<span id='tabs-props' className='scroll-mt-48' />
 The following props are available for the tabs component. These are the custom props
 that come with we've added for the tabs component and you can use all the other native
 props as well.
@@ -155,7 +155,7 @@ props as well.
 
 ## Tabs Header Props
 
-<span id="tabs-header-props" className="scroll-mt-48" />
+<span id='tabs-header-props' className='scroll-mt-48' />
 The following props are available for the tabs header component. These are the custom
 props that come with we've added for the tabs header component and you can use all
 the other native props as well.
@@ -170,7 +170,7 @@ the other native props as well.
 
 ## Tabs Body Props
 
-<span id="tabs-body-props" className="scroll-mt-48" />
+<span id='tabs-body-props' className='scroll-mt-48' />
 The following props are available for the tabs body component. These are the custom
 props that come with we've added for the tabs body component and you can use all
 the other native props as well.
@@ -185,7 +185,7 @@ the other native props as well.
 
 ## Tab Props
 
-<span id="tab-props" className="scroll-mt-48" />
+<span id='tab-props' className='scroll-mt-48' />
 The following props are available for the tab component. These are the custom props
 that come with we've added for the tab component and you can use all the other native
 props as well.
@@ -201,7 +201,7 @@ props as well.
 
 ## Tab Panel Props
 
-<span id="tab-panel-props" className="scroll-mt-48" />
+<span id='tab-panel-props' className='scroll-mt-48' />
 The following props are available for the tab panel component. These are the custom
 props that come with we've added for the tab panel component and you can use all
 the other native props as well.
@@ -216,7 +216,7 @@ the other native props as well.
 
 ## Types
 
-<span id="types" className="scroll-mt-48" />
+<span id='types' className='scroll-mt-48' />
 
 ```ts
 type value = string | number;

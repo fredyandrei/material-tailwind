@@ -68,7 +68,7 @@ export const navbar: NavbarStylesType = {
         boxShadow: "shadow-md",
       },
       blurred: {
-        backdropFilter: "backdrop-saturate-200 backdrop-blur-2xl",
+        backdropFilter: "backdrop-saturate-200 backdrop-blur-md",
         bgOpacity: "bg-opacity-80",
         borderWidth: "border",
         borderColor: "border-white/80",

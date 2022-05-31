@@ -62,10 +62,10 @@ export default function Header() {
                 variant="h1"
                 className="!font-sans text-[#1A237E] font-black tracking-normal mb-2"
               >
-                Material Tailwind
+                Horizon UI
               </Typography>
               <Typography className="text-[#1A237E] text-lg !font-light mb-6 lg:pr-12">
-                Material Tailwind is an easy to use components library for
+                Horizon UI is an easy to use components library for
                 Tailwind CSS and Material Design.
               </Typography>
               <div className="flex flex-col-reverse gap-2 lg:flex-row">

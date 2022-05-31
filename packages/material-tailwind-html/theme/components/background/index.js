@@ -2,11 +2,14 @@ const backgroundColor = (theme, background) => ({
   "background-color": theme(`${background}.500`),
 
   "&.bg-gradient": {
-    "background-image": `linear-gradient(195deg, ${theme(`${background}.400`)}, ${theme(`${background}.600`)})`
-  }
+    "background-image": `linear-gradient(195deg, ${theme(
+      `${background}.400`
+    )}, ${theme(`${background}.600`)})`,
+  },
 });
 
 const background = (theme) => ({
+  ".bg-primary": backgroundColor(theme, "colors.primary"),
   ".bg-blue-grey": backgroundColor(theme, "colors.blue-grey"),
   ".bg-grey": backgroundColor(theme, "colors.grey"),
   ".bg-brown": backgroundColor(theme, "colors.brown"),
@@ -28,7 +31,7 @@ const background = (theme) => ({
   ".bg-red": backgroundColor(theme, "colors.red"),
   ".bg-secondary": backgroundColor(theme, "colors.secondary"),
   ".bg-light": backgroundColor(theme, "colors.light"),
-  ".bg-dark": backgroundColor(theme, "colors.dark")
+  ".bg-dark": backgroundColor(theme, "colors.dark"),
 });
 
 module.exports.backgroundColor = backgroundColor;

@@ -85,9 +85,9 @@ const checkboxColors: object = {
     before: "checked:before:bg-purple-500",
   },
   pink: {
-    background: "checked:bg-pink-500",
-    border: "checked:border-pink-500",
-    before: "checked:before:bg-pink-500",
+    background: "checked:bg-primary-500",
+    border: "checked:border-primary-500",
+    before: "checked:before:bg-primary-500",
   },
   red: {
     background: "checked:bg-red-500",

@@ -1,5 +1,5 @@
 ---
-title: Tailwind CSS Menu for React - Material Tailwind
+title: Tailwind CSS Menu for React - Horizon UI
 description: Customise your web projects with our complex menu component for Tailwind CSS and React using Material Design guidelines.
 navigation:
   [
@@ -9,7 +9,7 @@ navigation:
     "menu-handler-props",
     "menu-list-props",
     "menu-item-props",
-    "types"
+    "types",
   ]
 github: menu
 prev: input
@@ -26,10 +26,10 @@ See below our menu example that you can use in your Tailwind CSS and React proje
 
 <br />
 
-<ComponentCard id="menu">
+<ComponentCard id='menu'>
   <Menu>
     <MenuHandler>
-      <Button variant="gradient">Open Menu</Button>
+      <Button variant='gradient'>Open Menu</Button>
     </MenuHandler>
     <MenuList>
       <MenuItem>Menu Item 1</MenuItem>
@@ -45,14 +45,14 @@ import {
   MenuHandler,
   MenuList,
   MenuItem,
-  Button
+  Button,
 } from "@material-tailwind/react";
 
 export default function Example() {
   return (
     <Menu>
       <MenuHandler>
-        <Button variant="gradient">Open Menu</Button>
+        <Button variant='gradient'>Open Menu</Button>
       </MenuHandler>
       <MenuList>
         <MenuItem>Menu Item 1</MenuItem>
@@ -70,15 +70,15 @@ export default function Example() {
 
 You can nest one menu inside another one very easily.
 
-<ComponentCard id="nested-menu">
+<ComponentCard id='nested-menu'>
   <Menu>
     <MenuHandler>
-      <Button variant="gradient">Open Nested Menu</Button>
+      <Button variant='gradient'>Open Nested Menu</Button>
     </MenuHandler>
     <MenuList>
       <MenuItem>Menu Item 1</MenuItem>
       <MenuItem>Menu Item 2</MenuItem>
-      <Menu placement="right-start" offset={15}>
+      <Menu placement='right-start' offset={15}>
         <MenuHandler>
           <MenuItem>Nested Item</MenuItem>
         </MenuHandler>
@@ -99,19 +99,19 @@ import {
   MenuHandler,
   MenuList,
   MenuItem,
-  Button
+  Button,
 } from "@material-tailwind/react";
 
 export default function NestedMenu() {
   return (
     <Menu>
       <MenuHandler>
-        <Button variant="gradient">Open Nested Menu</Button>
+        <Button variant='gradient'>Open Nested Menu</Button>
       </MenuHandler>
       <MenuList>
         <MenuItem>Menu Item 1</MenuItem>
         <MenuItem>Menu Item 2</MenuItem>
-        <Menu placement="right-start" offset={15}>
+        <Menu placement='right-start' offset={15}>
           <MenuHandler>
             <MenuItem>Nested Item</MenuItem>
           </MenuHandler>
@@ -132,7 +132,7 @@ export default function NestedMenu() {
 
 ## Menu Props
 
-<span id="menu-props" className="scroll-mt-48" />
+<span id='menu-props' className='scroll-mt-48' />
 The following props are available for the menu component. These are the custom props
 that come with we've added for the menu component and you can use all the other native
 props as well.
@@ -152,7 +152,7 @@ props as well.
 
 ## Menu Handler Props
 
-<span id="menu-handler-props" className="scroll-mt-48" />
+<span id='menu-handler-props' className='scroll-mt-48' />
 The following props are available for the menu handler component. These are the custom
 props that come with we've added for the menu handler component and you can use all
 the other native props as well.
@@ -165,7 +165,7 @@ the other native props as well.
 
 ## Menu List Props
 
-<span id="menu-list-props" className="scroll-mt-48" />
+<span id='menu-list-props' className='scroll-mt-48' />
 The following props are available for the menu list component. These are the custom
 props that come with we've added for the menu list component and you can use all
 the other native props as well.
@@ -179,7 +179,7 @@ the other native props as well.
 
 ## Menu Item Props
 
-<span id="menu-item-props" className="scroll-mt-48" />
+<span id='menu-item-props' className='scroll-mt-48' />
 The following props are available for the menu item component. These are the custom
 props that come with we've added for the menu item component and you can use all
 the other native props as well.
@@ -194,7 +194,7 @@ the other native props as well.
 
 ## Types
 
-<span id="types" className="scroll-mt-48" />
+<span id='types' className='scroll-mt-48' />
 
 ```ts
 type placement =
