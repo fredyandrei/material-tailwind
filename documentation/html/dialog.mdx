@@ -12,7 +12,7 @@ navigation:
   ]
 ---
 
-# Tailwind CSS Dialog
+## Tailwind CSS Dialog - Horizon UI
 
 Use our Tailwind CSS dialog component to inform users about a task or important information that require decisions, or involves multiple tasks.
 
@@ -26,7 +26,7 @@ See below our dialog example that you can use for your Tailwind CSS project.
     className='button button-primary mx-auto flex'
     dialog-trigger='true'
     data-ripple-light='true'>
-    Demo dialog
+    <span>Demo dialog</span>
   </button>
   <div className='dialog'>
     <div className='dialog-overlay' dialog-close='true'></div>
@@ -45,23 +45,21 @@ See below our dialog example that you can use for your Tailwind CSS project.
           </button>
         </div>
         <div className='dialog-body'>
-          <p className='opacity-60'>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean. A small river named Duden flows by their place and
-            supplies it with the necessary regelialia. It is a paradisematic
-            country, in which roasted parts of sentences fly into your mouth.
-          </p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the Semantics, a large
+          language ocean. A small river named Duden flows by their place and
+          supplies it with the necessary regelialia. It is a paradisematic
+          country, in which roasted parts of sentences fly into your mouth.
         </div>
         <div className='dialog-footer'>
           <button
             className='button button-gradient button-dark mr-3 mb-0'
             dialog-close='true'>
-            Close
+            <span>Close</span>
           </button>
           <button className='button button-gradient button-primary mb-0'>
-            Save changes
+            <span>Save changes</span>
           </button>
         </div>
       </div>
@@ -94,14 +92,12 @@ See below our dialog example that you can use for your Tailwind CSS project.
           </button>
         </div>
         <div class="dialog-body">
-          <p class="opacity-60">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean. A small river named Duden flows by their place and
-            supplies it with the necessary regelialia. It is a paradisematic
-            country, in which roasted parts of sentences fly into your mouth.
-          </p>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia, there live the blind texts. Separated they
+          live in Bookmarksgrove right at the coast of the Semantics, a large
+          language ocean. A small river named Duden flows by their place and
+          supplies it with the necessary regelialia. It is a paradisematic
+          country, in which roasted parts of sentences fly into your mouth.
         </div>
         <div class="dialog-footer">
           <button
@@ -123,16 +119,16 @@ See below our dialog example that you can use for your Tailwind CSS project.
 <br />
 <br />
 
-#### Notification Dialog
+### Notification Dialog
 
 Use this dialog example if you want to notify the user about an action that he should take.
 
 <ComponentCard id='notification dialog'>
   <button
-    className='button button-deep-orange'
+    className='button button-primary'
     dialog-trigger='true'
     data-ripple-light='true'>
-    Notification dialog
+    <span>Notification dialog</span>
   </button>
   <div className='dialog'>
     <div className='dialog-overlay' dialog-close='true'></div>
@@ -147,24 +143,22 @@ Use this dialog example if you want to notify the user about an action that he s
             className='button-close me-0'
             dialog-close='true'
             aria-label='Close'>
-            <i className='material-icons' aria-hidden='true'>
+            <i aria-hidden className='material-icons'>
               close
             </i>
           </button>
         </div>
         <div className='dialog-body'>
           <div className='py-3 text-center'>
-            <i className='fa fa-star text-dark-500 text-3xl'></i>
-            <h4 className='text-red-500 mt-4'>You should read this!</h4>
-            <p className='opacity-60'>
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia.
-            </p>
+            <i aria-hidden className='fa fa-star text-dark-500 text-3xl'></i>
+            <span className='text-red-500 mt-4'>You should read this!</span>A
+            small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
           </div>
         </div>
         <div className='dialog-footer'>
           <button className='button button-gradient button-primary mb-0'>
-            Got it
+            <span>Got it</span>
           </button>
         </div>
       </div>
@@ -174,7 +168,7 @@ Use this dialog example if you want to notify the user about an action that he s
 
 ```html showLineNumbers
 <button
-  class="button button-deep-orange"
+  class="button button-primary"
   dialog-trigger="true"
   data-ripple-light="true"
 >
@@ -185,30 +179,28 @@ Use this dialog example if you want to notify the user about an action that he s
   <div class="modal-dialog">
     <div class="dialog-content">
       <div class="dialog-header">
-        <h6 class="mb-0 text-dark-500 capitalize">
+        <span class="mb-0 text-dark-500 capitalize">
           Your attention is required
-        </h6>
+        </span>
         <button
           type="button"
           class="button-close me-0"
           dialog-close="true"
           aria-label="Close"
         >
-          <i class="material-icons" aria-hidden="true">close</i>
+          <i aria-hidden class="material-icons">close</i>
         </button>
       </div>
       <div class="dialog-body">
         <div class="py-3 text-center">
-          <i class="fa fa-star text-dark-500 text-3xl"></i>
-          <h4 class="text-red-500 mt-4">You should read this!</h4>
-          <p class="opacity-60">
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia.
-          </p>
+          <i aria-hidden class="fa fa-star text-dark-500 text-3xl"></i>
+          <span class="text-red-500 mt-4">You should read this!</span>
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia.
         </div>
       </div>
       <div class="dialog-footer">
-        <button class="button button-gradient button-deep-orange mb-0">
+        <button class="button button-gradient button-primary mb-0">
           Got it
         </button>
       </div>
@@ -220,31 +212,29 @@ Use this dialog example if you want to notify the user about an action that he s
 <br />
 <br />
 
-#### Message Dialog
+### Message Dialog
 
 This dialog should be used to help the user send messages easily.
 
 <ComponentCard id='message dialog'>
   <button
-    className='button button-green'
+    className='button button-primary'
     dialog-trigger='true'
     data-ripple-light='true'>
-    Message dialog
+    <span>Message dialog</span>
   </button>
   <div className='dialog'>
     <div className='dialog-overlay' dialog-close='true'></div>
     <div className='modal-dialog'>
       <div className='dialog-content'>
         <div className='dialog-header'>
-          <h6 className='mb-0 text-dark-500 capitalize'>
-            New message to @MaterialTailwind
-          </h6>
+          <h6 className='mb-0 text-dark-500'>New message to Horizon UI</h6>
           <button
             type='button'
             className='button-close me-0'
             dialog-close='true'
             aria-label='Close'>
-            <i className='material-icons' aria-hidden='true'>
+            <i aria-hidden className='material-icons'>
               close
             </i>
           </button>
@@ -262,8 +252,8 @@ This dialog should be used to help the user send messages easily.
           </form>
         </div>
         <div className='dialog-footer'>
-          <button className='button button-gradient button-green mb-0'>
-            Send
+          <button className='button button-gradient button-primary mb-0'>
+            <span>Send</span>
           </button>
         </div>
       </div>
@@ -273,7 +263,7 @@ This dialog should be used to help the user send messages easily.
 
 ```html showLineNumbers
 <button
-  class="button button-green"
+  class="button button-primary"
   dialog-trigger="true"
   data-ripple-light="true"
 >
@@ -284,16 +274,14 @@ This dialog should be used to help the user send messages easily.
   <div class="modal-dialog">
     <div class="dialog-content">
       <div class="dialog-header">
-        <h6 class="mb-0 text-dark-500 capitalize">
-          New message to @MaterialTailwind
-        </h6>
+        <h6 class="mb-0 text-dark-500">New message to Horizon UI</h6>
         <button
           type="button"
           class="button-close me-0"
           dialog-close="true"
           aria-label="Close"
         >
-          <i class="material-icons" aria-hidden="true">close</i>
+          <i aria-hidden class="material-icons">close</i>
         </button>
       </div>
       <div class="dialog-body">
@@ -309,7 +297,7 @@ This dialog should be used to help the user send messages easily.
         </form>
       </div>
       <div class="dialog-footer">
-        <button class="button button-gradient button-green mb-0">Send</button>
+        <button class="button button-gradient button-primary mb-0">Send</button>
       </div>
     </div>
   </div>
@@ -319,7 +307,7 @@ This dialog should be used to help the user send messages easily.
 <br />
 <br />
 
-#### Long Dialog
+### Long Dialog
 
 Use this dialog example to notify the user with longer informational messages.
 
@@ -328,7 +316,7 @@ Use this dialog example to notify the user with longer informational messages.
     className='button button-primary'
     dialog-trigger='true'
     data-ripple-light='true'>
-    Long dialog
+    <span>Long dialog</span>
   </button>
   <div className='dialog'>
     <div className='dialog-overlay' dialog-close='true'></div>
@@ -341,75 +329,61 @@ Use this dialog example to notify the user with longer informational messages.
             className='button-close me-0'
             dialog-close='true'
             aria-label='Close'>
-            <i className='material-icons' aria-hidden='true'>
+            <i aria-hidden className='material-icons'>
               close
             </i>
           </button>
         </div>
         <div className='dialog-body'>
-          <p className='opacity-60'>
-            I always felt like I could do anything. That’s the main thing people
-            are controlled by! Thoughts- their perception of themselves! They're
-            slowed down by their perception of themselves. If you're taught you
-            can’t do anything, you won’t do anything. I was taught I could do
-            everything.
-          </p>
+          I always felt like I could do anything. That’s the main thing people
+          are controlled by! Thoughts- their perception of themselves! They're
+          slowed down by their perception of themselves. If you're taught you
+          can’t do anything, you won’t do anything. I was taught I could do
+          everything.
           <br />
           <br />
-          <p className='opacity-60'>
-            As we live, our hearts turn colder. Cause pain is what we go through
-            as we become older. We get insulted by others, lose trust for those
-            others. We get back stabbed by friends. It becomes harder for us to
-            give others a hand. We get our heart broken by people we love, even
-            that we give them all we have. Then we lose family over time. What
-            else could rust the heart more over time? Blackgold.
-          </p>
+          As we live, our hearts turn colder. Cause pain is what we go through as
+          we become older. We get insulted by others, lose trust for those others.
+          We get back stabbed by friends. It becomes harder for us to give others
+          a hand. We get our heart broken by people we love, even that we give them
+          all we have. Then we lose family over time. What else could rust the heart
+          more over time? Blackgold.
           <br />
           <br />
-          <p className='opacity-60'>
-            We’re not always in the position that we want to be at. We’re
-            constantly growing. We’re constantly making mistakes. We’re
-            constantly trying to express ourselves and actualize our dreams. If
-            you have the opportunity to play this game of life you need to
-            appreciate every moment. A lot of people don’t appreciate the moment
-            until it’s passed.
-          </p>
+          We’re not always in the position that we want to be at. We’re
+          constantly growing. We’re constantly making mistakes. We’re constantly
+          trying to express ourselves and actualize our dreams. If you have the
+          opportunity to play this game of life you need to appreciate every
+          moment. A lot of people don’t appreciate the moment until it’s passed.
           <br />
           <br />
-          <p className='opacity-60'>
-            There’s nothing I really wanted to do in life that I wasn’t able to
-            get good at. That’s my skill. I’m not really specifically talented
-            at anything except for the ability to learn. That’s what I do.
-            That’s what I’m here for. Don’t be afraid to be wrong because you
-            can’t learn anything from a compliment.
-          </p>
+          There’s nothing I really wanted to do in life that I wasn’t able to get
+          good at. That’s my skill. I’m not really specifically talented at anything
+          except for the ability to learn. That’s what I do. That’s what I’m here
+          for. Don’t be afraid to be wrong because you can’t learn anything from
+          a compliment.
           <br />
           <br />
-          <p className='opacity-60'>
-            It really matters and then like it really doesn’t matter. What
-            matters is the people who are sparked by it. And the people who are
-            like offended by it, it doesn’t matter. Because it's about
-            motivating the doers. Because I’m here to follow my dreams and
-            inspire other people to follow their dreams, too.
-          </p>
+          It really matters and then like it really doesn’t matter. What matters
+          is the people who are sparked by it. And the people who are like
+          offended by it, it doesn’t matter. Because it's about motivating the
+          doers. Because I’m here to follow my dreams and inspire other people
+          to follow their dreams, too.
           <br />
           <br />
-          <p className='opacity-60'>
-            The time is now for it to be okay to be great. People in this world
-            shun people for being great. For being a bright color. For standing
-            out. But the time is now to be okay to be the greatest you. Would
-            you believe in what you believe in, if you were the only one who
-            believed it?
-          </p>
+          The time is now for it to be okay to be great. People in this world shun
+          people for being great. For being a bright color. For standing out. But
+          the time is now to be okay to be the greatest you. Would you believe in
+          what you believe in, if you were the only one who believed it?
         </div>
         <div className='dialog-footer'>
           <button
             className='button button-gradient button-dark mr-3 mb-0'
             dialog-close='true'>
-            Close
+            <span>Close</span>
           </button>
           <button className='button button-gradient button-primary mb-0'>
-            Save changes
+            <span>Save changes</span>
           </button>
         </div>
       </div>
@@ -437,58 +411,44 @@ Use this dialog example to notify the user with longer informational messages.
           dialog-close="true"
           aria-label="Close"
         >
-          <i class="material-icons" aria-hidden="true">close</i>
+          <i aria-hidden class="material-icons">close</i>
         </button>
       </div>
       <div class="dialog-body">
-        <p class="opacity-60">
-          I always felt like I could do anything. That’s the main thing people
-          are controlled by! Thoughts- their perception of themselves! They're
-          slowed down by their perception of themselves. If you're taught you
-          can’t do anything, you won’t do anything. I was taught I could do
-          everything.
-        </p>
+        I always felt like I could do anything. That’s the main thing people are
+        controlled by! Thoughts- their perception of themselves! They're slowed
+        down by their perception of themselves. If you're taught you can’t do
+        anything, you won’t do anything. I was taught I could do everything.
         <br /><br />
-        <p class="opacity-60">
-          As we live, our hearts turn colder. Cause pain is what we go through
-          as we become older. We get insulted by others, lose trust for those
-          others. We get back stabbed by friends. It becomes harder for us to
-          give others a hand. We get our heart broken by people we love, even
-          that we give them all we have. Then we lose family over time. What
-          else could rust the heart more over time? Blackgold.
-        </p>
+        As we live, our hearts turn colder. Cause pain is what we go through as
+        we become older. We get insulted by others, lose trust for those others.
+        We get back stabbed by friends. It becomes harder for us to give others
+        a hand. We get our heart broken by people we love, even that we give
+        them all we have. Then we lose family over time. What else could rust
+        the heart more over time? Blackgold.
         <br /><br />
-        <p class="opacity-60">
-          We’re not always in the position that we want to be at. We’re
-          constantly growing. We’re constantly making mistakes. We’re constantly
-          trying to express ourselves and actualize our dreams. If you have the
-          opportunity to play this game of life you need to appreciate every
-          moment. A lot of people don’t appreciate the moment until it’s passed.
-        </p>
+        We’re not always in the position that we want to be at. We’re constantly
+        growing. We’re constantly making mistakes. We’re constantly trying to
+        express ourselves and actualize our dreams. If you have the opportunity
+        to play this game of life you need to appreciate every moment. A lot of
+        people don’t appreciate the moment until it’s passed.
         <br /><br />
-        <p class="opacity-60">
-          There’s nothing I really wanted to do in life that I wasn’t able to
-          get good at. That’s my skill. I’m not really specifically talented at
-          anything except for the ability to learn. That’s what I do. That’s
-          what I’m here for. Don’t be afraid to be wrong because you can’t learn
-          anything from a compliment.
-        </p>
+        There’s nothing I really wanted to do in life that I wasn’t able to get
+        good at. That’s my skill. I’m not really specifically talented at
+        anything except for the ability to learn. That’s what I do. That’s what
+        I’m here for. Don’t be afraid to be wrong because you can’t learn
+        anything from a compliment.
         <br /><br />
-        <p class="opacity-60">
-          It really matters and then like it really doesn’t matter. What matters
-          is the people who are sparked by it. And the people who are like
-          offended by it, it doesn’t matter. Because it's about motivating the
-          doers. Because I’m here to follow my dreams and inspire other people
-          to follow their dreams, too.
-        </p>
+        It really matters and then like it really doesn’t matter. What matters
+        is the people who are sparked by it. And the people who are like
+        offended by it, it doesn’t matter. Because it's about motivating the
+        doers. Because I’m here to follow my dreams and inspire other people to
+        follow their dreams, too.
         <br /><br />
-        <p class="opacity-60">
-          The time is now for it to be okay to be great. People in this world
-          shun people for being great. For being a bright color. For standing
-          out. But the time is now to be okay to be the greatest you. Would you
-          believe in what you believe in, if you were the only one who believed
-          it?
-        </p>
+        The time is now for it to be okay to be great. People in this world shun
+        people for being great. For being a bright color. For standing out. But
+        the time is now to be okay to be the greatest you. Would you believe in
+        what you believe in, if you were the only one who believed it?
       </div>
       <div class="dialog-footer">
         <button
@@ -509,7 +469,7 @@ Use this dialog example to notify the user with longer informational messages.
 <br />
 <br />
 
-#### Signin Dialog
+### Sign In Dialog
 
 Use this example to help users Sign in easily
 
@@ -518,7 +478,7 @@ Use this example to help users Sign in easily
     className='button button-primary'
     dialog-trigger='true'
     data-ripple-light='true'>
-    Signin dialog
+    <span>Sign In dialog</span>
   </button>
   <div className='dialog'>
     <div className='dialog-overlay' dialog-close='true'></div>
@@ -532,13 +492,19 @@ Use this example to help users Sign in easily
               </h4>
               <div className='flex mt-4'>
                 <a className='button button-text ml-auto' href='#'>
-                  <i className='fab fa-facebook-f text-white text-lg'></i>
+                  <i
+                    aria-hidden
+                    className='fab fa-facebook-f text-white text-lg'></i>
                 </a>
                 <a className='button button-text' href='#'>
-                  <i className='fab fa-github text-white text-lg'></i>
+                  <i
+                    aria-hidden
+                    className='fab fa-github text-white text-lg'></i>
                 </a>
                 <a className='button button-text mr-auto' href='#'>
-                  <i className='fab fa-google text-white text-lg'></i>
+                  <i
+                    aria-hidden
+                    className='fab fa-google text-white text-lg'></i>
                 </a>
               </div>
             </div>
@@ -565,11 +531,13 @@ Use this example to help users Sign in easily
                 Remember me
               </label>
             </div>
-            <button className='button button-primary w-full'>Sign In</button>
+            <button className='button button-primary w-full'>
+              <span>Sign In</span>
+            </button>
             <a href='#'>
-              <p className='text-center mt-5 mb-0 text-sm'>
+              <span className='text-center mt-5 mb-0 text-sm'>
                 Don&apos;t have an account?
-              </p>
+              </span>
             </a>
           </div>
         </div>
@@ -584,7 +552,7 @@ Use this example to help users Sign in easily
   dialog-trigger="true"
   data-ripple-light="true"
 >
-  Signin dialog
+  Sign In dialog
 </button>
 <div className="dialog">
   <div className="dialog-overlay" dialog-close="true"></div>
@@ -598,13 +566,16 @@ Use this example to help users Sign in easily
             </h4>
             <div className="flex mt-4">
               <a className="button button-text ml-auto" href="#">
-                <i className="fab fa-facebook-f text-white text-lg"></i>
+                <i
+                  aria-hidden
+                  className="fab fa-facebook-f text-white text-lg"
+                ></i>
               </a>
               <a className="button button-text" href="#">
-                <i className="fab fa-github text-white text-lg"></i>
+                <i aria-hidden className="fab fa-github text-white text-lg"></i>
               </a>
               <a className="button button-text mr-auto" href="#">
-                <i className="fab fa-google text-white text-lg"></i>
+                <i aria-hidden className="fab fa-google text-white text-lg"></i>
               </a>
             </div>
           </div>
@@ -633,9 +604,9 @@ Use this example to help users Sign in easily
           </div>
           <button className="button button-primary w-full">Sign In</button>
           <a href="#">
-            <p className="text-center mt-5 mb-0 text-sm">
+            <span className="text-center mt-5 mb-0 text-sm">
               Don&apos;t have an account?
-            </p>
+            </span>
           </a>
         </div>
       </div>
@@ -647,16 +618,16 @@ Use this example to help users Sign in easily
 <br />
 <br />
 
-#### Signup Dialog
+### Sign Up Dialog
 
 Use this example to help users Signup in easily
 
 <ComponentCard id='signup dialog'>
   <button
-    className='button button-cyan'
+    className='button button-primary'
     dialog-trigger='true'
     data-ripple-light='true'>
-    Signup dialog
+    <span>Sign Up dialog</span>
   </button>
   <div className='dialog'>
     <div className='dialog-overlay' dialog-close='true'></div>
@@ -664,19 +635,25 @@ Use this example to help users Signup in easily
       <div className='dialog-content mx-12'>
         <div className='card'>
           <div className='card-header mx-4 -mt-6'>
-            <div className='bg-cyan-500 shadow-lg rounded-lg py-3 pe-1'>
+            <div className='bg-primary-500 shadow-lg rounded-lg py-3 pe-1'>
               <h4 className='text-white font-bold text-center mt-2 mb-0'>
                 Sign up
               </h4>
               <div className='flex mt-4'>
                 <a className='button button-text ml-auto' href='#'>
-                  <i className='fab fa-facebook-f text-white text-lg'></i>
+                  <i
+                    aria-hidden
+                    className='fab fa-facebook-f text-white text-lg'></i>
                 </a>
                 <a className='button button-text' href='#'>
-                  <i className='fab fa-github text-white text-lg'></i>
+                  <i
+                    aria-hidden
+                    className='fab fa-github text-white text-lg'></i>
                 </a>
                 <a className='button button-text mr-auto' href='#'>
-                  <i className='fab fa-google text-white text-lg'></i>
+                  <i
+                    aria-hidden
+                    className='fab fa-google text-white text-lg'></i>
                 </a>
               </div>
             </div>
@@ -696,11 +673,13 @@ Use this example to help users Signup in easily
                 <input type='password' className='form-control' />
               </div>
             </form>
-            <button className='button button-cyan flex mx-auto'>Sign Up</button>
+            <button className='button button-primary flex mx-auto'>
+              <span>Sign Up</span>
+            </button>
             <a href='#'>
-              <p className='text-center mt-5 mb-0 text-sm'>
+              <span className='text-center mt-5 mb-0 text-sm'>
                 Already have an account?
-              </p>
+              </span>
             </a>
           </div>
         </div>
@@ -711,11 +690,11 @@ Use this example to help users Signup in easily
 
 ```html showLineNumbers
 <button
-  className="button button-cyan"
+  className="button button-primary"
   dialog-trigger="true"
   data-ripple-light="true"
 >
-  Signup dialog
+  Sign Up dialog
 </button>
 <div className="dialog">
   <div className="dialog-overlay" dialog-close="true"></div>
@@ -723,19 +702,22 @@ Use this example to help users Signup in easily
     <div className="dialog-content mx-12">
       <div className="card">
         <div className="card-header mx-4 -mt-6">
-          <div className="bg-cyan-500 shadow-lg rounded-lg py-3 pe-1">
+          <div className="bg-primary-500 shadow-lg rounded-lg py-3 pe-1">
             <h4 className="text-white font-bold text-center mt-2 mb-0">
               Sign up
             </h4>
             <div className="flex mt-4">
               <a className="button button-text ml-auto" href="#">
-                <i className="fab fa-facebook-f text-white text-lg"></i>
+                <i
+                  aria-hidden
+                  className="fab fa-facebook-f text-white text-lg"
+                ></i>
               </a>
               <a className="button button-text" href="#">
-                <i className="fab fa-github text-white text-lg"></i>
+                <i aria-hidden className="fab fa-github text-white text-lg"></i>
               </a>
               <a className="button button-text mr-auto" href="#">
-                <i className="fab fa-google text-white text-lg"></i>
+                <i aria-hidden className="fab fa-google text-white text-lg"></i>
               </a>
             </div>
           </div>
@@ -755,11 +737,13 @@ Use this example to help users Signup in easily
               <input type="password" className="form-control" />
             </div>
           </form>
-          <button className="button button-cyan flex mx-auto">Sign Up</button>
+          <button className="button button-primary flex mx-auto">
+            Sign Up
+          </button>
           <a href="#">
-            <p className="text-center mt-5 mb-0 text-sm">
+            <span className="text-center mt-5 mb-0 text-sm">
               Already have an account?
-            </p>
+            </span>
           </a>
         </div>
       </div>

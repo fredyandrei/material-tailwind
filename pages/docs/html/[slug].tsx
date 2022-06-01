@@ -169,7 +169,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
               </button>
               <ol className="ml-4 flex text-sm leading-6 whitespace-nowrap min-w-0 text-blue-grey-700">
                 <li className="flex items-center">
-                  HTML
+                  <span>HTML</span>
                   <svg
                     width="3"
                     height="6"
@@ -208,8 +208,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
               />
               <div className="fixed overflow-y-scroll bg-white lg:bg-transparent w-80 lg:w-64 h-screen pb-48 pt-6 pl-6 lg:pt-0 lg:pl-0">
                 <div className="flex items-center justify-between">
-                  <Typography
-                    variant="h5"
+                  <span
                     className="lg:hidden p-2 mr-3 mt-px !text-blue-grey-500 hover:!text-blue-grey-900 cursor-pointer transition-colors"
                     onClick={() => setMobileNav(false)}
                   >
@@ -225,7 +224,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                         clipRule="evenodd"
                       />
                     </svg>
-                  </Typography>
+                  </span>
                 </div>
                 <div className="">
                   {routes.map(({ name, icon, pages }, key): any => (
@@ -239,7 +238,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                           fontSize="sm"
                           className="font-bold uppercase"
                         >
-                          {name}
+                          <span>{name}</span>
                         </Typography>
                       </div>
                       <ul className="space-y-1 py-2 pr-2 pl-9">
@@ -296,15 +295,15 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                 )}
               </div>
 
-              {/* <Typography
+              <Typography
                 as="a"
                 href={`https://www.github.com/creativetimofficial/material-tailwind/blob/main/documentation/html/${frontMatter.github}.mdx`}
                 target="_blank"
                 rel="noreferrer"
                 className="!font-normal mt-14 mb-6 text-right !text-blue-grey-500 hover:!text-blue-grey-900 transition-colors"
               >
-                Edit this page on Github
-              </Typography> */}
+                <span>Edit this page on Github</span>
+              </Typography>
               <footer className="py-6 border-t border-blue-grey-50 flex flex-col lg:flex-row justify-between items-center gap-4">
                 <a
                   href="https://vercel.com/?utm_source=ct-tailwind-team&utm_campaign=oss"
@@ -321,14 +320,14 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                   
                 </a>
                 <Typography className="!font-medium !text-sm !text-blue-grey-500 text-center lg:text-left">
-                  &copy; {date} Horizon UI - based on {" "}
+                  <span>&copy; {date} Horizon UI - based on {" "}</span>
                   <a
                     href="https://github.com/creativetimofficial/material-tailwind"
                     target="_blank"
                     rel="noreferrer"
                     className="text-current hover:text-blue-grey-900 transition-colors"
                   >
-                    Material Tailwind
+                    <span>Material Tailwind</span>
                   </a>
                   .
                 </Typography>
@@ -341,7 +340,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                   color="blue-grey"
                   className="capitalize"
                 >
-                  On This Page
+                  <span>On This Page</span>
                 </Typography>
                 <ul className="list-none pl-4 pt-2">
                   {frontMatter.navigation &&

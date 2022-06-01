@@ -249,7 +249,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
               </button>
               <ol className="ml-4 flex text-sm leading-6 whitespace-nowrap min-w-0 text-blue-grey-700">
                 <li className="flex items-center">
-                  React
+                  <span>React</span>
                   <svg
                     width="3"
                     height="6"
@@ -318,7 +318,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                           color="blue-grey"
                           className="font-bold capitalize"
                         >
-                          {name}
+                          <span>{name}</span>
                         </Typography>
                       </div>
                       <ul className="space-y-1 py-2 pr-2 pl-9">
@@ -381,7 +381,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                 rel="noreferrer"
                 className="!font-normal mt-14 mb-6 text-right !text-blue-grey-500 hover:!text-blue-grey-900 transition-colors"
               >
-                Edit this page on Github
+                <span>Edit this page on Github</span>
               </Typography>
                 <footer className="py-6 border-t border-blue-grey-50 flex flex-col lg:flex-row justify-between items-center gap-4">
                 <a
@@ -399,41 +399,14 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                   
                 </a>
                 <Typography className="!font-medium !text-sm !text-blue-grey-500 text-center lg:text-left">
-                  &copy; {date} Horizon UI - based on {" "}
+                 <span>&copy; {date} Horizon UI - based on {" "}</span>
                   <a
                     href="https://github.com/creativetimofficial/material-tailwind"
                     target="_blank"
                     rel="noreferrer"
                     className="text-current hover:text-blue-grey-900 transition-colors"
                   >
-                    Material Tailwind
-                  </a>
-                  .
-                </Typography>
-              </footer>   <footer className="py-6 border-t border-blue-grey-50 flex flex-col lg:flex-row justify-between items-center gap-4">
-                <a
-                  href="https://vercel.com/?utm_source=ct-tailwind-team&utm_campaign=oss"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center no-underline text-dark font-semibold">
-                    <span>
-                    <svg width="20" height="20" viewBox="0 0 1155 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M577.344 0L1154.69 1000H0L577.344 0Z" fill="black"/></svg>
-                  </span>
-
-                  <span className="border-[0.5px] h-4 rounded-full mr-2 ml-2"></span>
-                  <span className="mr-1 !text-sm">Powered by <span className="font-bold">Vercel</span></span>
-                  
-                </a>
-                <Typography className="!font-medium !text-sm !text-blue-grey-500 text-center lg:text-left">
-                  &copy; {date} Horizon UI - based on {" "}
-                  <a
-                    href="https://github.com/creativetimofficial/material-tailwind"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-current hover:text-blue-grey-900 transition-colors"
-                  >
-                    Material Tailwind
+                   <span>Material Tailwind</span> 
                   </a>
                   .
                 </Typography>
@@ -446,7 +419,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                   color="blue-grey"
                   className="capitalize"
                 >
-                  On This Page
+                  <span>On This Page</span>
                 </Typography>
                 <ul className="list-none pl-4 pt-2">
                   {frontMatter.navigation &&
