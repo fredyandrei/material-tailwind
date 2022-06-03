@@ -1,4 +1,11 @@
 const buttonOutlined: object = {
+  primary: {
+    backgroud: "border border-primary-500",
+    color: "text-primary-500",
+    hover: "hover:opacity-75",
+    focus: "focus:ring focus:ring-primary-200",
+    active: "active:opacity-[0.85]",
+  },
   "blue-grey": {
     backgroud: "border border-blue-grey-500",
     color: "text-blue-grey-500",
@@ -119,10 +126,10 @@ const buttonOutlined: object = {
     active: "active:opacity-[0.85]",
   },
   pink: {
-    backgroud: "border border-primary-500",
-    color: "text-primary-500",
+    backgroud: "border border-pink-500",
+    color: "text-pink-500",
     hover: "hover:opacity-75",
-    focus: "focus:ring focus:ring-primary-200",
+    focus: "focus:ring focus:ring-pink-200",
     active: "active:opacity-[0.85]",
   },
   red: {

@@ -1,4 +1,12 @@
 const buttonFilled: object = {
+  primary: {
+    backgroud: "bg-primary-500",
+    color: "text-white",
+    shadow: "shadow-md shadow-primary-500/20",
+    hover: "hover:shadow-lg hover:shadow-primary-500/40",
+    focus: "focus:opacity-[0.85] focus:shadow-none",
+    active: "active:opacity-[0.85] active:shadow-none",
+  },
   "blue-grey": {
     backgroud: "bg-blue-grey-500",
     color: "text-white",
@@ -138,8 +146,8 @@ const buttonFilled: object = {
   pink: {
     backgroud: "bg-primary-500",
     color: "text-white",
-    shadow: "shadow-md shadow-primary-500/20",
-    hover: "hover:shadow-lg hover:shadow-primary-500/40",
+    shadow: "shadow-md shadow-pink-500/20",
+    hover: "hover:shadow-lg hover:shadow-pink-500/40",
     focus: "focus:opacity-[0.85] focus:shadow-none",
     active: "active:opacity-[0.85] active:shadow-none",
   },

@@ -1,4 +1,11 @@
 const buttonGradient: object = {
+  primary: {
+    backgroud: "bg-gradient-to-tr from-primary-600 to-primary-400",
+    color: "text-white",
+    shadow: "shadow-md shadow-primary-500/20",
+    hover: "hover:shadow-lg hover:shadow-primary-500/40",
+    active: "active:opacity-[0.85]",
+  },
   "blue-grey": {
     backgroud: "bg-gradient-to-tr from-blue-grey-600 to-blue-grey-400",
     color: "text-white",
@@ -119,10 +126,10 @@ const buttonGradient: object = {
     active: "active:opacity-[0.85]",
   },
   pink: {
-    backgroud: "bg-gradient-to-tr from-primary-600 to-primary-400",
+    backgroud: "bg-gradient-to-tr from-pink-600 to-pink-400",
     color: "text-white",
-    shadow: "shadow-md shadow-primary-500/20",
-    hover: "hover:shadow-lg hover:shadow-primary-500/40",
+    shadow: "shadow-md shadow-pink-500/20",
+    hover: "hover:shadow-lg hover:shadow-pink-500/40",
     active: "active:opacity-[0.85]",
   },
   red: {
