@@ -15,7 +15,7 @@ export const routes = [
       "button",
       "card",
       "checkbox",
-      "chip",
+      "badge",
       "dialog",
       "icon-button",
       "input",

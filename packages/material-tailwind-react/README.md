@@ -15,7 +15,7 @@ Horizon UI React is written in TypeScript and you can easily use it for building
 - Button
 - Card
 - Checkbox
-- Chip
+- Badge
 - Dialog
 - Icon Button
 - Input

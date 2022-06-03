@@ -25,7 +25,7 @@ import type {
   animate,
   className,
   value,
-} from "../../types/components/chip";
+} from "../../types/components/badge";
 import {
   propTypesVariant,
   propTypesColor,
@@ -35,9 +35,9 @@ import {
   propTypesAnimate,
   propTypesClassName,
   propTypesValue,
-} from "../../types/components/chip";
+} from "../../types/components/badge";
 
-export interface ChipProps extends Omit<MotionProps, "animate"> {
+export interface badgeProps extends Omit<MotionProps, "animate"> {
   variant?: variant;
   color?: color;
   icon?: icon;
@@ -48,11 +48,11 @@ export interface ChipProps extends Omit<MotionProps, "animate"> {
   value: value;
 }
 
-export const Chip = React.forwardRef<HTMLDivElement, ChipProps>(
+export const badge = React.forwardRef<HTMLDivElement, badgeProps>(
   ({ variant, color, icon, show, dismissible, animate, className, value, ...rest }, ref) => {
     // 1. init
-    const { chip } = useTheme();
-    const { defaultProps, valid, styles } = chip;
+    const { badge } = useTheme();
+    const { defaultProps, valid, styles } = badge;
     const { base, variants, closeButtonColor } = styles;
     const rippleEffect = new Ripple();
 
@@ -64,18 +64,18 @@ export const Chip = React.forwardRef<HTMLDivElement, ChipProps>(
     show = show ?? defaultProps.show;
 
     // 3. set styles
-    const chipVariant = objectsToString(
+    const badgeVariant = objectsToString(
       variants[findMatch(valid.variants, variant, "filled")][
         findMatch(valid.colors, color, "primary")
       ],
     );
-    const chipCloseButton = objectsToString(
+    const badgeCloseButton = objectsToString(
       closeButtonColor[findMatch(valid.colors, color, "primary")],
     );
-    const classes = classnames(objectsToString(base), chipVariant, className);
-    const chipCloseButtonClasses = classnames(
+    const classes = classnames(objectsToString(base), badgeVariant, className);
+    const badgeCloseButtonClasses = classnames(
       "absolute top-1 right-1 mt-[0.5px] mx-px w-max rounded-md",
-      chipCloseButton,
+      badgeCloseButton,
       "transition-colors",
     );
 
@@ -117,7 +117,7 @@ export const Chip = React.forwardRef<HTMLDivElement, ChipProps>(
               {value}
             </div>
             {dismissible && (
-              <div className={chipCloseButtonClasses}>
+              <div className={badgeCloseButtonClasses}>
                 <div
                   role="button"
                   onClick={dismissible.onClose}
@@ -145,7 +145,7 @@ export const Chip = React.forwardRef<HTMLDivElement, ChipProps>(
   },
 );
 
-Chip.propTypes = {
+badge.propTypes = {
   variant: PropTypes.oneOf(propTypesVariant),
   color: PropTypes.oneOf(propTypesColor),
   icon: propTypesIcon,
@@ -156,6 +156,6 @@ Chip.propTypes = {
   value: propTypesValue,
 };
 
-Chip.displayName = "MaterialTailwind.Chip";
+badge.displayName = "MaterialTailwind.Badge";
 
-export default Chip;
+export default badge;

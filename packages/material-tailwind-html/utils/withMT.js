@@ -20,7 +20,7 @@ const { breadcrumbs } = require("../theme/components/breadcrumbs");
 const { button } = require("../theme/components/button");
 const { card } = require("../theme/components/card");
 const { checkbox } = require("../theme/components/checkbox");
-const { chip } = require("../theme/components/chip");
+const { badge } = require("../theme/components/badge");
 const { dialog } = require("../theme/components/dialog");
 const { input } = require("../theme/components/input");
 const { menu } = require("../theme/components/menu");
@@ -37,7 +37,7 @@ const materialTailwindConfig = {
     colors,
     fontFamily: typography,
     boxShadow: shadows,
-    screens: breakpoints
+    screens: breakpoints,
   },
   plugins: [
     plugin(function ({ addComponents, theme }) {
@@ -49,7 +49,7 @@ const materialTailwindConfig = {
       addComponents(button(theme));
       addComponents(card(theme));
       addComponents(checkbox(theme));
-      addComponents(chip(theme));
+      addComponents(badge(theme));
       addComponents(dialog(theme));
       addComponents(input(theme));
       addComponents(menu(theme));
@@ -58,8 +58,8 @@ const materialTailwindConfig = {
       addComponents(radio(theme));
       addComponents(toggle(theme));
       addComponents(typo(theme));
-    })
-  ]
+    }),
+  ],
 };
 
 /**

@@ -1,4 +1,4 @@
-const chipCloseButtonColors: object = {
+const badgeCloseButtonColors: object = {
   primary: {
     default: "bg-primary-800",
     hover: "hover:bg-primary-900",
@@ -81,4 +81,4 @@ const chipCloseButtonColors: object = {
   },
 };
 
-export default chipCloseButtonColors;
+export default badgeCloseButtonColors;

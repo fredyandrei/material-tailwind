@@ -1,4 +1,4 @@
-const chipFilled: object = {
+const badgeFilled: object = {
   primary: {
     backgroud: "bg-primary-500",
     color: "text-white",
@@ -81,4 +81,4 @@ const chipFilled: object = {
   },
 };
 
-export default chipFilled;
+export default badgeFilled;

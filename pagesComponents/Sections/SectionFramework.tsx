@@ -5,7 +5,7 @@ import ReactLogo from "pagesComponents/Icons/React";
 import HtmlLogo from "pagesComponents/Icons/Html";
 import AngularLogo from "pagesComponents/Icons/Angular";
 import VueLogo from "pagesComponents/Icons/Vue";
-import { Typography, Chip } from "../../packages/material-tailwind-react/src";
+import { Typography, Badge } from "../../packages/material-tailwind-react/src";
 
 export default function SectionFramework() {
   const [framework, setFramework] = useState("react");
@@ -87,7 +87,7 @@ export default function SectionFramework() {
               <div className="opacity-50">
                 <AngularLogo />
               </div>
-              <Chip
+              <Badge
                 value="soon"
                 variant="gradient"
                 className="py-1 px-2 !absolute -top-3 from-[#191919] to-[#42424a] rounded-full"
@@ -100,7 +100,7 @@ export default function SectionFramework() {
               <div className="opacity-50">
                 <VueLogo />
               </div>
-              <Chip
+              <Badge
                 value="soon"
                 variant="gradient"
                 className="py-1 px-2 !absolute -top-3 from-[#191919] to-[#42424a] rounded-full"

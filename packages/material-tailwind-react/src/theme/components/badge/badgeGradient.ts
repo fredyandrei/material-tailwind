@@ -1,4 +1,4 @@
-const chipGradient: object = {
+const badgeGradient: object = {
   primary: {
     backgroud: "bg-gradient-to-tr from-primary-600 to-primary-400",
     color: "text-white",
@@ -81,4 +81,4 @@ const chipGradient: object = {
   },
 };
 
-export default chipGradient;
+export default badgeGradient;

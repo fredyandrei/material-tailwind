@@ -6,7 +6,7 @@ import type { colors, animation } from "../generic";
 import { propTypesColors, propTypesAnimation } from "../generic";
 
 /**
- * This file contains the types and prop-types for Chip component.
+ * This file contains the types and prop-types for Badge component.
  */
 
 // typescript types

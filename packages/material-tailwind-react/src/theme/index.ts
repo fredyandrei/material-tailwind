@@ -8,7 +8,7 @@ import cardBody from "./components/card/cardBody";
 import cardFooter from "./components/card/cardFooter";
 import cardHeader from "./components/card/cardHeader";
 import checkbox from "./components/checkbox";
-import chip from "./components/chip";
+import badge from "./components/badge";
 import dialog from "./components/dialog";
 import dialogBody from "./components/dialog/dialogBody";
 import dialogFooter from "./components/dialog/dialogFooter";
@@ -42,7 +42,7 @@ const theme = {
   cardFooter,
   cardHeader,
   checkbox,
-  chip,
+  badge,
   dialog,
   dialogBody,
   dialogFooter,

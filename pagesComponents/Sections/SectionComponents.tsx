@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardBody,
   Typography,
-  Chip
+  Badge
 } from "../../packages/material-tailwind-react/src";
 
 export default function SectionComponents() {
@@ -85,7 +85,7 @@ export default function SectionComponents() {
         </div>
         <div className="w-full lg:w-6/12 px-4 lg:pt-36 md:pt-0 relative order-first lg:order-last -mt-14">
           <div className="w-11/12 lg:ml-24">
-            <Chip
+            <Badge
               variant="gradient"
               value="react only"
               className="rounded-full mb-8 from-[#191919] to-[#42424a]"
@@ -111,47 +111,47 @@ export default function SectionComponents() {
               project or modify them as you would like.
             </Typography>
             <div className="flex flex-wrap gap-x-1 gap-y-3">
-              <Chip
+              <Badge
                 variant="gradient"
                 value="Accordion"
                 className="rounded-full py-1.5 px-3"
               />
-              <Chip
+              <Badge
                 variant="gradient"
                 value="Breadcrumbs"
                 className="rounded-full py-1.5 px-3"
               />
-              <Chip
+              <Badge
                 variant="gradient"
                 value="Card"
                 className="rounded-full py-1.5 px-3"
               />
-              <Chip
+              <Badge
                 variant="gradient"
                 value="Dropdown"
                 className="rounded-full py-1.5 px-3"
               />
-              <Chip
+              <Badge
                 variant="gradient"
                 value="Navbar"
                 className="rounded-full py-1.5 px-3"
               />
-              <Chip
+              <Badge
                 variant="gradient"
                 value="Popover"
                 className="rounded-full py-1.5 px-3"
               />
-              <Chip
+              <Badge
                 variant="gradient"
                 value="Select"
                 className="rounded-full py-1.5 px-3"
               />
-              <Chip
+              <Badge
                 variant="gradient"
                 value="Tabs"
                 className="rounded-full py-1.5 px-3"
               />
-              <Chip
+              <Badge
                 variant="gradient"
                 value="Tooltip"
                 className="rounded-full py-1.5 px-3"

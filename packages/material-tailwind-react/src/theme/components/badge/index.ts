@@ -1,6 +1,6 @@
-import chipFilled from "./chipFilled";
-import chipGradient from "./chipGradient";
-import chipCloseButtonColors from "./chipCloseButtonColors";
+import badgeFilled from "./badgeFilled";
+import badgeGradient from "./badgeGradient";
+import badgeCloseButtonColors from "./badgeCloseButtonColors";
 
 // types
 import type {
@@ -11,10 +11,10 @@ import type {
   dismissible,
   animate,
   className,
-} from "../../../types/components/chip";
-import { propTypesVariant, propTypesColor } from "../../../types/components/chip";
+} from "../../../types/components/badge";
+import { propTypesVariant, propTypesColor } from "../../../types/components/badge";
 
-export interface ChipStylesType {
+export interface BadgeStylesType {
   defaultProps?: {
     variant?: variant;
     color?: color;
@@ -31,14 +31,14 @@ export interface ChipStylesType {
   styles?: {
     base?: object;
     variants?: {
-      filled?: typeof chipFilled;
-      gradient?: typeof chipGradient;
+      filled?: typeof badgeFilled;
+      gradient?: typeof badgeGradient;
     };
-    closeButtonColor?: typeof chipCloseButtonColors;
+    closeButtonColor?: typeof badgeCloseButtonColors;
   };
 }
 
-export const chip: ChipStylesType = {
+export const badge: BadgeStylesType = {
   defaultProps: {
     variant: "filled",
     color: "blue",
@@ -76,11 +76,11 @@ export const chip: ChipStylesType = {
       userSelect: "select-none",
     },
     variants: {
-      filled: chipFilled,
-      gradient: chipGradient,
+      filled: badgeFilled,
+      gradient: badgeGradient,
     },
-    closeButtonColor: chipCloseButtonColors,
+    closeButtonColor: badgeCloseButtonColors,
   },
 };
 
-export default chip;
+export default badge;
