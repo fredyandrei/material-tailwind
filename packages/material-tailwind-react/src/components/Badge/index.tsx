@@ -37,7 +37,7 @@ import {
   propTypesValue,
 } from "../../types/components/badge";
 
-export interface badgeProps extends Omit<MotionProps, "animate"> {
+export interface BadgeProps extends Omit<MotionProps, "animate"> {
   variant?: variant;
   color?: color;
   icon?: icon;
@@ -48,7 +48,7 @@ export interface badgeProps extends Omit<MotionProps, "animate"> {
   value: value;
 }
 
-export const badge = React.forwardRef<HTMLDivElement, badgeProps>(
+export const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
   ({ variant, color, icon, show, dismissible, animate, className, value, ...rest }, ref) => {
     // 1. init
     const { badge } = useTheme();
@@ -145,7 +145,7 @@ export const badge = React.forwardRef<HTMLDivElement, badgeProps>(
   },
 );
 
-badge.propTypes = {
+Badge.propTypes = {
   variant: PropTypes.oneOf(propTypesVariant),
   color: PropTypes.oneOf(propTypesColor),
   icon: propTypesIcon,
@@ -156,6 +156,6 @@ badge.propTypes = {
   value: propTypesValue,
 };
 
-badge.displayName = "MaterialTailwind.Badge";
+Badge.displayName = "MaterialTailwind.Badge";
 
-export default badge;
+export default Badge;
