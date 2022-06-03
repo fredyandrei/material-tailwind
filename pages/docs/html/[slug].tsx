@@ -230,13 +230,12 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                   {routes.map(({ name, icon, pages }, key): any => (
                     <div key={key}>
                       <div className="flex items-center mt-16">
-                        <div className="grid place-items-center w-7 h-7 text-xs rounded-lg bg-primary-500 text-white mr-3">
+                        <div className="grid place-items-center w-7 h-7 text-xs rounded-lg bg-gradient-to-br from-primary-500 to-primary-300 text-white mr-3">
                           <i aria-hidden className={icon} />
                         </div>
                         <Typography
                           color="blue-grey"
-                          fontSize="sm"
-                          className="font-bold uppercase"
+                          className="font-bold uppercase !text-sm"
                         >
                           <span>{name}</span>
                         </Typography>
@@ -248,10 +247,10 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                               <a>
                                 <Typography
                                   color="grey"
-                                  className={`capitalize relative w-full list-item py-1 px-1 before:content-[' '] before:absolute before:-left-[25px] before:top-2/4 before:-translate-y-2/4 before:w-1.5 before:h-1.5 before:rounded-full hover:text-blue-grey-900 hover:before:bg-blue-grey-900 transition-colors before:transition-colors ${
+                                  className={`capitalize !text-sm relative w-full list-item py-1 px-1 before:content-[' '] before:absolute before:-left-[25px] before:top-2/4 before:-translate-y-2/4 before:w-1.5 before:h-1.5 before:rounded-full hover:text-blue-grey-900 hover:before:bg-blue-grey-900 transition-colors before:transition-colors ${
                                     page === slug
-                                      ? "font-medium text-blue-grey-900 before:bg-blue-grey-900"
-                                      : "font-normal text-blue-grey-400 before:bg-blue-grey-300"
+                                      ? "!font-semibold text-blue-grey-900 before:bg-blue-grey-900"
+                                      : "font-medium text-blue-grey-400 before:bg-blue-grey-300"
                                   }`}
                                   onClick={() => setMobileNav(false)}
                                 >
@@ -338,9 +337,10 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                 <Typography
                   variant="h6"
                   color="blue-grey"
-                  className="capitalize"
+                  className="!text-sm "
+
                 >
-                  <span>On This Page</span>
+                  <span>ON THIS PAGE</span>
                 </Typography>
                 <ul className="list-none pl-4 pt-2">
                   {frontMatter.navigation &&
@@ -348,7 +348,7 @@ export default function Page({ frontMatter, mdxSource, slug }) {
                       <li key={key}>
                         <a
                           href={`#${el}`}
-                          className={`relative w-full list-item py-1 px-1 before:content-[' '] before:absolute before:-left-3 before:top-2/4 before:-translate-y-2/4 before:w-1 before:h-1 before:rounded-full text-sm capitalize hover:before:bg-blue-grey-900 hover:text-blue-grey-900 focus:before:bg-blue-grey-900 focus:text-blue-grey-900 transition-colors before:transition-colors ${
+                          className={`relative w-full !font-medium list-item py-1 px-1 before:content-[' '] before:absolute before:-left-3 before:top-2/4 before:-translate-y-2/4 before:w-1 before:h-1 before:rounded-full text-sm capitalize hover:before:bg-blue-grey-900 hover:text-blue-grey-900 focus:before:bg-blue-grey-900 focus:text-blue-grey-900 transition-colors before:transition-colors ${
                             hash === el
                               ? "font-semibold text-blue-grey-900 before:bg-blue-grey-900"
                               : "font-normal text-blue-grey-500 before:bg-blue-grey-300"

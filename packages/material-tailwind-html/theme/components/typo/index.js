@@ -5,12 +5,11 @@ const typo = (theme) => ({
   },
   "h1,h2,h3,h4,h5,h6": {
     "font-weight": "400",
-    "letter-spacing": "-.05rem",
     "margin-bottom": ".5rem",
-    color: theme("colors.grey.900"),
+    color: theme("colors.blue-grey.600"),
   },
   a: {
-    color: theme("colors.grey.900"),
+    color: theme("colors.blue-grey.600"),
   },
   "h1,.heading-1": {
     "font-size": "3rem",
