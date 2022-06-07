@@ -150,7 +150,7 @@ export default function Navbar({
       <li className="bg-white drop-shadow-[0px_18px_40px_rgba(112,144,176,0.30)] rounded-2xl w-14">
           <a
           className="flex items-center justify-center px-2 py-2 font-normal h-full w-auto  transition-all duration-250 text-size-sm text-current font-light cursor-pointer"
-            href="https://github.com/creativetimofficial/material-tailwind?ref=material-tailwind"
+            href="https://github.com/creativetimofficial/material-tailwind?ref=horizon-ui.com"
             target="_blank"
             rel="noreferrer">
             <i aria-hidden className="fab fa-github opacity-100 text-base"></i>

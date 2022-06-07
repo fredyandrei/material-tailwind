@@ -7,8 +7,8 @@ const card = (theme) => ({
     "word-wrap": "break-word",
     "background-color": theme("colors.white"),
     "background-clip": "border-box",
-    "border-radius": ".75rem",
-    "box-shadow": "0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);",
+    "border-radius": "1rem",
+    "box-shadow": "14px 17px 40px 4px rgba(112, 144, 176, 0.08)",
   
     "&.card-plain": {
       "box-shadow": "none",
@@ -16,6 +16,8 @@ const card = (theme) => ({
     },
 
     ".card-header": {
+      padding: "1rem",
+      "padding-bottom": "0rem",
       transform: "translateZ(0)",
       transition: "all .3s cubic-bezier(.34,1.61,.7,1)",
     },
@@ -39,9 +41,9 @@ const card = (theme) => ({
       }
     },
     ".colored-shadow": {
-      transform: "scale(.94)",
-      top: "3.5%",
-      filter: "blur(12px)",
+      transform: "scale(.82)",
+      top: "7.5%",
+      filter: "blur(20px)",
       position: "absolute",
       left: "0",
       width: "100%",

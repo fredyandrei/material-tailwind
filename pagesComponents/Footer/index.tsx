@@ -26,35 +26,35 @@ export default function Footer() {
             </Typography>
             <div className="mt-6">
               <a
-                href="https://www.twitter.com/creativetim?ref=material-tailwind"
+                href="https://www.twitter.com/creativetim?ref=horizon-ui.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="fab fa-twitter bg-white text-light-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
               </a>
               <a
-                href="https://www.facebook.com/creativetim?ref=material-tailwind"
+                href="https://www.facebook.com/creativetim?ref=horizon-ui.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="fab fa-facebook-square bg-white text-light-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
               </a>
               <a
-                href="https://www.dribbble.com/creativetim?ref=material-tailwind"
+                href="https://www.dribbble.com/creativetim?ref=horizon-ui.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="fab fa-dribbble bg-white text-primary-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
               </a>
               <a
-                href="https://www.github.com/creativetimofficial?ref=material-tailwind"
+                href="https://www.github.com/creativetimofficial?ref=horizon-ui.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <i className="fab fa-github bg-white text-grey-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
               </a>
               <a
-                href="https://discord.com/invite/gxtg2rJa?ref=material-tailwind"
+                href="https://discord.com/invite/gxtg2rJa?ref=horizon-ui.com"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -72,7 +72,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-[#1A237E]/60 font-normal block pb-2 text-sm"
-                      href="https://www.creative-tim.com/presentation?ref=material-tailwind"
+                      href="https://www.creative-tim.com/presentation?ref=horizon-ui.com"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -82,7 +82,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-[#1A237E]/60 font-normal block pb-2 text-sm"
-                      href="https://www.creative-tim.com/blog?ref=material-tailwind"
+                      href="https://www.creative-tim.com/blog?ref=horizon-ui.com"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -92,7 +92,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-[#1A237E]/60 font-normal block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial?ref=material-tailwind"
+                      href="https://github.com/creativetimofficial?ref=horizon-ui.com"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -102,7 +102,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-[#1A237E]/60 font-normal block pb-2 text-sm"
-                      href="https://www.creative-tim.com/templates/free?ref=material-tailwind"
+                      href="https://www.creative-tim.com/templates/free?ref=horizon-ui.com"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -119,7 +119,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-[#1A237E]/60 font-normal block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=material-tailwind"
+                      href="https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=horizon-ui.com"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -129,7 +129,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-[#1A237E]/60 font-normal block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=material-tailwind"
+                      href="https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=horizon-ui.com"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -139,7 +139,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-[#1A237E]/60 font-normal block pb-2 text-sm"
-                      href="https://github.com/creativetimofficial/material-tailwind/blob/main/CODE_OF_CONDUCT.md?ref=material-tailwind"
+                      href="https://github.com/creativetimofficial/material-tailwind/blob/main/CODE_OF_CONDUCT.md?ref=horizon-ui.com"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -149,7 +149,7 @@ export default function Footer() {
                   <li>
                     <a
                       className="text-[#1A237E]/60 font-normal block pb-2 text-sm"
-                      href="https://www.creative-tim.com/contact-us?ref=material-tailwind"
+                      href="https://www.creative-tim.com/contact-us?ref=horizon-ui.com"
                       target="_blank"
                       rel="noreferrer"
                     >

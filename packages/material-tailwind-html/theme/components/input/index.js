@@ -90,7 +90,7 @@ const input = (theme) => ({
         "border-radius": "0",
         border: "0",
         "background": "no-repeat bottom,50% calc(100% - 1px)",
-        "background-image": `linear-gradient(0deg,theme("colors.pink.500") 2px,rgba(156,39,176,0) 0),linear-gradient(0deg,theme("colors.blue-grey.100") 1px,hsla(0,0%,82%,0) 0)`,
+        "background-image": `linear-gradient(0deg,theme("colors.primary.500") 2px,rgba(156,39,176,0) 0),linear-gradient(0deg,theme("colors.blue-grey.100") 1px,hsla(0,0%,82%,0) 0)`,
         "background-size": "0 100%,100% 100%",
         transition: ".2s ease",
       },
@@ -110,28 +110,28 @@ const input = (theme) => ({
         width: "100%",
         height: "100%",
         "font-size": ".6875rem",
-        color: theme("colors.pink.500"),
+        color: theme("colors.primary.500"),
         display: "flex",
         "line-height": "1.25",
 
         "&:before": {
           opacity: "1",
-          "border-top-color": theme("colors.pink.500"),
-          "box-shadow": `inset 0 1px theme("colors.pink.500")`
+          "border-top-color": theme("colors.primary.500"),
+          "box-shadow": `inset 0 1px theme("colors.primary.500")`
         },
 
         "&:after": {
           opacity: "1",
-          "border-top-color": theme("colors.pink.500"),
-          "box-shadow": `inset 0 1px theme("colors.pink.500")`
+          "border-top-color": theme("colors.primary.500"),
+          "box-shadow": `inset 0 1px theme("colors.primary.500")`
         }
       },
 
       "&.input-group-outline": {
         ".form-label+.form-control": {
-          "border-color": theme("colors.pink.500"),
+          "border-color": theme("colors.primary.500"),
           "border-top-color": "transparent",
-          "box-shadow": `inset 1px 0 theme("colors.pink.500"), inset -1px 0 theme("colors.pink.500"), inset 0 -1px theme("colors.pink.500")`
+          "box-shadow": `inset 1px 0 theme("colors.primary.500"), inset -1px 0 theme("colors.primary.500"), inset 0 -1px theme("colors.primary.500")`
         },
       },
 
@@ -143,7 +143,7 @@ const input = (theme) => ({
 
       "&.input-group-static": {
         "label": {
-          color: theme("colors.pink.500")
+          color: theme("colors.primary.500")
         }
       },
 

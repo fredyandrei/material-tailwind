@@ -23,26 +23,25 @@ See below our beautiful card example that you can use in your Tailwind CSS proje
 <ComponentCard id='card blog'>
   <div className='w-1/2 my-10'>
     <div className='card'>
-      <div className='card-header mx-4 -mt-6'>
+      <div className='card-header'>
         <a href='#' blur-shadow-image='true'>
           <img
-            className='w-auto rounded-lg'
-            src='https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+            className='w-auto rounded-2xl'
+            src='https://images.unsplash.com/photo-1618004912476-29818d81ae2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2564&q=80'
             alt=''
           />
         </a>
       </div>
       <div className='card-body'>
         <a href='#'>
-          <h4 className='font-medium'>Horizon UI</h4>
+          <h4 className='font-bold text-blue-grey-900'><span>Horizon UI</span></h4>
         </a>
-        <p className='mb-4 opcacity-60'>
-          The time is now for it to be okay to be great. People in this world
-          shun people for being great. For being a bright color. For standing
-          out.
+        <p className='mb-5'>
+          <span>The time is now for it to be okay to be great. People in this world
+          shun people for being great. For being a bright color for everything.</span>
         </p>
         <button className='button button-primary' data-ripple-light='true'>
-          Read More
+          <span>Read More</span>
         </button>
       </div>
     </div>
@@ -51,22 +50,22 @@ See below our beautiful card example that you can use in your Tailwind CSS proje
 
 ```html showLineNumbers
 <div class="card">
-  <div class="card-header mx-4 -mt-6">
+  <div class="card-header">
     <a href="#" blur-shadow-image="true">
       <img
         class="w-auto rounded-lg"
-        src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+        src="https://images.unsplash.com/photo-1618004912476-29818d81ae2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2564&q=80"
         alt="tailwind-card-image"
       />
     </a>
   </div>
   <div class="card-body">
     <a href="#">
-      <h4 class="font-medium">Horizon UI</h4>
+      <h4 class="font-bold text-blue-grey-900">Horizon UI</h4>
     </a>
-    <p class="mb-3 opcacity-60">
+    <p class="mb-5">
       The time is now for it to be okay to be great. People in this world shun
-      people for being great. For being a bright color. For standing out.
+      people for being great. For being a bright color for everything.
     </p>
     <button class="button button-primary" data-ripple-light="true">
       Read More
@@ -80,7 +79,7 @@ See below our beautiful card example that you can use in your Tailwind CSS proje
 <br />
 <br />
 
-#### Simple Card
+### Simple Card
 
 Cards support a wide variety of content, including images, text, list groups, links and more.
 
@@ -91,15 +90,14 @@ Below you can see a card example with only text and link (button).
     <div className='card'>
       <div className='card-body'>
         <a href='#'>
-          <h3>Horizon UI</h3>
+          <h4 className="font-bold text-blue-grey-900"><span>Horizon UI</span></h4>
         </a>
-        <p className='mb-3 opacity-60'>
-          The time is now for it to be okay to be great. People in this world
-          shun people for being great. For being a bright color. For standing
-          out.
+        <p className='mb-5'>
+          <span>The time is now for it to be okay to be great. People in this world shun
+      people for being great. For being a bright color for everything.</span>
         </p>
         <button className='button button-primary' data-ripple-light='true'>
-          Read More
+          <span>Read More</span>
         </button>
       </div>
     </div>
@@ -110,11 +108,11 @@ Below you can see a card example with only text and link (button).
 <div class="card">
   <div class="card-body">
     <a href="#">
-      <h3>Horizon UI</h3>
+      <h4 class="font-bold text-blue-grey-900">Horizon UI</h4>
     </a>
-    <p class="mb-3 opacity-60">
+    <p class="mb-5">
       The time is now for it to be okay to be great. People in this world shun
-      people for being great. For being a bright color. For standing out.
+      people for being great. For being a bright color for everything..
     </p>
     <button class="button button-primary" data-ripple-light="true">
       Read More
@@ -128,31 +126,30 @@ Below you can see a card example with only text and link (button).
 <br />
 <br />
 
-#### Card with image inside
+### Card with image inside
 
 The card example below includes an image and avatar component.
 
 <ComponentCard id='card image inside'>
-  <div className='w-2/3 my-10'>
+  <div className='w-1/2 my-10'>
     <div className='card'>
-      <div className='card-header mx-4 mt-4'>
+      <div className='card-header'>
         <a href='#' blur-shadow-image='true'>
           <img
-            className='w-auto rounded-lg'
-            src='https://demos.creative-tim.com/material-kit-pro/assets/img/annie-spratt.jpg'
+            className='w-auto rounded-2xl'
+            src='https://images.unsplash.com/photo-1629948618343-0d33f97a3091?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3732&q=80'
             alt='tailwind-card-image'
           />
         </a>
       </div>
       <div className='card-body'>
-        <span className='font-bold uppercase text-orange-500 text-sm'>Hub</span>
+        <span className='font-bold uppercase text-primary-500 text-sm'>Hub</span>
         <a href='#'>
-          <h5 className='mt-2 font-medium'>Horizon UI</h5>
+          <h4 className='font-bold text-blue-grey-900'><span>Abstract Gradient</span></h4>
         </a>
         <p className='mb-3'>
-          The time is now for it to be okay to be great. People in this world
-          shun people for being great. For being a bright color. For standing
-          out.
+          <span>The time is now for it to be okay to be great. People in this world
+          shun people for being great. For being a bright color for everything.</span>
         </p>
       </div>
       <div className='card-footer'>
@@ -160,12 +157,12 @@ The card example below includes an image and avatar component.
           <a href='#' className='avatar'>
             <img
               alt='Image placeholder'
-              src='https://demos.creative-tim.com/material-kit-pro/assets/img/marie.jpg'
+              src='https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3880&q=80'
             />
           </a>
           <div className='ml-3'>
-            <span className='font-bold mb-0 text-blue-grey-700'>Mathew</span>
-            <p className='text-xs mb-0'>Posted on 28 February</p>
+            <span className='font-bold mb-0 text-blue-grey-900'>Mathew</span>
+            <p className='text-xs mb-0'><span>Posted on 19 November</span></p>
           </div>
         </div>
       </div>
@@ -175,23 +172,23 @@ The card example below includes an image and avatar component.
 
 ```html showLineNumbers
 <div class="card">
-  <div class="card-header mx-4 mt-4">
+  <div class="card-header">
     <a href="#" blur-shadow-image="true">
       <img
-        class="w-auto rounded-lg"
-        src="https://demos.creative-tim.com/material-kit-pro/assets/img/annie-spratt.jpg"
+        class="w-auto rounded-2xl"
+        src="https://images.unsplash.com/photo-1629948618343-0d33f97a3091?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3732&q=80"
         alt="tailwind-card-image"
       />
     </a>
   </div>
   <div class="card-body">
-    <span class="font-bold uppercase text-orange-500 text-sm">Hub</span>
+    <span class="font-bold uppercase text-primary-500 text-sm">Hub</span>
     <a href="#">
-      <h5 class="mt-2 font-medium">Horizon UI</h5>
+      <h4 class="font-bold text-blue-grey-900">Abstract Gradient</h4>
     </a>
     <p class="mb-3">
       The time is now for it to be okay to be great. People in this world shun
-      people for being great. For being a bright color. For standing out.
+      people for being great. For being a bright color for everything.
     </p>
   </div>
   <div class="card-footer">
@@ -199,12 +196,12 @@ The card example below includes an image and avatar component.
       <a href="#" class="avatar">
         <img
           alt="Image placeholder"
-          src="https://demos.creative-tim.com/material-kit-pro/assets/img/marie.jpg"
+          src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3880&q=80"
         />
       </a>
       <div class="ml-3">
-        <span class="font-bold mb-0 text-blue-grey-700">Mathew</span>
-        <p class="text-xs mb-0">Posted on 28 February</p>
+        <span class="font-bold mb-0 text-blue-grey-900">Mathew</span>
+        <p class="text-xs mb-0">Posted on 19 November</p>
       </div>
     </div>
   </div>
@@ -216,27 +213,27 @@ The card example below includes an image and avatar component.
 <br />
 <br />
 
-#### Card Signin
+### Card Sign In
 
 Cards also can be used for Login/Signup pages. See below our Tailwind CSS example:
 
 <ComponentCard id='card signin'>
   <div className='w-1/2 my-10'>
     <div className='card'>
-      <div className='card-header mx-4 -mt-6'>
-        <div className='bg-primary-500 shadow-primary rounded-lg py-3 pe-1'>
+      <div className='card-header'>
+        <div className='bg-primary-500 shadow-primary rounded-2xl py-3 pe-1'>
           <h4 className='text-white font-bold text-center mt-2 mb-0'>
-            Sign in
+            <span>Sign in</span>
           </h4>
           <div className='flex mt-4'>
             <a className='button button-text ml-auto' href='#'>
-              <i className='fab fa-facebook-f text-white text-lg'></i>
+              <i aria-hidden className='fab fa-facebook-f text-white text-lg'></i>
             </a>
             <a className='button button-text' href='#'>
-              <i className='fab fa-github text-white text-lg'></i>
+              <i aria-hidden className='fab fa-github text-white text-lg'></i>
             </a>
             <a className='button button-text mr-auto' href='#'>
-              <i className='fab fa-google text-white text-lg'></i>
+              <i aria-hidden className='fab fa-google text-white text-lg'></i>
             </a>
           </div>
         </div>
@@ -266,7 +263,7 @@ Cards also can be used for Login/Signup pages. See below our Tailwind CSS exampl
         <button className='button button-primary w-full'>Sign In</button>
         <a href='#'>
           <p className='text-center mt-5 mb-0 text-sm'>
-            Don&apos;t have an account?
+            <span>Don&apos;t have an account?</span>
           </p>
         </a>
       </div>
@@ -276,18 +273,18 @@ Cards also can be used for Login/Signup pages. See below our Tailwind CSS exampl
 
 ```html showLineNumbers
 <div class="card">
-  <div class="card-header mx-4 -mt-6">
-    <div class="bg-primary-500 shadow-primary rounded-lg py-3 pe-1">
+  <div class="card-header">
+    <div class="bg-primary-500 shadow-primary rounded-2xl py-3 pe-1">
       <h4 class="text-white font-bold text-center mt-2 mb-0">Sign in</h4>
       <div class="flex mt-4">
         <a class="button button-text ml-auto" href="#">
-          <i class="fab fa-facebook-f text-white text-lg"></i>
+          <i aria-hidden class="fab fa-facebook-f text-white text-lg"></i>
         </a>
         <a class="button button-text" href="#">
-          <i class="fab fa-github text-white text-lg"></i>
+          <i aria-hidden class="fab fa-github text-white text-lg"></i>
         </a>
         <a class="button button-text mr-auto" href="#">
-          <i class="fab fa-google text-white text-lg"></i>
+          <i aria-hidden class="fab fa-google text-white text-lg"></i>
         </a>
       </div>
     </div>
@@ -327,7 +324,7 @@ Cards also can be used for Login/Signup pages. See below our Tailwind CSS exampl
 <br />
 <br />
 
-#### Card Horizontal
+### Card Horizontal
 
 Our last card example has an horizontal layout. Use it to your projects!
 
@@ -336,27 +333,29 @@ Our last card example has an horizontal layout. Use it to your projects!
     <div className='card card-plain'>
       <div className='flex'>
         <div className='w-1/3'>
-          <img
-            className='rounded-lg'
-            src='https://images.unsplash.com/photo-1536704689578-8fff53d4dfd7?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987'
-            alt='tailwind_card-horizozntal-image'
-          />
+          <a href='#' blur-shadow-image='true'>
+            <img
+              className='rounded-2xl'
+              src='https://images.unsplash.com/photo-1618004912476-29818d81ae2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987'
+              alt='tailwind_card-horizontal-image'
+            />
+        </a>
         </div>
-        <div className='w-2/3 card-body'>
-          <span className='text-blue-500 font-bold uppercase'>Startups</span>
+        <div className='w-2/3 card-body self-center'>
+          <span className='text-primary-500 font-bold uppercase'>Startups</span>
           <a href='#'>
-            <h3 className='mt-4'>
-              Lyft launching cross-platform service this week
+            <h3 className='mt-4 font-bold text-blue-grey-900'>
+              <span>Lyft launching cross-platform service this week</span>
             </h3>
           </a>
-          <p className='opacity-80 mb-5'>
-            Like so many organizations these days, Autodesk is a company in
+          <span className='opacity-80 mb-5'>
+           <span>Like so many organizations these days, Autodesk is a company in
             transition. It was until recently a traditional boxed software
             company selling licenses. Yet its own business model disruption is
-            only part of the story — and <a href='#'>Read More</a>.
-          </p>
+            only part of the story — and</span> <a href='#'>Read More</a>.
+          </span>
           <span>
-            by <span className='font-bold'>Megan Rose</span>, 2 days ago
+            by <span className='font-bold text-blue-grey-900'>Megan Rose</span>, 2 days ago
           </span>
         </div>
       </div>
@@ -368,16 +367,18 @@ Our last card example has an horizontal layout. Use it to your projects!
 <div class="card card-plain">
   <div class="flex">
     <div class="w-1/3">
-      <img
-        class="rounded-lg"
-        src="https://images.unsplash.com/photo-1536704689578-8fff53d4dfd7?ixlib=rb-1.2.1&raw_url=true&q=80&fm=jpg&crop=entropy&cs=tinysrgb&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987"
-        alt="tailwind_card-horizozntal-image"
-      />
+      <a href="#" blur-shadow-image="true">
+        <img
+          class="rounded-2xl"
+          src="https://images.unsplash.com/photo-1618004912476-29818d81ae2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987"
+          alt="tailwind_card-horizontal-image"
+        />
+      </a>
     </div>
-    <div class="w-2/3 card-body">
-      <span class="text-blue-500 font-bold uppercase">Startups</span>
+    <div class="w-2/3 card-body self-center">
+      <span class="text-primary-500 font-bold uppercase">Startups</span>
       <a href="#">
-        <h3 class="mt-4">Lyft launching cross-platform service this week</h3>
+        <h3 class="mt-4 font-bold text-blue-grey-900">Lyft launching cross-platform service this week</h3>
       </a>
       <p class="opacity-80 mb-5">
         Like so many organizations these days, Autodesk is a company in
@@ -385,7 +386,7 @@ Our last card example has an horizontal layout. Use it to your projects!
         selling licenses. Yet its own business model disruption is only part of
         the story — and{" "} <a href="#">Read More</a>.
       </p>
-      <span>by <span class="font-bold">Megan Rose</span>, 2 days ago</span>
+      <span>by <span class="font-bold text-blue-grey-900">Megan Rose</span>, 2 days ago</span>
     </div>
   </div>
 </div>

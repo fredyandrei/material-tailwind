@@ -6,7 +6,10 @@ navigation:
     "button",
     "button-variants",
     "simple-buttons",
-    "button-with-gradient",
+    "buttons-with-gradients",
+    "buttons-with-custom-gradients",
+    "payment-buttons",
+    "buttons-with-icon",
     "button-sizes",
   ]
 ---
@@ -82,7 +85,7 @@ See our button examples below. They come in different styles and color:
 
 ### Simple Buttons
 
-Use this example to create a simple button element for your Tailwind CSS project.
+Use this examples to create a simple button element for your Tailwind CSS project.
 
 <br />
 <ComponentCard id='simple-buttons'>
@@ -122,10 +125,10 @@ Use this example to create a simple button element for your Tailwind CSS project
 
 ### Buttons with gradients
 
-Use this example to create a simple button element with gradient for your Tailwind CSS project.
+Use this examples to create a simple button element with gradient for your Tailwind CSS project.
 
 <br />
-<ComponentCard id='buttons-with-gradient'>
+<ComponentCard id='buttons-with-gradients'>
   <div className='flex'>
     <button
       className='button button-gradient button-primary mr-3'
@@ -184,9 +187,432 @@ Use this example to create a simple button element with gradient for your Tailwi
 <br />
 <br />
 
+### Buttons with custom gradients
+
+Use this examples to create a custom trendy gradient button for your Tailwind CSS project.
+
+<br />
+<ComponentCard id='buttons-with-custom-gradients'>
+  <div className='flex flex-wrap justify-center'>
+    <button
+      className='button button-gradient button-primary mr-3'
+      data-ripple-light>
+      {`Button 1`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#FAB2FF] to-[#1904E5] text-white hover:shadow-lg hover:shadow-[#FAB2FF]/50 mr-3'
+      data-ripple-light>
+      {`Button 2`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#4481EB] to-[#04BEFE] text-white hover:shadow-lg hover:shadow-[#4481EB]/50 mr-3 mt-3 md:mt-0'
+      data-ripple-light>
+      {`Button 3`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#00DBDE] to-[#FC00FF] text-white hover:shadow-lg hover:shadow-[#FC00FF]/50 mr-3 mt-3 md:mt-0'
+      data-ripple-light>
+      {`Button 4`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#0083FE] to-[#00FFF0] text-white hover:shadow-lg hover:shadow-[#0083FE]/50 mr-3 mt-3 md:mt-0 lg:mt-3 xl:mt-0'
+      data-ripple-light>
+      {`Button 5`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#0ED2F7] to-[#B2FEFA] text-white hover:shadow-lg hover:shadow-[#0ED2F7]/50 mr-3 mt-3 2xl:mt-0'
+      data-ripple-light>
+      {`Button 6`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#00C9FF] to-[#92FE9D] text-white hover:shadow-lg hover:shadow-[#00C9FF]/50 mr-3 mt-3 3xl:mt-0 4xl:mt-3'
+      data-ripple-light>
+      {`Button 7`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#FDFC47] to-[#24FE41] text-white hover:shadow-lg hover:shadow-[#FDFC47]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 8`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#6AFE24] to-[#FEDB24] text-white hover:shadow-lg hover:shadow-[#6AFE24]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 9`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#FFC837] to-[#FF6108] text-white hover:shadow-lg hover:shadow-[#FFC837]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 10`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#FF9966] to-[#FF5E62] text-white hover:shadow-lg hover:shadow-[#FF9966]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 11`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#FF416C] to-[#FF4B2B] text-white hover:shadow-lg hover:shadow-[#FF416C]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 12`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#F64F59] via-[#C471ED] to-[#12C2E9] text-white hover:shadow-lg hover:shadow-[#C471ED]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 13`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#F857A6] to-[#FF5858] text-white hover:shadow-lg hover:shadow-[#F857A6]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 14`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#EC008C] to-[#FC6767] text-white hover:shadow-lg hover:shadow-[#EC008C]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 15`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] text-white hover:shadow-lg hover:shadow-[#FD1D1D]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 16`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#6025F5] to-[#FF5555] text-white hover:shadow-lg hover:shadow-[#6025F5]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 17`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#7F00FF] to-[#E100FF] text-white hover:shadow-lg hover:shadow-[#7F00FF]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 18`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#29E9F5] via-[#7A64FF] to-[#FF508B] text-white hover:shadow-lg hover:shadow-[#7A64FF]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 19`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#FC00FF] via-[#504CF3] to-[#02FFD1] text-white hover:shadow-lg hover:shadow-[#504CF3]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 20`}
+    </button>
+    <button
+      className='button bg-gradient-to-br from-[#3C0066] via-[#EC38BC] to-[#FDEFF9] text-white hover:shadow-lg hover:shadow-[#EC38BC]/50 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 21`}
+    </button>
+    <button
+      className='button bg-gradient-to-r from-[#EA52F8] to-[#0066FF] text-white hover:shadow-lg hover:shadow-[#0066FF]/25 mr-3 mt-3'
+      data-ripple-light>
+      {`Button 22`}
+    </button>
+  </div>
+</ComponentCard>
+
+```html showLineNumbers
+<button className="button button-gradient button-primary" data-ripple-light>
+  Button 1
+</button>
+<button
+  class="button bg-gradient-to-br from-[#FAB2FF] to-[#1904E5] text-white hover:shadow-lg hover:shadow-[#FAB2FF]/50" data-ripple-light>
+  Button 2
+</button>
+<button
+  class="button bg-gradient-to-br from-[#4481EB] to-[#04BEFE] text-white hover:shadow-lg hover:shadow-[#4481EB]/50" data-ripple-light>
+  Button 3
+</button>
+<button
+  class="button bg-gradient-to-br from-[#00DBDE] to-[#FC00FF] text-white hover:shadow-lg hover:shadow-[#FC00FF]/50" data-ripple-light>
+  Button 4
+</button>
+<button
+  class="button bg-gradient-to-br from-[#0083FE] to-[#00FFF0] text-white hover:shadow-lg hover:shadow-[#0083FE]/50" data-ripple-light>
+  Button 5
+</button>
+<button
+  class="button bg-gradient-to-br from-[#0ED2F7] to-[#B2FEFA] text-white hover:shadow-lg hover:shadow-[#0ED2F7]/50" data-ripple-light>
+  Button 6
+</button>
+<button
+  class="button bg-gradient-to-br from-[#00C9FF] to-[#92FE9D] text-white hover:shadow-lg hover:shadow-[#00C9FF]/50" data-ripple-light>
+  Button 7
+</button>
+<button
+  class="button bg-gradient-to-br from-[#FDFC47] to-[#24FE41] text-white hover:shadow-lg hover:shadow-[#FDFC47]/50" data-ripple-light>
+  Button 8
+</button>
+<button
+  class="button bg-gradient-to-br from-[#6AFE24] to-[#FEDB24] text-white hover:shadow-lg hover:shadow-[#6AFE24]/50" data-ripple-light>
+  Button 9
+</button>
+<button
+  class="button bg-gradient-to-br from-[#FFC837] to-[#FF6108] text-white hover:shadow-lg hover:shadow-[#FFC837]/50" data-ripple-light>
+  Button 10
+</button>
+<button
+  class="button bg-gradient-to-br from-[#FF9966] to-[#FF5E62] text-white hover:shadow-lg hover:shadow-[#FF9966]/50" data-ripple-light>
+  Button 11
+</button>
+<button
+  class="button bg-gradient-to-br from-[#FF416C] to-[#FF4B2B] text-white hover:shadow-lg hover:shadow-[#FF416C]/50" data-ripple-light>
+  Button 12
+</button>
+<button
+  class="button bg-gradient-to-br from-[#F64F59] via-[#C471ED] to-[#12C2E9] text-white hover:shadow-lg hover:shadow-[#C471ED]/50" data-ripple-light>
+  Button 13
+</button>
+<button
+  class="button bg-gradient-to-br from-[#F857A6] to-[#FF5858] text-white hover:shadow-lg hover:shadow-[#F857A6]/50" data-ripple-light>
+  Button 14
+</button>
+<button
+  class="button bg-gradient-to-br from-[#EC008C] to-[#FC6767] text-white hover:shadow-lg hover:shadow-[#EC008C]/50" data-ripple-light>
+  Button 15
+</button>
+<button
+  class="button bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#FCB045] text-white hover:shadow-lg hover:shadow-[#FD1D1D]/50" data-ripple-light>
+  Button 16
+</button>
+<button
+  class="button bg-gradient-to-br from-[#6025F5] to-[#FF5555] text-white hover:shadow-lg hover:shadow-[#6025F5]/50" data-ripple-light>
+  Button 17
+</button>
+<button
+  class="button bg-gradient-to-br from-[#7F00FF] to-[#E100FF] text-white hover:shadow-lg hover:shadow-[#7F00FF]/50" data-ripple-light>
+  Button 18
+</button>
+<button
+  class="button bg-gradient-to-br from-[#29E9F5] via-[#7A64FF] to-[#FF508B] text-white hover:shadow-lg hover:shadow-[#7A64FF]/50" data-ripple-light>
+  Button 19
+</button>
+<button
+  class="button bg-gradient-to-br from-[#FC00FF] via-[#504CF3] to-[#02FFD1] text-white hover:shadow-lg hover:shadow-[#504CF3]/50" data-ripple-light>
+  Button 20
+</button>
+<button
+  class="button bg-gradient-to-br from-[#3C0066] via-[#EC38BC] to-[#FDEFF9] text-white hover:shadow-lg hover:shadow-[#EC38BC]/50" data-ripple-light>
+  Button 21
+</button>
+<button
+  class="button bg-gradient-to-r from-[#EA52F8] to-[#0066FF] text-white hover:shadow-lg hover:shadow-[#0066FF]/25" data-ripple-light>
+  Button 22
+</button>
+```
+
+<br />
+<br />
+
+### Payment buttons
+
+Use this examples to create a payment button for your Tailwind CSS project.
+
+<br />
+<ComponentCard id='payment-buttons'>
+  <div className='flex flex-wrap justify-center'>
+    <button
+        className='button button-amber mr-3 text-center inline-flex items-center text-black'
+        data-ripple-light>
+        <svg className="fill-black mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+        <path d="M7.914 10.677h1.659c3.604 0 5.649-1.623 6.3-4.96.021-.11.04-.216.056-.322.036-.226.054-.429.062-.624.006-.134.01-.213.009-.287a2.643 2.643 0 0 0-.216-1.039c-.129-.296-.324-.587-.613-.918C14.318 1.557 12.832 1 11.057 1H5.404a.81.81 0 0 0-.799.683l-1.02 6.571-1.269 8.185a.486.486 0 0 0 .48.561h2.772l.849-5.043a1.51 1.51 0 0 1 1.497-1.28zm9.103-4.587c-.792 3.771-3.357 5.772-7.445 5.772H7.914a.331.331 0 0 0-.328.282L6.481 19h2.907a.707.707 0 0 0 .699-.597l.029-.15.555-3.514.036-.194a.707.707 0 0 1 .699-.597h.44c2.85 0 5.081-1.158 5.733-4.506.268-1.38.132-2.534-.562-3.352z"/>
+        </svg>
+      {`Pay safely with Paypal`}
+    </button>
+
+    <button
+        className='button button-dark mr-3 text-center inline-flex items-center'
+        data-ripple-light>
+        <svg className="fill-white mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+        <path d="M18.5 5.146V14.854Q18.5 15.688 17.927 16.26Q17.354 16.833 16.521 16.833H3.479Q2.646 16.833 2.073 16.26Q1.5 15.688 1.5 14.854V5.146Q1.5 4.312 2.073 3.74Q2.646 3.167 3.479 3.167H16.521Q17.354 3.167 17.927 3.74Q18.5 4.312 18.5 5.146ZM3.479 6.625H16.521V5.146Q16.521 5.146 16.521 5.146Q16.521 5.146 16.521 5.146H3.479Q3.479 5.146 3.479 5.146Q3.479 5.146 3.479 5.146ZM3.479 10.062V14.854Q3.479 14.854 3.479 14.854Q3.479 14.854 3.479 14.854H16.521Q16.521 14.854 16.521 14.854Q16.521 14.854 16.521 14.854V10.062ZM3.479 14.854Q3.479 14.854 3.479 14.854Q3.479 14.854 3.479 14.854V5.146Q3.479 5.146 3.479 5.146Q3.479 5.146 3.479 5.146Q3.479 5.146 3.479 5.146Q3.479 5.146 3.479 5.146V14.854Q3.479 14.854 3.479 14.854Q3.479 14.854 3.479 14.854Z"/>
+        </svg>
+      {`Debit or Credit Card`}
+    </button>
+
+    <button
+        className='button button-orange mr-3 text-center inline-flex items-center text-white'
+        data-ripple-light>
+        <svg className="mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="16" width="16">
+       <path d="M63.04 39.741c-4.274 17.143-21.638 27.575-38.783 23.301C7.12 58.768-3.313 41.404.962 24.262 5.234 7.117 22.597-3.317 39.737.957c17.144 4.274 27.576 21.64 23.302 38.784z" className="fill-white"/><path d="M46.11 27.441c.636-4.258-2.606-6.547-7.039-8.074l1.438-5.768-3.512-.875-1.4 5.616c-.922-.23-1.87-.447-2.812-.662l1.41-5.653-3.509-.875-1.439 5.766c-.764-.174-1.514-.346-2.242-.527l.004-.018-4.842-1.209-.934 3.75s2.605.597 2.55.634c1.422.355 1.68 1.296 1.636 2.042l-1.638 6.571c.098.025.225.061.365.117l-.37-.092-2.297 9.205c-.174.432-.615 1.08-1.609.834.035.051-2.552-.637-2.552-.637l-1.743 4.02 4.57 1.139c.85.213 1.683.436 2.502.646l-1.453 5.835 3.507.875 1.44-5.772c.957.26 1.887.5 2.797.726L27.504 50.8l3.511.875 1.453-5.823c5.987 1.133 10.49.676 12.383-4.738 1.527-4.36-.075-6.875-3.225-8.516 2.294-.531 4.022-2.04 4.483-5.157zM38.087 38.69c-1.086 4.36-8.426 2.004-10.807 1.412l1.928-7.729c2.38.594 10.011 1.77 8.88 6.317zm1.085-11.312c-.99 3.966-7.1 1.951-9.083 1.457l1.748-7.01c1.983.494 8.367 1.416 7.335 5.553z" className="fill-orange-500"/>
+       </svg>
+      {`Pay with Bitcoin`}
+    </button>
+
+    <button
+        className='button button-gradient button-dark mr-3 text-center inline-flex items-center text-white mt-3'
+        data-ripple-light>
+      {`Buy with `}   
+        <svg className="ml-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 435.97 173.13" height="20" width="40">
+         <path d="M206.2,84.58v50.75H190.1V10h42.7a38.61,38.61,0,0,1,27.65,10.85A34.88,34.88,0,0,1,272,47.3a34.72,34.72,0,0,1-11.55,26.6q-11.2,10.68-27.65,10.67H206.2Zm0-59.15V69.18h27a21.28,21.28,0,0,0,15.93-6.48,21.36,21.36,0,0,0,0-30.63,21,21,0,0,0-15.93-6.65h-27Z" fill="#fff"></path><path d="M309.1,46.78q17.85,0,28.18,9.54T347.6,82.48v52.85H332.2v-11.9h-.7q-10,14.7-26.6,14.7-14.17,0-23.71-8.4a26.82,26.82,0,0,1-9.54-21q0-13.31,10.06-21.17t26.86-7.88q14.34,0,23.62,5.25V81.25A18.33,18.33,0,0,0,325.54,67,22.8,22.8,0,0,0,310,61.13q-13.49,0-21.35,11.38l-14.18-8.93Q286.17,46.78,309.1,46.78Zm-20.83,62.3a12.86,12.86,0,0,0,5.34,10.5,19.64,19.64,0,0,0,12.51,4.2,25.67,25.67,0,0,0,18.11-7.52q8-7.53,8-17.67-7.53-6-21-6-9.81,0-16.36,4.73C290.46,100.52,288.27,104.41,288.27,109.08Z" fill="#fff"></path><path d="M436,49.58,382.24,173.13H365.62l19.95-43.23L350.22,49.58h17.5l25.55,61.6h.35l24.85-61.6Z" fill="#fff"></path><path d="M141.14,73.64A85.79,85.79,0,0,0,139.9,59H72V86.73h38.89a33.33,33.33,0,0,1-14.38,21.88v18h23.21C133.31,114.08,141.14,95.55,141.14,73.64Z" fill="#4285f4"></path><path d="M72,144c19.43,0,35.79-6.38,47.72-17.38l-23.21-18C90.05,113,81.73,115.5,72,115.5c-18.78,0-34.72-12.66-40.42-29.72H7.67v18.55A72,72,0,0,0,72,144Z" fill="#34a853"></path><path d="M31.58,85.78a43.14,43.14,0,0,1,0-27.56V39.67H7.67a72,72,0,0,0,0,64.66Z" fill="#fbbc04"></path><path d="M72,28.5A39.09,39.09,0,0,1,99.62,39.3h0l20.55-20.55A69.18,69.18,0,0,0,72,0,72,72,0,0,0,7.67,39.67L31.58,58.22C37.28,41.16,53.22,28.5,72,28.5Z" fill="#ea4335"></path>
+       </svg>
+    </button>
+
+    <button
+        className='button button-outlined button-dark mr-3 text-center inline-flex items-center text-white mt-3'
+        data-ripple-light>
+        <svg className="mr-1 -mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.773 22.773" height="16" width="16">
+          <path d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573
+          c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z"/>
+          <path d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334
+          c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0
+          c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019
+          c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464
+          c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648
+          c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z"/>
+        </svg>
+      {`Checkout with Apple Pay `}   
+      
+    </button>
+
+    <button
+        className='button button-gradient button-primary mr-3 text-center inline-flex items-center mt-3'
+        data-ripple-light>
+        <svg className="fill-white mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+       <path d="M5.146 18.458Q4.312 18.458 3.74 17.875Q3.167 17.292 3.167 16.458V6.833Q3.167 6.021 3.74 5.438Q4.312 4.854 5.146 4.854H6.5Q6.542 3.417 7.552 2.427Q8.562 1.438 10 1.438Q11.438 1.438 12.448 2.427Q13.458 3.417 13.5 4.854H14.854Q15.688 4.854 16.26 5.438Q16.833 6.021 16.833 6.833V16.458Q16.833 17.292 16.26 17.875Q15.688 18.458 14.854 18.458ZM8.5 4.854H11.5Q11.479 4.25 11.042 3.833Q10.604 3.417 10 3.417Q9.396 3.417 8.958 3.833Q8.521 4.25 8.5 4.854ZM5.146 16.458H14.854Q14.854 16.458 14.854 16.458Q14.854 16.458 14.854 16.458V6.833Q14.854 6.833 14.854 6.833Q14.854 6.833 14.854 6.833H13.5V8.354Q13.5 8.75 13.198 9.042Q12.896 9.333 12.5 9.333Q12.104 9.333 11.802 9.042Q11.5 8.75 11.5 8.354V6.833H8.5V8.354Q8.5 8.75 8.198 9.042Q7.896 9.333 7.5 9.333Q7.104 9.333 6.802 9.042Q6.5 8.75 6.5 8.354V6.833H5.146Q5.146 6.833 5.146 6.833Q5.146 6.833 5.146 6.833V16.458Q5.146 16.458 5.146 16.458Q5.146 16.458 5.146 16.458ZM5.146 16.458Q5.146 16.458 5.146 16.458Q5.146 16.458 5.146 16.458V6.833Q5.146 6.833 5.146 6.833Q5.146 6.833 5.146 6.833Q5.146 6.833 5.146 6.833Q5.146 6.833 5.146 6.833V16.458Q5.146 16.458 5.146 16.458Q5.146 16.458 5.146 16.458Z"/>
+       </svg>
+      {`Add to cart`}
+    </button>
+
+    <button
+        className='button button-green mr-3 text-center inline-flex items-center mt-3'
+        data-ripple-light>
+        <svg className="fill-white mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+       <path d="M7.979 14.771Q7.792 14.771 7.615 14.698Q7.438 14.625 7.271 14.458L3.75 10.938Q3.458 10.646 3.469 10.219Q3.479 9.792 3.771 9.5Q4.062 9.208 4.49 9.208Q4.917 9.208 5.188 9.5L8.021 12.333L14.833 5.521Q15.104 5.229 15.521 5.229Q15.938 5.229 16.229 5.521Q16.5 5.812 16.5 6.219Q16.5 6.625 16.229 6.917L8.688 14.458Q8.521 14.625 8.344 14.698Q8.167 14.771 7.979 14.771Z"/>
+       </svg>
+      {`Save all changes`}
+    </button>
+
+    <button
+        className='button bg-secondary-500/20 mr-3 text-center inline-flex items-center !text-[#454A75] mt-3'
+        data-ripple-light>
+        <svg className="mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920" height="20" width="20">
+         <g>
+          <polygon fill="#8A92B2" points="959.8,80.7 420.1,976.3 959.8,731 	"/>
+          <polygon fill="#62688F" points="959.8,731 420.1,976.3 959.8,1295.4 	"/>
+          <polygon fill="#62688F" points="1499.6,976.3 959.8,80.7 959.8,731 	"/>
+          <polygon fill="#454A75" points="959.8,1295.4 1499.6,976.3 959.8,731 	"/>
+          <polygon fill="#8A92B2" points="420.1,1078.7 959.8,1839.3 959.8,1397.6 	"/>
+          <polygon fill="#62688F" points="959.8,1397.6 959.8,1839.3 1499.9,1078.7 	"/>
+        </g>
+        </svg>
+      {`Pay safely with Ethereum`}
+    </button>
+
+
+  </div>
+</ComponentCard>
+
+```html showLineNumbers
+    <button class='button button-amber text-center inline-flex items-center text-black' data-ripple-light>
+        <svg class="fill-black mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+         <path d="M7.914 10.677h1.659c3.604 0 5.649-1.623 6.3-4.96.021-.11.04-.216.056-.322.036-.226.054-.429.062-.624.006-.134.01-.213.009-.287a2.643 2.643 0 0 0-.216-1.039c-.129-.296-.324-.587-.613-.918C14.318 1.557 12.832 1 11.057 1H5.404a.81.81 0 0 0-.799.683l-1.02 6.571-1.269 8.185a.486.486 0 0 0 .48.561h2.772l.849-5.043a1.51 1.51 0 0 1 1.497-1.28zm9.103-4.587c-.792 3.771-3.357 5.772-7.445 5.772H7.914a.331.331 0 0 0-.328.282L6.481 19h2.907a.707.707 0 0 0 .699-.597l.029-.15.555-3.514.036-.194a.707.707 0 0 1 .699-.597h.44c2.85 0 5.081-1.158 5.733-4.506.268-1.38.132-2.534-.562-3.352z"/>
+        </svg>Pay safely with Paypal
+    </button>
+
+    <button class='button button-dark text-center inline-flex items-center' data-ripple-light>
+        <svg class="fill-white mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+         <path d="M18.5 5.146V14.854Q18.5 15.688 17.927 16.26Q17.354 16.833 16.521 16.833H3.479Q2.646 16.833 2.073 16.26Q1.5 15.688 1.5 14.854V5.146Q1.5 4.312 2.073 3.74Q2.646 3.167 3.479 3.167H16.521Q17.354 3.167 17.927 3.74Q18.5 4.312 18.5 5.146ZM3.479 6.625H16.521V5.146Q16.521 5.146 16.521 5.146Q16.521 5.146 16.521 5.146H3.479Q3.479 5.146 3.479 5.146Q3.479 5.146 3.479 5.146ZM3.479 10.062V14.854Q3.479 14.854 3.479 14.854Q3.479 14.854 3.479 14.854H16.521Q16.521 14.854 16.521 14.854Q16.521 14.854 16.521 14.854V10.062ZM3.479 14.854Q3.479 14.854 3.479 14.854Q3.479 14.854 3.479 14.854V5.146Q3.479 5.146 3.479 5.146Q3.479 5.146 3.479 5.146Q3.479 5.146 3.479 5.146Q3.479 5.146 3.479 5.146V14.854Q3.479 14.854 3.479 14.854Q3.479 14.854 3.479 14.854Z"/>
+        </svg>Debit or Credit Card
+    </button>
+
+    <button class='button button-orange text-center inline-flex items-center text-white' data-ripple-light>
+        <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" height="16" width="16">
+         <path d="M63.04 39.741c-4.274 17.143-21.638 27.575-38.783 23.301C7.12 58.768-3.313 41.404.962 24.262 5.234 7.117 22.597-3.317 39.737.957c17.144 4.274 27.576 21.64 23.302 38.784z" class="fill-white"/><path d="M46.11 27.441c.636-4.258-2.606-6.547-7.039-8.074l1.438-5.768-3.512-.875-1.4 5.616c-.922-.23-1.87-.447-2.812-.662l1.41-5.653-3.509-.875-1.439 5.766c-.764-.174-1.514-.346-2.242-.527l.004-.018-4.842-1.209-.934 3.75s2.605.597 2.55.634c1.422.355 1.68 1.296 1.636 2.042l-1.638 6.571c.098.025.225.061.365.117l-.37-.092-2.297 9.205c-.174.432-.615 1.08-1.609.834.035.051-2.552-.637-2.552-.637l-1.743 4.02 4.57 1.139c.85.213 1.683.436 2.502.646l-1.453 5.835 3.507.875 1.44-5.772c.957.26 1.887.5 2.797.726L27.504 50.8l3.511.875 1.453-5.823c5.987 1.133 10.49.676 12.383-4.738 1.527-4.36-.075-6.875-3.225-8.516 2.294-.531 4.022-2.04 4.483-5.157zM38.087 38.69c-1.086 4.36-8.426 2.004-10.807 1.412l1.928-7.729c2.38.594 10.011 1.77 8.88 6.317zm1.085-11.312c-.99 3.966-7.1 1.951-9.083 1.457l1.748-7.01c1.983.494 8.367 1.416 7.335 5.553z" class="fill-orange-500"/>
+       </svg>Pay with Bitcoin
+    </button>
+
+    <button class='button button-gradient button-dark text-center inline-flex items-center text-white' data-ripple-light> Buy with   
+        <svg class="ml-2 mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 435.97 173.13" height="20" width="40">
+         <path d="M206.2,84.58v50.75H190.1V10h42.7a38.61,38.61,0,0,1,27.65,10.85A34.88,34.88,0,0,1,272,47.3a34.72,34.72,0,0,1-11.55,26.6q-11.2,10.68-27.65,10.67H206.2Zm0-59.15V69.18h27a21.28,21.28,0,0,0,15.93-6.48,21.36,21.36,0,0,0,0-30.63,21,21,0,0,0-15.93-6.65h-27Z" fill="#fff"></path><path d="M309.1,46.78q17.85,0,28.18,9.54T347.6,82.48v52.85H332.2v-11.9h-.7q-10,14.7-26.6,14.7-14.17,0-23.71-8.4a26.82,26.82,0,0,1-9.54-21q0-13.31,10.06-21.17t26.86-7.88q14.34,0,23.62,5.25V81.25A18.33,18.33,0,0,0,325.54,67,22.8,22.8,0,0,0,310,61.13q-13.49,0-21.35,11.38l-14.18-8.93Q286.17,46.78,309.1,46.78Zm-20.83,62.3a12.86,12.86,0,0,0,5.34,10.5,19.64,19.64,0,0,0,12.51,4.2,25.67,25.67,0,0,0,18.11-7.52q8-7.53,8-17.67-7.53-6-21-6-9.81,0-16.36,4.73C290.46,100.52,288.27,104.41,288.27,109.08Z" fill="#fff"></path><path d="M436,49.58,382.24,173.13H365.62l19.95-43.23L350.22,49.58h17.5l25.55,61.6h.35l24.85-61.6Z" fill="#fff"></path><path d="M141.14,73.64A85.79,85.79,0,0,0,139.9,59H72V86.73h38.89a33.33,33.33,0,0,1-14.38,21.88v18h23.21C133.31,114.08,141.14,95.55,141.14,73.64Z" fill="#4285f4"></path><path d="M72,144c19.43,0,35.79-6.38,47.72-17.38l-23.21-18C90.05,113,81.73,115.5,72,115.5c-18.78,0-34.72-12.66-40.42-29.72H7.67v18.55A72,72,0,0,0,72,144Z" fill="#34a853"></path><path d="M31.58,85.78a43.14,43.14,0,0,1,0-27.56V39.67H7.67a72,72,0,0,0,0,64.66Z" fill="#fbbc04"></path><path d="M72,28.5A39.09,39.09,0,0,1,99.62,39.3h0l20.55-20.55A69.18,69.18,0,0,0,72,0,72,72,0,0,0,7.67,39.67L31.58,58.22C37.28,41.16,53.22,28.5,72,28.5Z" fill="#ea4335"></path>
+       </svg>
+    </button>
+
+    <button class='button button-outlined button-dark text-center inline-flex items-center text-white' data-ripple-light>
+        <svg class="mr-1 -mt-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.773 22.773" height="16" width="16">
+          <path d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573
+          c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z"/>
+          <path d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334
+          c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0
+          c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019
+          c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464
+          c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648
+          c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z"/>
+        </svg>Checkout with Apple Pay
+    </button>
+
+    <button class='button button-gradient button-primary text-center inline-flex items-center' data-ripple-light>
+        <svg class="fill-white mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+         <path d="M5.146 18.458Q4.312 18.458 3.74 17.875Q3.167 17.292 3.167 16.458V6.833Q3.167 6.021 3.74 5.438Q4.312 4.854 5.146 4.854H6.5Q6.542 3.417 7.552 2.427Q8.562 1.438 10 1.438Q11.438 1.438 12.448 2.427Q13.458 3.417 13.5 4.854H14.854Q15.688 4.854 16.26 5.438Q16.833 6.021 16.833 6.833V16.458Q16.833 17.292 16.26 17.875Q15.688 18.458 14.854 18.458ZM8.5 4.854H11.5Q11.479 4.25 11.042 3.833Q10.604 3.417 10 3.417Q9.396 3.417 8.958 3.833Q8.521 4.25 8.5 4.854ZM5.146 16.458H14.854Q14.854 16.458 14.854 16.458Q14.854 16.458 14.854 16.458V6.833Q14.854 6.833 14.854 6.833Q14.854 6.833 14.854 6.833H13.5V8.354Q13.5 8.75 13.198 9.042Q12.896 9.333 12.5 9.333Q12.104 9.333 11.802 9.042Q11.5 8.75 11.5 8.354V6.833H8.5V8.354Q8.5 8.75 8.198 9.042Q7.896 9.333 7.5 9.333Q7.104 9.333 6.802 9.042Q6.5 8.75 6.5 8.354V6.833H5.146Q5.146 6.833 5.146 6.833Q5.146 6.833 5.146 6.833V16.458Q5.146 16.458 5.146 16.458Q5.146 16.458 5.146 16.458ZM5.146 16.458Q5.146 16.458 5.146 16.458Q5.146 16.458 5.146 16.458V6.833Q5.146 6.833 5.146 6.833Q5.146 6.833 5.146 6.833Q5.146 6.833 5.146 6.833Q5.146 6.833 5.146 6.833V16.458Q5.146 16.458 5.146 16.458Q5.146 16.458 5.146 16.458Z"/>
+        </svg>Add to cart
+    </button>
+
+    <button class='button button-green text-center inline-flex items-center' data-ripple-light>
+        <svg class="fill-white mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+         <path d="M7.979 14.771Q7.792 14.771 7.615 14.698Q7.438 14.625 7.271 14.458L3.75 10.938Q3.458 10.646 3.469 10.219Q3.479 9.792 3.771 9.5Q4.062 9.208 4.49 9.208Q4.917 9.208 5.188 9.5L8.021 12.333L14.833 5.521Q15.104 5.229 15.521 5.229Q15.938 5.229 16.229 5.521Q16.5 5.812 16.5 6.219Q16.5 6.625 16.229 6.917L8.688 14.458Q8.521 14.625 8.344 14.698Q8.167 14.771 7.979 14.771Z"/>
+        </svg>Save all changes
+    </button>
+
+    <button className='button bg-secondary-500/20 mr-3 text-center inline-flex items-center !text-[#454A75] mt-3' data-ripple-light>
+        <svg className="mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920" height="20" width="20">
+         <g>
+          <polygon fill="#8A92B2" points="959.8,80.7 420.1,976.3 959.8,731 	"/>
+          <polygon fill="#62688F" points="959.8,731 420.1,976.3 959.8,1295.4 	"/>
+          <polygon fill="#62688F" points="1499.6,976.3 959.8,80.7 959.8,731 	"/>
+          <polygon fill="#454A75" points="959.8,1295.4 1499.6,976.3 959.8,731 	"/>
+          <polygon fill="#8A92B2" points="420.1,1078.7 959.8,1839.3 959.8,1397.6 	"/>
+          <polygon fill="#62688F" points="959.8,1397.6 959.8,1839.3 1499.9,1078.7 	"/>
+        </g>
+        </svg>
+      Pay safely with Ethereum
+    </button>
+```
+
+<br />
+<br />
+
+### Buttons with icon
+
+Use this examples to create a button with icon for your Tailwind CSS project.
+
+<br />
+<ComponentCard id='buttons-with-icon'>
+  <div className='flex flex-wrap justify-center'>
+    <button
+        className='button button-primary mr-3 text-center inline-flex items-center'
+        data-ripple-light>
+        {`Button`}
+        <svg className="fill-white -mr-[6px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20" width="20">
+        <path d="M7.125 14.458Q6.812 14.146 6.812 13.75Q6.812 13.354 7.125 13.042L10.167 10L7.125 6.958Q6.812 6.646 6.812 6.25Q6.812 5.854 7.125 5.542Q7.438 5.229 7.833 5.229Q8.229 5.229 8.542 5.542L12.292 9.292Q12.458 9.458 12.531 9.635Q12.604 9.812 12.604 10Q12.604 10.188 12.531 10.365Q12.458 10.542 12.292 10.708L8.542 14.458Q8.229 14.771 7.833 14.771Q7.438 14.771 7.125 14.458Z"/>
+        </svg>
+    </button>
+
+    <button
+        className='button button-primary mr-3 text-center inline-flex items-center'
+        data-ripple-light>
+        <svg className="fill-white mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+        <path d="M8.854 11.188 7.25 9.562Q6.958 9.271 6.552 9.271Q6.146 9.271 5.875 9.562Q5.562 9.854 5.562 10.26Q5.562 10.667 5.875 10.938L8.125 13.208Q8.417 13.521 8.823 13.521Q9.229 13.521 9.542 13.208L14.125 8.625Q14.396 8.354 14.396 7.958Q14.396 7.562 14.125 7.292Q13.833 7 13.427 7Q13.021 7 12.75 7.292ZM10 18.5Q8.229 18.5 6.677 17.833Q5.125 17.167 3.979 16.021Q2.833 14.875 2.167 13.323Q1.5 11.771 1.5 10Q1.5 8.229 2.167 6.677Q2.833 5.125 3.979 3.979Q5.125 2.833 6.677 2.167Q8.229 1.5 10 1.5Q11.771 1.5 13.323 2.167Q14.875 2.833 16.021 3.979Q17.167 5.125 17.833 6.677Q18.5 8.229 18.5 10Q18.5 11.771 17.833 13.323Q17.167 14.875 16.021 16.021Q14.875 17.167 13.323 17.833Q11.771 18.5 10 18.5ZM10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10ZM10 16.521Q12.708 16.521 14.615 14.615Q16.521 12.708 16.521 10Q16.521 7.292 14.615 5.385Q12.708 3.479 10 3.479Q7.292 3.479 5.385 5.385Q3.479 7.292 3.479 10Q3.479 12.708 5.385 14.615Q7.292 16.521 10 16.521Z"/>
+        </svg>
+      {`Button`}
+    </button>
+  </div>
+</ComponentCard>
+
+```html showLineNumbers
+    <button class='button button-primary text-center inline-flex items-center' data-ripple-light> Button
+      <svg class="fill-white -mr-[6px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20" width="20">
+        <path d="M7.125 14.458Q6.812 14.146 6.812 13.75Q6.812 13.354 7.125 13.042L10.167 10L7.125 6.958Q6.812 6.646 6.812 6.25Q6.812 5.854 7.125 5.542Q7.438 5.229 7.833 5.229Q8.229 5.229 8.542 5.542L12.292 9.292Q12.458 9.458 12.531 9.635Q12.604 9.812 12.604 10Q12.604 10.188 12.531 10.365Q12.458 10.542 12.292 10.708L8.542 14.458Q8.229 14.771 7.833 14.771Q7.438 14.771 7.125 14.458Z"/>
+      </svg>
+    </button>
+
+    <button class='button button-primary text-center inline-flex items-center' data-ripple-light>
+      <svg class="fill-white mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="16" width="16">
+        <path d="M8.854 11.188 7.25 9.562Q6.958 9.271 6.552 9.271Q6.146 9.271 5.875 9.562Q5.562 9.854 5.562 10.26Q5.562 10.667 5.875 10.938L8.125 13.208Q8.417 13.521 8.823 13.521Q9.229 13.521 9.542 13.208L14.125 8.625Q14.396 8.354 14.396 7.958Q14.396 7.562 14.125 7.292Q13.833 7 13.427 7Q13.021 7 12.75 7.292ZM10 18.5Q8.229 18.5 6.677 17.833Q5.125 17.167 3.979 16.021Q2.833 14.875 2.167 13.323Q1.5 11.771 1.5 10Q1.5 8.229 2.167 6.677Q2.833 5.125 3.979 3.979Q5.125 2.833 6.677 2.167Q8.229 1.5 10 1.5Q11.771 1.5 13.323 2.167Q14.875 2.833 16.021 3.979Q17.167 5.125 17.833 6.677Q18.5 8.229 18.5 10Q18.5 11.771 17.833 13.323Q17.167 14.875 16.021 16.021Q14.875 17.167 13.323 17.833Q11.771 18.5 10 18.5ZM10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10Q10 10 10 10ZM10 16.521Q12.708 16.521 14.615 14.615Q16.521 12.708 16.521 10Q16.521 7.292 14.615 5.385Q12.708 3.479 10 3.479Q7.292 3.479 5.385 5.385Q3.479 7.292 3.479 10Q3.479 12.708 5.385 14.615Q7.292 16.521 10 16.521Z"/>
+      </svg> Button
+    </button>
+```
+
+<br />
+<br />
+
 ### Button sizes
 
-Use this example to create buttons in different sizes.
+Use this examples to create buttons in different sizes.
 
 <br />
 
