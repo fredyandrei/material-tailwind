@@ -23,7 +23,7 @@ Below we are presenting our examples of progress component that you can use in y
 
 <br />
 
-<ComponentCard id='progress-bar'>
+<ComponentDemo id='progress-bar'>
   <Progress value={50} />
 </ComponentDemo>
 
@@ -41,7 +41,7 @@ export default function Example() {
 
 The progress bar component comes with 2 different variants that you can change it using the <Code>color</Code> prop.
 
-<ComponentCard id='progress-bar-variants'>
+<ComponentDemo id='progress-bar-variants'>
   <div className='flex flex-col gap-4 w-full'>
     <Progress value={50} variant='filled' />
     <Progress value={50} variant='gradient' />
@@ -67,7 +67,7 @@ export default function Colors() {
 
 The progress bar component comes with 19 different colors that you can change it using the <Code>color</Code> prop, below there are some examples of the colors but you can check all of the them [here.](#props)
 
-<ComponentCard id='progress-bar-colors'>
+<ComponentDemo id='progress-bar-colors'>
   <div className='flex flex-col gap-4 w-full'>
     <Progress value={50} color='blue' />
     <Progress value={50} color='red' />
@@ -103,9 +103,9 @@ export default function Colors() {
 
 ## Progress Bar with Label
 
-<ComponentCard id='progress-bar-with-label'>
+<ComponentDemo id='progress-bar-with-label'>
   <Progress value={50} label='Completed' />
-</ComponentCard>
+</ComponentDemo>
 
 ```jsx showLineNumbers
 import { Progress } from "@material-tailwind/react";

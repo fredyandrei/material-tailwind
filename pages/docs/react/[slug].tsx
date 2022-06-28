@@ -12,12 +12,12 @@ import remarkGfm from "remark-gfm";
 import { State, Observe } from "mdx-observable";
 
 // page components
-import MainNavbar from "pagesComponents/Navbar";
-import ComponentCard from "pagesComponents/Cards/ComponentCard";
-import Code from "pagesComponents/Code";
-import Pre from "pagesComponents/Pre";
-import CodeSandbox from "pagesComponents/CodeSandbox";
-import StackBlitz from "pagesComponents/StackBlitz";
+import MainNavbar from "components/layout/navbar";
+import ComponentDemo from "components/cards/component-demo";
+import Code from "components/code";
+import Pre from "components/pre";
+import CodeSandbox from "components/code-sandbox";
+import StackBlitz from "components/stack-blitz";
 
 // components
 import {
@@ -152,7 +152,7 @@ const components = {
   State,
   Observe,
   Image,
-  ComponentCard,
+  ComponentDemo,
   CodeSandbox,
   StackBlitz,
   Code,

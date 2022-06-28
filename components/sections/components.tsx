@@ -12,6 +12,9 @@ import {
   Badge
 } from "../../packages/material-tailwind-react/src";
 
+
+import CodePreview from "components/cards/code-preview";
+
 export default function SectionComponents() {
   const components = [
     "accordion",

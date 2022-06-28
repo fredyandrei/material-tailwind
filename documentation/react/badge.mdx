@@ -23,9 +23,9 @@ See below our simple badge component example that you can use for your Tailwind 
 
 <br />
 
-<ComponentCard id='badge'>
+<ComponentDemo id='badge'>
   <Badge value='badge' />
-</ComponentCard>
+</ComponentDemo>
 
 ```jsx showLineNumbers {1, 4}
 import { Badge } from "@material-tailwind/react";
@@ -41,12 +41,12 @@ export default function Example() {
 
 The badge component comes with 2 different variants that you can change it using the <Code>variant</Code> prop.
 
-<ComponentCard id='badge-variants'>
+<ComponentDemo id='badge-variants'>
   <div className='flex gap-2'>
     <Badge value='badge filled' />
     <Badge variant='gradient' value='badge gradient' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
 ```jsx showLineNumbers {6-7}
 import { Badge } from "@material-tailwind/react";
@@ -67,7 +67,7 @@ export default function Variants() {
 
 The badge component comes with 19 different colors that you can change it using the <Code>color</Code> prop, below there are some examples of the colors but you can check all of the them [here.](#props)
 
-<ComponentCard id='badge-colors'>
+<ComponentDemo id='badge-colors'>
   <div className='flex gap-2'>
     <Badge value='blue' />
     <Badge color='red' value='red' />
@@ -79,7 +79,7 @@ The badge component comes with 19 different colors that you can change it using 
     <Badge color='teal' value='teal' />
     <Badge color='cyan' value='cyan' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
 ```jsx showLineNumbers {6-14}
 import { Badge } from "@material-tailwind/react";
@@ -108,7 +108,7 @@ export default function Colors() {
 The badge component is a dismissible component that you can control it using the <Code>dismissible</Code> and <Code>show</Code> props.
 
 <State initialState={{ show: true }}>
-  <ComponentCard id='badge-dismissible'>
+  <ComponentDemo id='badge-dismissible'>
     <Observe>
       {({ setState, show }) => (
         <>
@@ -131,7 +131,7 @@ The badge component is a dismissible component that you can control it using the
         </>
       )}
     </Observe>
-  </ComponentCard>
+  </ComponentDemo>
 </State>
 
 ```jsx showLineNumbers {5, 8-26}

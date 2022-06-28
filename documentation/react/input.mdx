@@ -27,7 +27,7 @@ See below our input component example. It comes in different styles and colors, 
 
 <br />
 
-<ComponentCard id='input'>
+<ComponentDemo id='input'>
   <div className='w-72'>
     <Input label='Username' />
   </div>
@@ -47,7 +47,7 @@ export default function Example() {
 
 The input component comes with 3 different variants that you can change it using the <Code>variant</Code> prop.
 
-<ComponentCard id='input-variants'>
+<ComponentDemo id='input-variants'>
   <div className='flex items-end gap-4 w-full'>
     <Input variant='outlined' label='Outlined' />
     <Input variant='standard' label='Standard' />
@@ -75,7 +75,7 @@ export default function Variants() {
 
 The input component comes with 2 different sizes that you can change it using the <Code>size</Code> prop.
 
-<ComponentCard id='input-sizes'>
+<ComponentDemo id='input-sizes'>
   <div className='flex items-end gap-4 w-full'>
     <Input size='md' label='Input Medium' />
     <Input size='lg' label='Input Large' />
@@ -101,7 +101,7 @@ export default function Sizes() {
 
 The input component comes with 19 different colors that you can change it using the <Code>color</Code> prop, below there are some examples of the colors but you can check all of the them [here.](#props)
 
-<ComponentCard id='input-colors'>
+<ComponentDemo id='input-colors'>
   <div className='flex flex-col gap-4 w-72'>
     <Input color='blue' label='Input Blue' />
     <Input color='purple' label='Input Purple' />
@@ -131,7 +131,7 @@ export default function Colors() {
 
 The input component comes with error and success states for performing validations.
 
-<ComponentCard id='input-validations'>
+<ComponentDemo id='input-validations'>
   <div className='flex items-end gap-4 w-full'>
     <Input label='Input Error' error />
     <Input label='Input Success' success />
@@ -157,7 +157,7 @@ export default function Validations() {
 
 You can add icon for the input component using the <Code>icon</Code> prop.
 
-<ComponentCard id='input-with-icon'>
+<ComponentDemo id='input-with-icon'>
   <div className='w-72'>
     <Input label='Input With Icon' icon={<i className='fas fa-heart' />} />
   </div>
