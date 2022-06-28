@@ -1,7 +1,10 @@
 ---
 title: Tailwind CSS Accordion - Horizon UI
 description: Customise your web projects with our easy-to-use accordion component for Tailwind CSS using Material Design guidelines.
-navigation: ["accordion"]
+navigation: ["accordion", "required-script"]
+github: accordion
+prev: screens
+next: alert
 ---
 
 # Tailwind CSS Accordion
@@ -145,7 +148,7 @@ To use an accordion example that has items expanded, add the **.open** class on 
       </div>
     </div>
   </div>
-</ComponentCard>
+</ComponentDemo>
 
 ```html showLineNumbers
 <div class="accordion">
@@ -294,4 +297,14 @@ To use an accordion example that has items expanded, add the **.open** class on 
 </div>
 ```
 
-{" "}
+---
+
+## Required Scrips
+
+<span id="required-script" className="scroll-mt-56" />
+
+The accordion component needs a required script file to work, you just need to add the below script file to the bottom of your html file.
+
+```html showLineNumbers
+<script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
+```

@@ -1,7 +1,10 @@
 ---
 title: Tailwind CSS Switch - Horizon UI
 description: Customise your web projects with our easy-to-use Switch component for Tailwind CSS using Material Design guidelines.
-navigation: ["switch"]
+navigation: ["switch", "required-script"]
+github: switch
+prev: select
+next: tabs
 ---
 
 # Tailwind CSS Switch
@@ -27,13 +30,29 @@ Use the following example to create a simple and easy-to-use switch component fo
 </ComponentCard>
 
 ```html showLineNumbers
-<div class="form-check form-switch flex items-center mb-4">
+<div class="form-check form-switch mb-4 flex items-center">
   <input
-    class="opacity-0 cursor-pointer absolute z-10 w-8 h-5"
+    class="absolute z-10 h-5 w-8 cursor-pointer opacity-0"
     data-attribute="toggle"
     id="remember"
   />
   <div class="form-check-input"></div>
-  <label class="form-check-label mb-0 ml-2" for="remember">Remember me</label>
+  <label
+    class="form-check-label mb-0 ml-2 cursor-pointer select-none"
+    for="remember"
+    >Remember me</label
+  >
 </div>
+```
+
+---
+
+## Required Scrips
+
+<span id="required-script" className="scroll-mt-56" />
+
+The switch/toggle component needs a required script files to work, you just need to add the below script file to the bottom of your html file.
+
+```html showLineNumbers
+<script src="node_modules/@material-tailwind/html/scripts/toggle.js"></script>
 ```

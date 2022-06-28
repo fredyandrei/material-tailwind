@@ -10,7 +10,7 @@ navigation:
     "types",
   ]
 github: accordion
-prev: getting-started
+prev: screens
 next: alert
 ---
 
@@ -32,10 +32,9 @@ See below our simple and versatile accordion example that you can use in your Re
             onClick={() => setState((s) => ({ active: active === 1 ? 0 : 1 }))}>
             <AccordionHeader>What is Horizon UI?</AccordionHeader>
             <AccordionBody>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              We're not always in the position that we want to be at. We're
+              constantly growing. We're constantly making mistakes. We're
+              constantly trying to express ourselves and actualize our dreams.
             </AccordionBody>
           </Accordion>
           <Accordion
@@ -43,10 +42,9 @@ See below our simple and versatile accordion example that you can use in your Re
             onClick={() => setState((s) => ({ active: active === 2 ? 0 : 2 }))}>
             <AccordionHeader>How to use Horizon UI?</AccordionHeader>
             <AccordionBody>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              We're not always in the position that we want to be at. We're
+              constantly growing. We're constantly making mistakes. We're
+              constantly trying to express ourselves and actualize our dreams.
             </AccordionBody>
           </Accordion>
           <Accordion
@@ -54,20 +52,19 @@ See below our simple and versatile accordion example that you can use in your Re
             onClick={() => setState((s) => ({ active: active === 3 ? 0 : 3 }))}>
             <AccordionHeader>What can I do with Horizon UI?</AccordionHeader>
             <AccordionBody>
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              We're not always in the position that we want to be at. We're
+              constantly growing. We're constantly making mistakes. We're
+              constantly trying to express ourselves and actualize our dreams.
             </AccordionBody>
           </Accordion>
         </>
       )}
     </Observe>
-  </ComponentCard>
+  </ComponentDemo>
 </State>
 
 ```jsx showLineNumbers
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import {
   Accordion,
   AccordionHeader,
@@ -86,28 +83,25 @@ export default function Example() {
       <Accordion open={open === 1} onClick={() => handleOpen(1)}>
         <AccordionHeader>What is Horizon UI?</AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
+          We're not always in the position that we want to be at. We're
+          constantly growing. We're constantly making mistakes. We're constantly
+          trying to express ourselves and actualize our dreams.
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 2} onClick={() => handleOpen(2)}>
         <AccordionHeader>How to use Horizon UI?</AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
+          We're not always in the position that we want to be at. We're
+          constantly growing. We're constantly making mistakes. We're constantly
+          trying to express ourselves and actualize our dreams.
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 3} onClick={() => handleOpen(3)}>
         <AccordionHeader>What can I do with Horizon UI?</AccordionHeader>
         <AccordionBody>
-          We&apos;re not always in the position that we want to be at.
-          We&apos;re constantly growing. We&apos;re constantly making mistakes.
-          We&apos;re constantly trying to express ourselves and actualize our
-          dreams.
+          We're not always in the position that we want to be at. We're
+          constantly growing. We're constantly making mistakes. We're constantly
+          trying to express ourselves and actualize our dreams.
         </AccordionBody>
       </Accordion>
     </Fragment>
@@ -124,14 +118,14 @@ The following props are available for the accordion component. These are the cus
 props that come with we've added for the accordion component and you can use all
 the other native props as well.
 
-| Attribute   | Type                       | Description                        | Default                               |
-| ----------- | -------------------------- | ---------------------------------- | ------------------------------------- |
-| `open`      | <Code small>boolean</Code> | Open accordion collapse            | No default value its a required prop. |
-| `icon`      | <Code small>node</Code>    | Change accordion collapse end icon | <Code small>false</Code>              |
-| `animate`   | [Animate](#types)          | Change accordion body animation    | <Code small>undefined</Code>          |
-| `disabled`  | <Code small>boolean</Code> | Disable the accordion              | <Code small>false</Code>              |
-| `className` | <Code small>string</Code>  | Add custom className for accordion | `''`                                  |
-| `children`  | <Code small>node</Code>    | Add content for accordion          | No default value its a required prop. |
+| Attribute   | Type                       | Description                        | Default                                |
+| ----------- | -------------------------- | ---------------------------------- | -------------------------------------- |
+| `open`      | <Code small>boolean</Code> | Open accordion collapse            | No default value it's a required prop. |
+| `icon`      | <Code small>node</Code>    | Change accordion collapse end icon | <Code small>false</Code>               |
+| `animate`   | [Animate](#types)          | Change accordion body animation    | <Code small>undefined</Code>           |
+| `disabled`  | <Code small>boolean</Code> | Disable the accordion              | <Code small>false</Code>               |
+| `className` | <Code small>string</Code>  | Add custom className for accordion | `''`                                   |
+| `children`  | <Code small>node</Code>    | Add content for accordion          | No default value it's a required prop. |
 
 ---
 
@@ -142,10 +136,10 @@ The following props are available for the accordion header component. These are 
 custom props that come with we've added for the accordion header component and you
 can use all the other native props as well.
 
-| Attribute   | Type                      | Description                               | Default                               |
-| ----------- | ------------------------- | ----------------------------------------- | ------------------------------------- |
-| `className` | <Code small>string</Code> | Add custom className for accordion header | `''`                                  |
-| `children`  | <Code small>node</Code>   | Add content for accordion header          | No default value its a required prop. |
+| Attribute   | Type                      | Description                               | Default                                |
+| ----------- | ------------------------- | ----------------------------------------- | -------------------------------------- |
+| `className` | <Code small>string</Code> | Add custom className for accordion header | `''`                                   |
+| `children`  | <Code small>node</Code>   | Add content for accordion header          | No default value it's a required prop. |
 
 ---
 
@@ -156,10 +150,10 @@ The following props are available for the accordion body component. These are th
 custom props that come with we've added for the accordion body component and you
 can use all the other native props as well.
 
-| Attribute   | Type                      | Description                             | Default                               |
-| ----------- | ------------------------- | --------------------------------------- | ------------------------------------- |
-| `className` | <Code small>string</Code> | Add custom className for accordion body | `''`                                  |
-| `children`  | <Code small>node</Code>   | Add content for accordion body          | No default value its a required prop. |
+| Attribute   | Type                      | Description                             | Default                                |
+| ----------- | ------------------------- | --------------------------------------- | -------------------------------------- |
+| `className` | <Code small>string</Code> | Add custom className for accordion body | `''`                                   |
+| `children`  | <Code small>node</Code>   | Add content for accordion body          | No default value it's a required prop. |
 
 ---
 

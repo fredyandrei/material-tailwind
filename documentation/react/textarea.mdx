@@ -28,10 +28,10 @@ See below our example that will help you create a simple textarea for your proje
   <div className='w-96'>
     <Textarea label='Message' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {1, 4}
-import { Input } from "@material-tailwind/react";
+```jsx showLineNumbers
+import { Textarea } from "@material-tailwind/react";
 
 export default function Example() {
   return <Textarea label='Message' />;
@@ -50,9 +50,9 @@ The textarea component comes with 3 different variants that you can change it us
     <Textarea variant='standard' label='Standard' />
     <Textarea variant='static' label='Static' placeholder='Static' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-8}
+```jsx showLineNumbers
 import { Textarea } from "@material-tailwind/react";
 
 export default function Variants() {
@@ -77,9 +77,9 @@ The textarea component comes with 2 different sizes that you can change it using
     <Textarea size='md' label='Textarea Medium' />
     <Textarea size='lg' label='Textarea Large' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-7}
+```jsx showLineNumbers
 import { Textarea } from "@material-tailwind/react";
 
 export default function Sizes() {
@@ -105,9 +105,9 @@ The textarea component comes with 19 different colors that you can change it usi
     <Textarea color='indigo' label='Textarea Indigo' />
     <Textarea color='teal' label='Textarea Teal' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-9}
+```jsx showLineNumbers
 import { Textarea } from "@material-tailwind/react";
 
 export default function Colors() {
@@ -133,9 +133,9 @@ The textarea component comes with error and success states for performing valida
     <Textarea label='Textarea Error' error />
     <Textarea label='Textarea Success' success />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-7}
+```jsx showLineNumbers
 import { Textarea } from "@material-tailwind/react";
 
 export default function Validations() {

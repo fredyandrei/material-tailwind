@@ -25,9 +25,9 @@ Use this example to create user-friendly buttons with icon for your Tailwind CSS
   <IconButton>
     <i className='fas fa-heart' />
   </IconButton>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {1, 5-7}
+```jsx showLineNumbers
 import { IconButton } from "@material-tailwind/react";
 
 export default function Example() {
@@ -60,9 +60,9 @@ The icon button component comes with 4 different variants that you can change it
       <i className='fas fa-heart' />
     </IconButton>
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-17}
+```jsx showLineNumbers
 import { IconButton } from "@material-tailwind/react";
 
 export default function Variants() {
@@ -103,9 +103,9 @@ The icon button component comes with 3 different sizes that you can change it us
       <i className='fas fa-heart fa-lg' />
     </IconButton>
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-14}
+```jsx showLineNumbers
 import { IconButton } from "@material-tailwind/react";
 
 export default function Sizes() {
@@ -146,9 +146,9 @@ The icon button component comes with 19 different colors that you can change it 
       <i className='fas fa-heart' />
     </IconButton>
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-17}
+```jsx showLineNumbers
 import { IconButton } from "@material-tailwind/react";
 
 export default function Colors() {
@@ -180,14 +180,14 @@ The following props are available for the icon button component. These are the c
 props that come with we've added for the icon button component and you can use all
 the other native button props as well.
 
-| Attribute   | Type                       | Description                          | Default                               |
-| ----------- | -------------------------- | ------------------------------------ | ------------------------------------- |
-| `variant`   | [Variant](#types)          | Change icon button variant           | <Code small>filled</Code>             |
-| `size`      | [Size](#types)             | Change icon button size              | <Code small>md</Code>                 |
-| `color`     | [Color](#types)            | Change icon button color             | <Code small>blue</Code>               |
-| `ripple`    | <Code small>boolean</Code> | Add ripple effect for icon button    | <Code small>true</Code>               |
-| `className` | <Code small>string</Code>  | Add custom className for icon button | `''`                                  |
-| `children`  | <Code small>node</Code>    | Add content for icon button          | No default value its a required prop. |
+| Attribute   | Type                       | Description                          | Default                                |
+| ----------- | -------------------------- | ------------------------------------ | -------------------------------------- |
+| `variant`   | [Variant](#types)          | Change icon button variant           | <Code small>filled</Code>              |
+| `size`      | [Size](#types)             | Change icon button size              | <Code small>md</Code>                  |
+| `color`     | [Color](#types)            | Change icon button color             | <Code small>blue</Code>                |
+| `ripple`    | <Code small>boolean</Code> | Add ripple effect for icon button    | <Code small>true</Code>                |
+| `className` | <Code small>string</Code>  | Add custom className for icon button | `''`                                   |
+| `children`  | <Code small>node</Code>    | Add content for icon button          | No default value it's a required prop. |
 
 ---
 

@@ -12,13 +12,16 @@ navigation:
     "buttons-with-icon",
     "button-sizes",
   ]
+github: button
+prev: breadcrumbs
+next: card
 ---
 
 # Tailwind CSS Button
 
 Use our buttons based on Tailwind CSS for actions in forms, dialogues, and more with support for multiple sizes, states, and more.
 
-Buttons are an essential element of web design. Basically, buttons are styled links that grab the users’ attention. They help users navigate our websites or apps and drive them to a particular action like submitting a contact form, or placing an order as easily as possible.
+Buttons are an essential element of web design. Basically, buttons are styled links that grab the user's attention. They help users navigate our websites or apps and drive them to a particular action like submitting a contact form, or placing an order as easily as possible.
 
 See below our button components examples.
 
@@ -26,18 +29,16 @@ See below our button components examples.
   <button className='button button-primary' data-ripple-light>
     {`Button`}
   </button>
-</ComponentCard>
-
+</ComponentDemo>
 ```html showLineNumbers
 <button class="button button-primary">Button</button>
 ```
 
-<br />
-<br />
+---
 
-### Button Variants
+## Button Variants
 
-See our button examples below. They come in different styles and color:
+See our button examples below. They come in different styles and color.
 
 <br />
 <ComponentCard id='button-variants'>
@@ -62,7 +63,7 @@ See our button examples below. They come in different styles and color:
       <i className='material-icons'>dashboard</i>
     </button>
   </div>
-</ComponentCard>
+</ComponentDemo>
 
 ```html showLineNumbers
 <button class="button button-primary mr-3" data-ripple-light>Button</button>
@@ -80,8 +81,7 @@ See our button examples below. They come in different styles and color:
 </button>
 ```
 
-<br />
-<br />
+---
 
 ### Simple Buttons
 
@@ -109,7 +109,7 @@ Use this examples to create a simple button element for your Tailwind CSS projec
       {`Button`}
     </button>
   </div>
-</ComponentCard>
+</ComponentDemo>
 
 ```html showLineNumbers
 <button class="button button-primary" data-ripple-light>Button</button>
@@ -120,10 +120,9 @@ Use this examples to create a simple button element for your Tailwind CSS projec
 <button class="button button-dark" data-ripple-light>Button</button>
 ```
 
-<br />
-<br />
+---
 
-### Buttons with gradients
+### Buttons with Gradients
 
 Use this examples to create a simple button element with gradient for your Tailwind CSS project.
 
@@ -161,31 +160,33 @@ Use this examples to create a simple button element with gradient for your Tailw
       {`Button`}
     </button>
   </div>
-</ComponentCard>
+</ComponentDemo>
 
 ```html showLineNumbers
 <button class="button button-gradient button-primary" data-ripple-light>
   Button
 </button>
-<button class="button button-gradient button-secondary" data-ripple-light>
+<button
+  class="button button-gradient button-secondary"
+  data-ripple-light="true"
+>
   Button
 </button>
-<button class="button button-gradient button-green" data-ripple-light>
+<button class="button button-gradient button-green" data-ripple-light="true">
   Button
 </button>
-<button class="button button-gradient button-orange" data-ripple-light>
+<button class="button button-gradient button-orange" data-ripple-light="true">
   Button
 </button>
-<button class="button button-gradient button-red" data-ripple-light>
+<button class="button button-gradient button-red" data-ripple-light="true">
   Button
 </button>
-<button class="button button-gradient button-dark" data-ripple-light>
+<button class="button button-gradient button-dark" data-ripple-light="true">
   Button
 </button>
 ```
 
-<br />
-<br />
+---
 
 ### Buttons with custom gradients
 
@@ -632,8 +633,7 @@ Use this examples to create buttons in different sizes.
     data-ripple-light>
     {`Button`}
   </button>
-</ComponentCard>
-
+</ComponentDemo>
 ```html showLineNumbers
 <button
   class="button button-gradient button-sm button-primary mb-3"

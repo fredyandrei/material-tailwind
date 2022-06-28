@@ -6,17 +6,28 @@ Horizon UI HTML is an easy to use components library for Tailwind CSS. Horizon U
 
 ## Tailwind CSS Components
 
+- Accordion
 - Alert
 - Avatar
+- Breadcrumbs
 - Button
+- Card
 - Checkbox
 - Badge
+- Dialog
 - Icon Button
 - Input
+- Menu
+- Navbar
+- Pagination
+- Popover
 - Progress Bar
 - Radio Button
+- Select
 - Switch
+- Tabs
 - Textarea
+- Tooltip
 - Typography
 
 <br />

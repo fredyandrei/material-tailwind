@@ -27,9 +27,9 @@ See below our simple alert example that you can use in your Tailwind CSS and Rea
 
 <ComponentCard id='alert'>
   <Alert>A simple alert for showing message.</Alert>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {1, 4}
+```jsx showLineNumbers
 import { Alert } from "@material-tailwind/react";
 
 export default function Example() {
@@ -50,9 +50,9 @@ The alert component comes with 2 different variants that you can change it using
       <span>A simple gradient alert for showing message.</span>
     </Alert>
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-9}
+```jsx showLineNumbers
 import { Alert } from "@material-tailwind/react";
 
 export default function Variants() {
@@ -80,9 +80,9 @@ The alert component comes with 19 different colors that you can change it using 
     <Alert color='green'>A success alert for showing message.</Alert>
     <Alert color='amber'>A warning alert for showing message.</Alert>
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-9}
+```jsx showLineNumbers
 import { Alert } from "@material-tailwind/react";
 
 export default function Colors() {
@@ -127,12 +127,12 @@ The alert component is a dismissible component that you can control it using the
         </>
       )}
     </Observe>
-  </ComponentCard>
+  </ComponentDemo>
 </State>
 
-```jsx showLineNumbers {5, 8-26}
+```jsx showLineNumbers
 import { useState, Fragment } from "react";
-import { Alert } from "@material-tailwind/react";
+import { Alert, Button } from "@material-tailwind/react";
 
 export default function Colors() {
   const [show, setShow] = useState(true);
@@ -168,16 +168,16 @@ The following props are available for the button component. These are the custom
 props that come with we've added for the alert component and you can use all the
 other native props as well.
 
-| Attribute     | Type                       | Description                        | Default                               |
-| ------------- | -------------------------- | ---------------------------------- | ------------------------------------- |
-| `variant`     | [Variant](#types)          | Change alert variant               | <Code small>filled</Code>             |
-| `color`       | [Color](#types)            | Change alert color                 | <Code small>blue</Code>               |
-| `dismissible` | [Dismissible](#types)      | Makes the alert dismissible        | <Code small>undefined</Code>          |
-| `animate`     | [Animate](#types)          | Change alert animation             | <Code small>undefined</Code>          |
-| `show`        | <Code small>boolean</Code> | Change the alert visibility        | <Code small>true</Code>               |
-| `icon`        | <Code small>node</Code>    | Add icon at the beginning of alert | <Code small>undefined</Code>          |
-| `className`   | <Code small>string</Code>  | Add custom className for alert     | `''`                                  |
-| `children`    | <Code small>node</Code>    | Add content for alert              | No default value its a required prop. |
+| Attribute     | Type                       | Description                        | Default                                |
+| ------------- | -------------------------- | ---------------------------------- | -------------------------------------- |
+| `variant`     | [Variant](#types)          | Change alert variant               | <Code small>filled</Code>              |
+| `color`       | [Color](#types)            | Change alert color                 | <Code small>blue</Code>                |
+| `dismissible` | [Dismissible](#types)      | Makes the alert dismissible        | <Code small>undefined</Code>           |
+| `animate`     | [Animate](#types)          | Change alert animation             | <Code small>undefined</Code>           |
+| `show`        | <Code small>boolean</Code> | Change the alert visibility        | <Code small>true</Code>                |
+| `icon`        | <Code small>node</Code>    | Add icon at the beginning of alert | <Code small>undefined</Code>           |
+| `className`   | <Code small>string</Code>  | Add custom className for alert     | `''`                                   |
+| `children`    | <Code small>node</Code>    | Add content for alert              | No default value it's a required prop. |
 
 ---
 

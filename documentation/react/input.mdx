@@ -31,9 +31,9 @@ See below our input component example. It comes in different styles and colors, 
   <div className='w-72'>
     <Input label='Username' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {1, 4}
+```jsx showLineNumbers
 import { Input } from "@material-tailwind/react";
 
 export default function Example() {
@@ -53,9 +53,9 @@ The input component comes with 3 different variants that you can change it using
     <Input variant='standard' label='Standard' />
     <Input variant='static' label='Static' placeholder='Static' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-8}
+```jsx showLineNumbers
 import { Input } from "@material-tailwind/react";
 
 export default function Variants() {
@@ -80,9 +80,9 @@ The input component comes with 2 different sizes that you can change it using th
     <Input size='md' label='Input Medium' />
     <Input size='lg' label='Input Large' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-7}
+```jsx showLineNumbers
 import { Input } from "@material-tailwind/react";
 
 export default function Sizes() {
@@ -108,9 +108,9 @@ The input component comes with 19 different colors that you can change it using 
     <Input color='indigo' label='Input Indigo' />
     <Input color='teal' label='Input Teal' />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-9}
+```jsx showLineNumbers
 import { Input } from "@material-tailwind/react";
 
 export default function Colors() {
@@ -136,9 +136,9 @@ The input component comes with error and success states for performing validatio
     <Input label='Input Error' error />
     <Input label='Input Success' success />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {6-7}
+```jsx showLineNumbers
 import { Input } from "@material-tailwind/react";
 
 export default function Validations() {
@@ -161,9 +161,9 @@ You can add icon for the input component using the <Code>icon</Code> prop.
   <div className='w-72'>
     <Input label='Input With Icon' icon={<i className='fas fa-heart' />} />
   </div>
-</ComponentCard>
+</ComponentDemo>
 
-```jsx showLineNumbers {1, 4}
+```jsx showLineNumbers
 import { Input } from "@material-tailwind/react";
 
 export default function InputWithIcon() {

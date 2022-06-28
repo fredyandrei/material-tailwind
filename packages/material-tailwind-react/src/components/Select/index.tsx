@@ -177,9 +177,9 @@ const Select = React.forwardRef<HTMLDivElement, SelectProps>(
           fuiOffset(offset),
           flip({ padding: 8 }),
           fuiSize({
-            apply({ reference, height }) {
-              Object.assign(refs.floating.current?.style ?? {}, {
-                width: `${reference.width}px`,
+            apply({ rects, elements }: any) {
+              Object.assign(elements.floating.style, {
+                width: `${rects.reference.width}px`,
                 zIndex: 99,
               });
             },
@@ -420,7 +420,7 @@ const Select = React.forwardRef<HTMLDivElement, SelectProps>(
                 {selected(children[selectedIndex - 1], selectedIndex - 1)}
               </span>
             ) : (
-              <span className={buttonContentClasses} {...children[selectedIndex - 1]?.props} />
+              <span {...children[selectedIndex - 1]?.props} className={buttonContentClasses} />
             )}
             <div className={arrowClasses}>
               {arrow ?? (
